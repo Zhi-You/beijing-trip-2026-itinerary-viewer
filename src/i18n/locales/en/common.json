@@ -1,12 +1,16 @@
 {
   "nav": {
     "overview": "Overview",
+    "packing": "Packing",
     "itinerary": "Itinerary",
     "bookings": "Book Ahead",
     "pokemon": "Pokemon",
     "food": "Food Map",
     "tips": "Season & Tips",
     "planner": "Planner"
+  },
+  "packing": {
+    "subtitle": "Buy or pack these before you fly — small items that make long walking days easier for the whole group."
   },
   "board": {
     "viewMode": "View",
@@ -28,7 +32,7 @@
     "import": "Import timeline",
     "importConfirm": "Replace your current timeline with the imported file? This overwrites your saved customizations.",
     "importInvalid": "That file is not a valid timeline export.",
-    "persistenceNote": "Customizations auto-save in this browser. Export before deploying, then add the file as public/custom-board.json in your repo.",
+    "persistenceNote": "Customizations auto-save in this browser, including deletions. Export before deploying, then add the file as public/custom-board.json in your repo. Reset timeline restores the original itinerary (including deleted cards).",
     "noMeals": "No meals on the timeline yet",
     "schedule": "Time & duration",
     "notes": {

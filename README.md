@@ -54,9 +54,9 @@ For GitHub project pages, set `base` in `vite.config.ts` to your repo path.
 
 | Item | Action |
 |------|--------|
-| Forbidden City (2 Nov) | Real-name timed tickets — book when slots open |
-| National Museum (7 Nov) | Free reservation with passport |
-| Mutianyu Great Wall (6 Nov) | Entry + cable car; private DiDi recommended |
+| Forbidden City (3 Nov, Tue) | Real-name timed tickets — book when slots open (closed Mondays) |
+| National Museum (5 Nov, Thu) | Free reservation with passport |
+| Mutianyu Great Wall (6 Nov, Fri) | Entry + cable car; private DiDi recommended |
 | Alipay / WeChat / DiDi | Set up before departure |
 | Airports | Arrive PKX · Depart PEK T3 (different airports!) |
 

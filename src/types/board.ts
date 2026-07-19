@@ -75,6 +75,8 @@ export interface DayBoard {
   cardIds: string[];
   cards: Record<string, TimelineCard>;
   notes: Record<string, CardNote>;
+  /** Canonical / custom card ids the user deleted — merge must not revive them. */
+  removedCardIds?: string[];
 }
 
 export interface BoardState {

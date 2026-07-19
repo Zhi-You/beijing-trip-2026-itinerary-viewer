@@ -1,6 +1,13 @@
 import type { BoardState } from '../types/board';
 
-/** Placeholder for future one-time board remaps. New project starts with no migrations. */
+/** Ensure each day board has a removedCardIds array for deletion persistence. */
 export function runBoardMigrations(state: BoardState): BoardState {
-  return state;
+  const days: BoardState['days'] = {};
+  for (const [dayId, dayBoard] of Object.entries(state.days)) {
+    days[dayId] = {
+      ...dayBoard,
+      removedCardIds: dayBoard.removedCardIds ?? [],
+    };
+  }
+  return { ...state, days };
 }

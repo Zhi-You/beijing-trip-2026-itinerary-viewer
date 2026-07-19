@@ -26,7 +26,10 @@ export const PLACE_COORDINATES: Record<string, Coordinates> = {
   'xidan-joy-city': { lat: 39.9097, lng: 116.3738 },
   'zhongguancun-pokemon-gym': { lat: 39.9836, lng: 116.3135 },
   'wangjing-capitalmall': { lat: 39.9945, lng: 116.4738 },
+  'xihongmen-onix-gym': { lat: 39.788, lng: 116.328 },
   'beixinqiao': { lat: 39.9408, lng: 116.417 },
+  'peking-university': { lat: 39.9869, lng: 116.3059 },
+  'tsinghua-university': { lat: 40.0024, lng: 116.3265 },
 };
 
 export const AREA_COORDINATES: Record<string, Coordinates> = {
@@ -44,11 +47,14 @@ export const AREA_COORDINATES: Record<string, Coordinates> = {
   Houhai: { lat: 39.9408, lng: 116.385 },
   Beihai: { lat: 39.9244, lng: 116.3892 },
   Haidian: { lat: 39.9599, lng: 116.298 },
+  'Peking University': { lat: 39.9869, lng: 116.3059 },
+  Tsinghua: { lat: 40.0024, lng: 116.3265 },
   'Summer Palace': { lat: 39.9999, lng: 116.2755 },
   Mutianyu: { lat: 40.4319, lng: 116.5704 },
   Xidan: { lat: 39.9097, lng: 116.3738 },
   Zhongguancun: { lat: 39.9836, lng: 116.3135 },
   Wangjing: { lat: 39.9945, lng: 116.4738 },
+  Xihongmen: { lat: 39.788, lng: 116.328 },
   Guijie: { lat: 39.9405, lng: 116.422 },
   'Ghost Street': { lat: 39.9405, lng: 116.422 },
   Dongsi: { lat: 39.928, lng: 116.4175 },

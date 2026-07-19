@@ -2,8 +2,10 @@
 @import "leaflet/dist/leaflet.css";
 
 @theme {
-  --font-sans: "Noto Sans SC", system-ui, sans-serif;
-  --font-serif: "Noto Serif SC", Georgia, serif;
+  /* Latin faces first so English punctuation (e.g. apostrophes) uses Western metrics;
+     SC faces supply Chinese glyphs as fallback. */
+  --font-sans: "Noto Sans", "Noto Sans SC", system-ui, sans-serif;
+  --font-serif: "Noto Serif", "Noto Serif SC", Georgia, serif;
   --color-ink: #1c1410;
   --color-ink-light: #3d2e24;
   --color-vermillion: #b71c1c;

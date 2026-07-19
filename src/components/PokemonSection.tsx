@@ -48,7 +48,7 @@ export function PokemonSection({ strategy, centers, shops }: PokemonSectionProps
           ))}
         </div>
 
-        <h3 className="mt-10 font-serif text-xl font-semibold">Akihabara TCG Shops (Day 7)</h3>
+        <h3 className="mt-10 font-serif text-xl font-semibold">Backup TCG Shops</h3>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           {shops.map((shop) => (
             <div

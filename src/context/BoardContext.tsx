@@ -59,6 +59,24 @@ interface BoardProviderProps {
 export function BoardProvider({ days, children }: BoardProviderProps) {
   const defaultBoard = useMemo(() => initializeBoardState(days), [days]);
 
+  /** When itinerary content/order changes, re-sync place cards into the saved board. */
+  const itineraryFingerprint = useMemo(
+    () =>
+      JSON.stringify(
+        days.map((day) => ({
+          id: day.id,
+          title: day.title,
+          placeIds: day.places.map((p) => p.id),
+          placeNames: day.places.map((p) => p.name),
+          paceNotes: day.places.map((p) => p.paceNote ?? ''),
+          mealCount: day.food.length,
+          mealNames: day.food.map((m) => m.name),
+          hasPokemon: Boolean(day.pokemonCenter),
+        })),
+      ),
+    [days],
+  );
+
   const [board, setBoard] = useState<BoardState>(() => {
     const saved = loadBoardState();
     const migrated = saved ? runBoardMigrations(saved) : null;
@@ -69,6 +87,13 @@ export function BoardProvider({ days, children }: BoardProviderProps) {
   useEffect(() => {
     saveBoardState(board);
   }, [board]);
+
+  useEffect(() => {
+    setBoard((prev) => {
+      const next = repairBoardState(mergeBoardWithDefaults(prev, days), days);
+      return JSON.stringify(prev) === JSON.stringify(next) ? prev : next;
+    });
+  }, [itineraryFingerprint, days]);
 
   useEffect(() => {
     if (loadBoardState()) return;
@@ -250,6 +275,9 @@ export function BoardProvider({ days, children }: BoardProviderProps) {
 
       const { [cardId]: _removed, ...cards } = dayBoard.cards;
       const { [cardId]: _note, ...notes } = dayBoard.notes;
+      const removedCardIds = Array.from(
+        new Set([...(dayBoard.removedCardIds ?? []), cardId]),
+      );
 
       return {
         ...prev,
@@ -260,6 +288,7 @@ export function BoardProvider({ days, children }: BoardProviderProps) {
             cardIds: dayBoard.cardIds.filter((id) => id !== cardId),
             cards,
             notes,
+            removedCardIds,
           },
         },
       };

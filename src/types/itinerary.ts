@@ -111,9 +111,16 @@ export interface TripMeta {
   groupNote: string;
 }
 
+export interface PackingReminder {
+  id: string;
+  item: string;
+  detail: string;
+}
+
 export interface ItineraryData {
   meta: TripMeta;
   seasonNotes: string[];
+  packingReminders: PackingReminder[];
   bookingChecklist: BookingItem[];
   pokemonStrategy: string[];
   pokemonCenters: PokemonCenter[];

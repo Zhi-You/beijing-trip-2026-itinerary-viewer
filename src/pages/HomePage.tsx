@@ -1,6 +1,7 @@
 import { Header, Footer } from '../components/Layout';
 import { Hero } from '../components/Hero';
 import { TripOverview } from '../components/TripOverview';
+import { PackingReminders } from '../components/PackingReminders';
 import { BookingChecklist } from '../components/BookingChecklist';
 import { ItinerarySection } from '../components/ItinerarySection';
 import { PokemonSection } from '../components/PokemonSection';
@@ -20,6 +21,7 @@ export function HomePage({ itinerary }: HomePageProps) {
       <main>
         <Hero meta={itinerary.meta} todayDayId={getDefaultDayId(itinerary.days)} />
         <TripOverview meta={itinerary.meta} seasonNotes={itinerary.seasonNotes} />
+        <PackingReminders items={itinerary.packingReminders} />
         <BookingChecklist items={itinerary.bookingChecklist} />
         <ItinerarySection days={itinerary.days} />
         <PokemonSection

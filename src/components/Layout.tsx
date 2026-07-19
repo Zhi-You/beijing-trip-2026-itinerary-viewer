@@ -6,6 +6,7 @@ export function Header() {
 
   const links = [
     { href: '#overview', label: t('nav.overview') },
+    { href: '#packing', label: t('nav.packing') },
     { href: '#itinerary', label: t('nav.itinerary') },
     { href: '#bookings', label: t('nav.bookings') },
     { href: '#pokemon', label: t('nav.pokemon') },
