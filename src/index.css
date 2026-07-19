@@ -1,0 +1,116 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --font-sans: "Noto Sans SC", system-ui, sans-serif;
+  --font-serif: "Noto Serif SC", Georgia, serif;
+  --color-ink: #1c1410;
+  --color-ink-light: #3d2e24;
+  --color-vermillion: #b71c1c;
+  --color-vermillion-light: #e53935;
+  --color-gold: #c9a227;
+  --color-gold-light: #e0c35a;
+  --color-washi: #f7f1e8;
+  --color-washi-dark: #e8dcc8;
+  --color-indigo: #8b1a1a;
+  --color-sakura: #f5d0c5;
+  --color-matcha: #2e7d4f;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-washi);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-vermillion) 25%, transparent);
+}
+
+@media (max-width: 767px) {
+  main {
+    padding-bottom: calc(4.25rem + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+.washi-pattern {
+  background-color: var(--color-washi);
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9a227' fill-opacity='0.12'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.5s ease-out forwards;
+}
+
+.touch-target {
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+}
+
+.drag-handle {
+  touch-action: none;
+}
+
+.day-map-marker {
+  background: transparent;
+  border: none;
+}
+
+.day-map-marker-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+@media (pointer: coarse) {
+  .day-map-marker-pin {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+}
+
+.leaflet-popup-content {
+  margin: 10px 12px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+@media (pointer: coarse) {
+  .leaflet-container {
+    touch-action: pan-x pan-y;
+  }
+}
