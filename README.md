@@ -21,6 +21,16 @@ npm run preview
 
 The static site is output to `dist/` — deploy to Netlify, Vercel, GitHub Pages, or any static host.
 
+### GitHub Pages
+
+This repo deploys via GitHub Actions (`.github/workflows/deploy-pages.yml`).
+
+1. Repo **Settings → Pages → Source**: choose **GitHub Actions** (not “Deploy from a branch”).
+2. Push to `main` (or run the workflow manually).
+3. Site URL: `https://zhi-you.github.io/beijing-trip-2026-itinerary-viewer/`
+
+Do **not** point Pages at the `main` branch source — that serves Vite’s `index.html` (`/src/main.tsx`), which browsers cannot run, so the page looks blank.
+
 ## What’s included
 
 Same architecture as the Tokyo planner, adapted for Beijing:
@@ -42,7 +52,7 @@ The **Itinerary** section has a **View / Customize** toggle. Changes auto-save i
 2. Copy it to `public/custom-board.json`
 3. Run `npm run build` and deploy `dist/`
 
-For GitHub project pages, set `base` in `vite.config.ts` to your repo path.
+The Vite `base` path is set automatically in GitHub Actions.
 
 ## Day map & focus page
 

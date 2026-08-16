@@ -9,7 +9,7 @@ function App() {
 
   return (
     <BoardProvider days={itinerary.days}>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<HomePage itinerary={itinerary} />} />
           <Route path="/day/:dayId" element={<DayFocusPage days={itinerary.days} />} />
