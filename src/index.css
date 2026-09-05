@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "leaflet/dist/leaflet.css";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Latin faces first so English punctuation (e.g. apostrophes) uses Western metrics;
      SC faces supply Chinese glyphs as fallback. */
@@ -14,6 +16,9 @@
   --color-gold-light: #e0c35a;
   --color-washi: #f7f1e8;
   --color-washi-dark: #e8dcc8;
+  --color-surface: #ffffff;
+  --color-banner: #1c1410;
+  --color-banner-fg: #f7f1e8;
   --color-indigo: #8b1a1a;
   --color-sakura: #f5d0c5;
   --color-matcha: #2e7d4f;
@@ -22,6 +27,19 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+  --color-ink: #f0ebe3;
+  --color-ink-light: #c8c2b8;
+  --color-washi: #14141c;
+  --color-washi-dark: #2a2a36;
+  --color-surface: #1e1e28;
+  --color-banner: #0e0e14;
+  --color-banner-fg: #f0ebe3;
+  --color-sakura: #5c3a3e;
 }
 
 body {

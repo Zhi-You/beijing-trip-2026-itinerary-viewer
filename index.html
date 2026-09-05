@@ -2,11 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#f7f1e8" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem('beijing-itinerary-theme');
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+            var meta = document.querySelector('meta[name="theme-color"]');
+            if (meta) meta.setAttribute('content', '#14141c');
+          }
+          if (localStorage.getItem('beijing-itinerary-locale') === 'zh') {
+            document.documentElement.lang = 'zh-CN';
+          }
+        } catch (e) {}
+      })();
+    </script>
     <meta
       name="description"
       content="Beijing trip itinerary for 4 travellers — November 1–9, 2026. Forbidden City, Great Wall, Temple of Heaven, Summer Palace, Pokemon stops, and more."

@@ -4,6 +4,7 @@ import type { DayPlan } from '../types/itinerary';
 import { useBoard } from '../context/BoardContext';
 import { parseImportedBoardState } from '../utils/boardStorage';
 import { DayBoardCustomizer } from './board/DayBoardCustomizer';
+import { RestorePublishedButton } from './board/RestorePublishedButton';
 import { DayTimeline } from './DayTimeline';
 
 interface ItinerarySectionProps {
@@ -45,7 +46,7 @@ export function ItinerarySection({ days }: ItinerarySectionProps) {
   };
 
   return (
-    <section id="itinerary" className="bg-white py-10 sm:py-16">
+    <section id="itinerary" className="bg-surface py-10 sm:py-16">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between">
           <div>
@@ -83,6 +84,13 @@ export function ItinerarySection({ days }: ItinerarySectionProps) {
                   className="hidden"
                   onChange={handleImportFile}
                 />
+                <RestorePublishedButton
+                  className="col-span-2 min-h-11 rounded-lg border border-indigo/40 px-3 py-2.5 text-xs font-medium text-indigo transition hover:border-indigo hover:bg-indigo/5 disabled:opacity-50 sm:col-span-1"
+                  onRestored={() => {
+                    setSavedHint(true);
+                    window.setTimeout(() => setSavedHint(false), 3000);
+                  }}
+                />
                 <button
                   type="button"
                   onClick={() => {
@@ -100,7 +108,7 @@ export function ItinerarySection({ days }: ItinerarySectionProps) {
                 onClick={switchToView}
                 className={`min-h-11 flex-1 rounded-md px-4 py-2.5 text-sm font-medium transition sm:flex-none sm:py-2 ${
                   mode === 'view'
-                    ? 'bg-white text-ink shadow-sm'
+                    ? 'bg-surface text-ink shadow-sm'
                     : 'text-ink-light hover:text-ink'
                 }`}
               >

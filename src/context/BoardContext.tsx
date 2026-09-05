@@ -4,6 +4,7 @@ import {
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
   type ReactNode,
 } from 'react';
@@ -47,6 +48,7 @@ interface BoardContextValue {
   resetBoard: () => void;
   exportBoard: () => void;
   importBoard: (state: BoardState) => void;
+  restoreBundledBoard: () => Promise<boolean>;
 }
 
 const BoardContext = createContext<BoardContextValue | null>(null);
@@ -84,11 +86,19 @@ export function BoardProvider({ days, children }: BoardProviderProps) {
     return repairBoardState(base, days);
   });
 
-  useEffect(() => {
-    saveBoardState(board);
-  }, [board]);
+  const [boardReady, setBoardReady] = useState(() => Boolean(loadBoardState()));
 
   useEffect(() => {
+    if (!boardReady) return;
+    saveBoardState(board);
+  }, [board, boardReady]);
+
+  const skipLocaleMerge = useRef(true);
+  useEffect(() => {
+    if (skipLocaleMerge.current) {
+      skipLocaleMerge.current = false;
+      return;
+    }
     setBoard((prev) => {
       const next = repairBoardState(mergeBoardWithDefaults(prev, days), days);
       return JSON.stringify(prev) === JSON.stringify(next) ? prev : next;
@@ -96,18 +106,21 @@ export function BoardProvider({ days, children }: BoardProviderProps) {
   }, [itineraryFingerprint, days]);
 
   useEffect(() => {
-    if (loadBoardState()) return;
+    if (boardReady) return;
 
     let cancelled = false;
     loadBundledBoardState().then((bundled) => {
-      if (cancelled || !bundled) return;
-      setBoard(repairBoardState(mergeBoardWithDefaults(runBoardMigrations(bundled), days), days));
+      if (cancelled) return;
+      if (bundled) {
+        setBoard(repairBoardState(mergeBoardWithDefaults(runBoardMigrations(bundled), days), days));
+      }
+      setBoardReady(true);
     });
 
     return () => {
       cancelled = true;
     };
-  }, [days]);
+  }, [boardReady, days]);
 
   const getDayCards = useCallback(
     (dayId: string): TimelineCard[] => {
@@ -362,6 +375,14 @@ export function BoardProvider({ days, children }: BoardProviderProps) {
     [days],
   );
 
+  const restoreBundledBoard = useCallback(async () => {
+    const bundled = await loadBundledBoardState();
+    if (!bundled) return false;
+    const merged = mergeBoardWithDefaults(runBoardMigrations(bundled), days);
+    setBoard(repairBoardState(merged, days));
+    return true;
+  }, [days]);
+
   const value: BoardContextValue = {
     board,
     getDayCards,
@@ -378,6 +399,7 @@ export function BoardProvider({ days, children }: BoardProviderProps) {
     resetBoard,
     exportBoard,
     importBoard,
+    restoreBundledBoard,
   };
 
   return <BoardContext.Provider value={value}>{children}</BoardContext.Provider>;

@@ -26,6 +26,8 @@ export interface FlightSegment {
   departure: FlightEndpoint;
   arrival: FlightEndpoint;
   duration: string;
+  /** Optional party / package note (e.g. which travellers). */
+  note?: string;
 }
 
 export interface AirportProcess {
@@ -86,10 +88,15 @@ export interface DayPlan {
 
 export interface BookingItem {
   id: string;
-  item: string;
-  deadline: string;
+  /** When to buy / reserve (table “When” column). */
+  when: string;
+  /** What to buy (table “What” column; Day N is prefixed in the UI). */
+  what: string;
+  /** Visit day ids such as `day-3` — rendered as “Day 3”. */
+  dayIds?: string[];
   urgency: 'critical' | 'high' | 'medium';
   link?: string;
+  linkLabel?: string;
   notes: string;
 }
 

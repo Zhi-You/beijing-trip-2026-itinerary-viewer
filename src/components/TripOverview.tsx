@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import type { ItineraryData } from '../types/itinerary';
+import { CollapsibleSection } from './CollapsibleSection';
 
 interface TripOverviewProps {
   meta: ItineraryData['meta'];
@@ -16,15 +17,18 @@ export function TripOverview({ meta, seasonNotes }: TripOverviewProps) {
   ];
 
   return (
-    <section id="overview" className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-16">
-      <h2 className="font-serif text-2xl font-bold text-ink sm:text-3xl">{t('overview.title')}</h2>
-      <p className="mt-3 max-w-3xl text-ink-light/80">{meta.groupNote}</p>
+    <CollapsibleSection
+      id="overview"
+      title={t('overview.title')}
+      className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-10"
+    >
+      <p className="max-w-3xl text-ink-light/80">{meta.groupNote}</p>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-3">
         {stats.map((stat) => (
           <div
             key={stat.label}
-            className="rounded-xl border border-washi-dark bg-white p-5 shadow-sm"
+            className="rounded-xl border border-washi-dark bg-surface p-5 shadow-sm"
           >
             <p className="text-sm font-medium uppercase tracking-wider text-ink-light/60">
               {stat.label}
@@ -51,12 +55,8 @@ export function TripOverview({ meta, seasonNotes }: TripOverviewProps) {
 
       <div className="mt-6 rounded-xl border border-matcha/30 bg-matcha/5 p-5">
         <p className="text-sm font-medium text-matcha">{t('overview.transport')}</p>
-        <p className="mt-1 text-sm text-ink-light">
-          Mostly DiDi (ride-hailing) for a group of 4 — door-to-door between clusters. Metro is a
-          backup for short hops near Beixinqiao. Set up Alipay / WeChat Pay and Amap (高德) before
-          you land. Note: you arrive at Daxing (PKX) and depart from Capital (PEK).
-        </p>
+        <p className="mt-1 text-sm text-ink-light">{t('overview.transportBody')}</p>
       </div>
-    </section>
+    </CollapsibleSection>
   );
 }

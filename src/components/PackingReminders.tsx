@@ -9,7 +9,7 @@ export function PackingReminders({ items }: PackingRemindersProps) {
   const { t } = useTranslation();
 
   return (
-    <section id="packing" className="border-y border-washi-dark bg-white py-10 sm:py-12">
+    <section id="packing" className="border-y border-washi-dark bg-surface py-10 sm:py-12">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <h2 className="font-serif text-2xl font-bold text-ink sm:text-3xl">{t('nav.packing')}</h2>
         <p className="mt-2 max-w-2xl text-sm text-ink-light/70">{t('packing.subtitle')}</p>

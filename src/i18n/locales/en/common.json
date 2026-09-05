@@ -3,7 +3,7 @@
     "overview": "Overview",
     "packing": "Packing",
     "itinerary": "Itinerary",
-    "bookings": "Book Ahead",
+    "bookings": "Tickets",
     "pokemon": "Pokemon",
     "food": "Food Map",
     "tips": "Season & Tips",
@@ -26,17 +26,27 @@
     "deleteConfirmMessage": "Remove \"{{title}}\" from this day's timeline? This cannot be undone.",
     "emptyDay": "No cards yet — add an activity or meal above",
     "reset": "Reset timeline",
-    "resetConfirm": "Reset all days to the original itinerary? Your custom cards, order, and notes will be lost.",
+    "resetConfirm": "Reset all days to the original built-in itinerary (not the published trip plan)? Your custom cards, order, and notes will be lost. Use Restore published timeline to get the group plan back.",
     "savedHint": "Changes saved automatically",
     "export": "Export timeline",
     "import": "Import timeline",
     "importConfirm": "Replace your current timeline with the imported file? This overwrites your saved customizations.",
     "importInvalid": "That file is not a valid timeline export.",
-    "persistenceNote": "Customizations auto-save in this browser, including deletions. Export before deploying, then add the file as public/custom-board.json in your repo. Reset timeline restores the original itinerary (including deleted cards).",
+    "restorePublished": "Restore published timeline",
+    "restorePublishedConfirm": "Replace your current timeline with the trip plan published on this site? Local-only changes will be overwritten. You do not need a file on this phone.",
+    "restorePublishedMissing": "No published timeline is available on this site yet.",
+    "persistenceNote": "Customizations auto-save in this browser, including deletions. Use Restore published timeline to reload the trip plan from this site — no file needed on your phone. Reset restores the original built-in itinerary (including deleted cards), not the published file.",
     "noMeals": "No meals on the timeline yet",
     "schedule": "Time & duration",
+    "cancel": "Cancel",
+    "confirmDelete": "Delete",
+    "show": "Show",
+    "hide": "Hide",
+    "untitledActivity": "Untitled activity",
+    "untitledMeal": "Untitled meal",
     "notes": {
       "toggle": "Toggle notes",
+      "hasNote": "This card has a note",
       "label": "Notes",
       "placeholder": "Add comments for your group..."
     }
@@ -48,7 +58,8 @@
     "noActivities": "No activities to show",
     "noCoordinates": "No map location — add an area name",
     "legend": "{{mapped}} of {{total}} stops plotted · dashed line shows visit order",
-    "routeNote": "Route line is approximate (straight paths, not road routes). Powered by OpenStreetMap."
+    "routeNote": "Route line is approximate (straight paths, not road routes). Powered by OpenStreetMap.",
+    "youAreHere": "You are here"
   },
   "focus": {
     "back": "Overview",
@@ -69,14 +80,47 @@
     "badge": "November 2026 · Beijing",
     "ctaToday": "Today's plan & map",
     "cta": "View Itinerary",
-    "ctaBookings": "Booking Checklist"
+    "ctaBookings": "Tickets to buy"
   },
   "overview": {
     "title": "Trip at a Glance",
     "dates": "Dates",
     "travellers": "Travellers",
     "base": "Home Base",
-    "transport": "Getting Around"
+    "transport": "Getting Around",
+    "transportBody": "Mostly DiDi (ride-hailing) for a group of 4 — door-to-door between clusters. Metro is a backup for short hops near Beixinqiao. Set up Alipay / WeChat Pay and Amap (高德) before you land. Note: you arrive at Daxing (PKX) and depart from Capital (PEK)."
+  },
+  "pokemon": {
+    "subtitle": "Official pop-ups, TCG gyms, and backup specialty shops in Beijing",
+    "strategy": "Strategy",
+    "centersByDay": "Pokemon Centers by Day",
+    "backupShops": "Backup TCG Shops"
+  },
+  "tips": {
+    "title": "Backup Plans & Extras",
+    "contingencies": "Contingencies",
+    "addons": "Optional Add-ons",
+    "addonsNote": "From your saved list — lower priority"
+  },
+  "food": {
+    "subtitle": "Meals from your itinerary timeline — updates when you reorder or add custom meals",
+    "custom": "Custom",
+    "customTag": "custom",
+    "scheduled": "Scheduled: {{day}} ({{dayTitle}})"
+  },
+  "bookings": {
+    "title": "Tickets to buy",
+    "subtitle": "",
+    "colWhen": "When",
+    "colWhat": "What",
+    "colLink": "Link",
+    "bookOnline": "Book online →"
+  },
+  "prefs": {
+    "language": "Language",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark"
   },
   "labels": {
     "intensity": "Pace",
@@ -93,6 +137,7 @@
     "food": "Meals today",
     "transport": "Transport",
     "dayTips": "Day notes",
+    "dayNumber": "Day {{n}}",
     "pokemonCenter": "Pokemon stop",
     "flight": "Flight",
     "airportDeparture": "Departure process",
@@ -115,6 +160,32 @@
   },
   "footer": {
     "note": "Itinerary optimised for Beixinqiao base · Mostly DiDi · i18n-ready architecture",
-    "built": "Built for your group of 4"
+    "built": "Built for your group of 4",
+    "locale": "Language: English"
+  },
+  "forms": {
+    "title": "Title *",
+    "titlePlaceholder": "Activity name",
+    "location": "Location (optional)",
+    "locationPlaceholder": "Area or address",
+    "areaPlaceholder": "Area",
+    "when": "When",
+    "duration": "Duration",
+    "description": "Description",
+    "activityDescriptionPlaceholder": "What to expect, tips...",
+    "customActivity": "Custom activity",
+    "name": "Name *",
+    "namePlaceholder": "Restaurant or dish",
+    "price": "Price",
+    "pricePlaceholder": "e.g. ¥80–200",
+    "mealType": "Meal type",
+    "mealDescriptionPlaceholder": "Notes, what to order...",
+    "customMeal": "Custom meal",
+    "hrs": "hrs",
+    "mins": "mins",
+    "breakfast": "Breakfast",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
+    "snack": "Snack"
   }
 }

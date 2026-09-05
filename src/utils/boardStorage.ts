@@ -1,13 +1,28 @@
-import type { BoardState } from '../types/board';
+import type { BoardState, DayBoard } from '../types/board';
 
 const STORAGE_KEY = 'beijing-itinerary-board-v1';
 export const BOARD_EXPORT_FILENAME = 'beijing-itinerary-board.json';
 export const BUNDLED_BOARD_PATH = `${import.meta.env.BASE_URL}custom-board.json`;
 
+function isValidDayBoard(value: unknown): value is DayBoard {
+  if (!value || typeof value !== 'object') return false;
+  const day = value as DayBoard;
+  if (!Array.isArray(day.cardIds) || typeof day.cards !== 'object' || day.cards === null) {
+    return false;
+  }
+  return day.cardIds.every((id) => typeof id === 'string' && Boolean(day.cards[id]));
+}
+
 export function isValidBoardState(value: unknown): value is BoardState {
   if (!value || typeof value !== 'object') return false;
   const candidate = value as BoardState;
   return candidate.version === 1 && typeof candidate.days === 'object' && candidate.days !== null;
+}
+
+/** Published / imported files must have every cardIds entry pointing at a card. */
+export function isCompleteBoardState(value: unknown): value is BoardState {
+  if (!isValidBoardState(value)) return false;
+  return Object.values(value.days).every(isValidDayBoard);
 }
 
 export function loadBoardState(): BoardState | null {
@@ -27,7 +42,7 @@ export async function loadBundledBoardState(): Promise<BoardState | null> {
     const response = await fetch(BUNDLED_BOARD_PATH);
     if (!response.ok) return null;
     const parsed = (await response.json()) as unknown;
-    if (!isValidBoardState(parsed)) return null;
+    if (!isCompleteBoardState(parsed)) return null;
     return parsed;
   } catch {
     return null;
@@ -45,7 +60,7 @@ export function clearBoardState(): void {
 export function parseImportedBoardState(raw: string): BoardState | null {
   try {
     const parsed = JSON.parse(raw) as unknown;
-    if (!isValidBoardState(parsed)) return null;
+    if (!isCompleteBoardState(parsed)) return null;
     return parsed;
   } catch {
     return null;

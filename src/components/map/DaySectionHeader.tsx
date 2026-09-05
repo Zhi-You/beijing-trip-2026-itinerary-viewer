@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { DayPlan } from '../../types/itinerary';
+import { getDayNumber } from '../../utils/tripDay';
 import { IntensityBadge } from '../Badges';
 
 interface DaySectionHeaderProps {
@@ -17,13 +18,19 @@ export function DaySectionHeader({
   extraBadge,
 }: DaySectionHeaderProps) {
   const { t } = useTranslation();
+  const dayNumber = getDayNumber(day);
 
   return (
     <>
       <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-        <div className="rounded-lg bg-ink px-3 py-1 font-serif text-sm font-bold text-washi">
+        <div className="rounded-lg bg-banner px-3 py-1 font-serif text-sm font-bold text-banner-fg">
           {day.date}
         </div>
+        {dayNumber !== null && (
+          <span className="font-serif text-sm font-bold text-ink">
+            {t('labels.dayNumber', { n: dayNumber })}
+          </span>
+        )}
         <span className="text-sm text-ink-light/60">{day.weekday}</span>
         <IntensityBadge intensity={day.intensity} />
         {extraBadge}
@@ -45,7 +52,7 @@ export function DaySectionHeader({
           className={`w-full shrink-0 rounded-lg border px-4 py-3 text-sm font-medium transition sm:w-auto sm:py-2 ${
             mapOpen
               ? 'border-indigo bg-indigo text-white shadow-sm'
-              : 'border-washi-dark bg-white text-ink-light hover:border-indigo hover:text-indigo'
+              : 'border-washi-dark bg-surface text-ink-light hover:border-indigo hover:text-indigo'
           }`}
         >
           {mapOpen ? t('map.hideMap') : t('map.showMap')}

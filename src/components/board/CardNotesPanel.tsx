@@ -12,11 +12,11 @@ export function CardNotesPanel({ dayId, cardId }: CardNotesPanelProps) {
   const note = getCardNote(dayId, cardId);
   const hasText = Boolean(note?.text?.trim());
 
-  const noteButtonClass = `flex h-11 w-11 items-center justify-center rounded-lg border text-sm transition ${
+  const noteButtonClass = `relative flex h-11 w-11 items-center justify-center rounded-lg border text-base font-bold transition ${
     note?.isOpen
       ? 'border-indigo bg-indigo/10 text-indigo'
       : hasText
-        ? 'border-gold bg-gold/10 text-gold'
+        ? 'border-vermillion bg-vermillion text-white'
         : 'border-washi-dark bg-washi text-ink-light/50 hover:border-indigo/40 hover:text-indigo'
   }`;
 
@@ -35,12 +35,15 @@ export function CardNotesPanel({ dayId, cardId }: CardNotesPanelProps) {
       <button
         type="button"
         onClick={() => toggleCardNote(dayId, cardId)}
-        title={t('board.notes.toggle')}
+        title={hasText ? t('board.notes.hasNote') : t('board.notes.toggle')}
         className={noteButtonClass}
         aria-expanded={note?.isOpen ?? false}
-        aria-label={t('board.notes.toggle')}
+        aria-label={hasText ? t('board.notes.hasNote') : t('board.notes.toggle')}
       >
-        📝
+        {hasText ? '!' : '📝'}
+        {hasText && !note?.isOpen && (
+          <span className="absolute -right-0.5 -top-0.5 h-2.5 w-2.5 rounded-full bg-gold" />
+        )}
       </button>
 
       {note?.isOpen && (
@@ -51,7 +54,7 @@ export function CardNotesPanel({ dayId, cardId }: CardNotesPanelProps) {
             aria-hidden
           />
           <div
-            className="fixed inset-x-0 bottom-0 z-[60] rounded-t-2xl border border-washi-dark bg-white p-4 shadow-2xl md:hidden"
+            className="fixed inset-x-0 bottom-0 z-[60] rounded-t-2xl border border-washi-dark bg-surface p-4 shadow-2xl md:hidden"
             style={{ paddingBottom: 'calc(1rem + env(safe-area-inset-bottom, 0px))' }}
           >
             <div className="mx-auto mb-3 h-1 w-10 rounded-full bg-washi-dark" />
@@ -64,11 +67,11 @@ export function CardNotesPanel({ dayId, cardId }: CardNotesPanelProps) {
               onClick={() => toggleCardNote(dayId, cardId)}
               className="mt-3 w-full rounded-lg bg-indigo py-3 text-sm font-medium text-white"
             >
-              Done
+              {t('board.hide')}
             </button>
           </div>
 
-          <div className="absolute right-0 top-full z-20 mt-2 hidden w-64 rounded-lg border border-washi-dark bg-white p-3 shadow-lg md:block">
+          <div className="absolute right-0 top-full z-20 mt-2 hidden w-64 rounded-lg border border-washi-dark bg-surface p-3 shadow-lg md:block">
             <label className="text-xs font-semibold uppercase tracking-wide text-indigo">
               {t('board.notes.label')}
             </label>

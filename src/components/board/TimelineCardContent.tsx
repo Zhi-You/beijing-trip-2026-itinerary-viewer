@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import i18n from '../../i18n';
+import type { ReactNode } from 'react';
 import type { TimelineCard } from '../../types/board';
 import { getEffectiveSchedule } from '../../utils/cardSchedule';
 import { PlaceCard } from '../PlaceCard';
@@ -13,9 +15,13 @@ interface TimelineCardContentProps {
   mode: 'view' | 'edit';
   onUpdateActivity?: (data: NonNullable<TimelineCard['customActivity']>) => void;
   onUpdateMeal?: (data: NonNullable<TimelineCard['customMeal']>) => void;
+  /** Skip outer card chrome — used inside an already-framed expand panel. */
+  bare?: boolean;
 }
 
 function MealCardView({ meal }: { meal: NonNullable<TimelineCard['meal']> }) {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="flex items-start justify-between gap-2">
@@ -26,8 +32,8 @@ function MealCardView({ meal }: { meal: NonNullable<TimelineCard['meal']> }) {
             {meal.rating && ` · ${meal.rating}`}
           </p>
         </div>
-        <span className="shrink-0 rounded bg-washi px-2 py-0.5 text-xs capitalize text-ink-light">
-          {meal.meal}
+        <span className="shrink-0 rounded bg-washi px-2 py-0.5 text-xs font-semibold capitalize text-vermillion">
+          {t(`forms.${meal.meal}`)}
         </span>
       </div>
       {meal.note && (
@@ -73,9 +79,12 @@ export function TimelineCardContent({
   mode,
   onUpdateActivity,
   onUpdateMeal,
+  bare = false,
 }: TimelineCardContentProps) {
   const { t } = useTranslation();
   const schedule = getEffectiveSchedule(card);
+  const frame = (extra: string, children: ReactNode) =>
+    bare ? <>{children}</> : <div className={extra}>{children}</div>;
 
   if (card.kind === 'flight' && card.flight) {
     return <FlightSegmentCard flight={card.flight} />;
@@ -88,49 +97,47 @@ export function TimelineCardContent({
   }
 
   if (card.kind === 'pokemon-center' && card.pokemonCenter) {
-    return (
-      <div className="rounded-xl border border-indigo/20 bg-indigo/5 p-4 shadow-sm sm:p-5">
-        <PokemonCenterCardView data={card.pokemonCenter} schedule={schedule} />
-      </div>
+    return frame(
+      'rounded-xl border border-indigo/20 bg-indigo/5 p-4 shadow-sm sm:p-5',
+      <PokemonCenterCardView data={card.pokemonCenter} schedule={schedule} />,
     );
   }
 
   if (card.kind === 'place' && card.place) {
-    return <PlaceCard place={card.place} index={index} schedule={schedule} />;
+    return <PlaceCard place={card.place} index={index} schedule={schedule} embedded={bare} />;
   }
 
   if (card.kind === 'meal' && card.meal) {
-    return (
-      <div className="rounded-xl border border-washi-dark bg-white p-4 shadow-sm sm:p-5">
+    return frame(
+      'rounded-xl border border-washi-dark bg-surface p-4 shadow-sm sm:p-5',
+      <>
         <p className="mb-2 text-xs font-semibold uppercase text-vermillion">
           🍜 {t('labels.food')}
         </p>
         <MealCardView meal={card.meal} />
-      </div>
+      </>,
     );
   }
 
   if (card.kind === 'custom-activity' && card.customActivity) {
-    return (
-      <div className="rounded-xl border border-indigo/20 bg-white p-4 shadow-sm sm:p-5">
-        {mode === 'edit' && onUpdateActivity ? (
-          <CustomActivityEditor data={card.customActivity} onChange={onUpdateActivity} />
-        ) : (
-          <CustomActivityDisplay data={card.customActivity} />
-        )}
-      </div>
+    return frame(
+      'rounded-xl border border-indigo/20 bg-surface p-4 shadow-sm sm:p-5',
+      mode === 'edit' && onUpdateActivity ? (
+        <CustomActivityEditor data={card.customActivity} onChange={onUpdateActivity} />
+      ) : (
+        <CustomActivityDisplay data={card.customActivity} />
+      ),
     );
   }
 
   if (card.kind === 'custom-meal' && card.customMeal) {
-    return (
-      <div className="rounded-xl border border-vermillion/20 bg-white p-4 shadow-sm sm:p-5">
-        {mode === 'edit' && onUpdateMeal ? (
-          <CustomMealEditor data={card.customMeal} onChange={onUpdateMeal} />
-        ) : (
-          <CustomMealDisplay data={card.customMeal} />
-        )}
-      </div>
+    return frame(
+      'rounded-xl border border-vermillion/20 bg-surface p-4 shadow-sm sm:p-5',
+      mode === 'edit' && onUpdateMeal ? (
+        <CustomMealEditor data={card.customMeal} onChange={onUpdateMeal} />
+      ) : (
+        <CustomMealDisplay data={card.customMeal} />
+      ),
     );
   }
 
@@ -142,16 +149,18 @@ export function getCardTitle(card: TimelineCard): string {
     return `${card.flight.airline} ${card.flight.flightNumber}`;
   }
   if (card.kind === 'airport-process' && card.airportProcess) {
-    return card.airportProcess.type === 'departure' ? 'Airport departure' : 'Airport touchdown';
+    return card.airportProcess.type === 'departure'
+      ? i18n.t('labels.airportDeparture')
+      : i18n.t('labels.airportTouchdown');
   }
   if (card.kind === 'pokemon-center' && card.pokemonCenter) return card.pokemonCenter.name;
   if (card.kind === 'place' && card.place) return card.place.name;
   if (card.kind === 'meal' && card.meal) return card.meal.name;
   if (card.kind === 'custom-activity' && card.customActivity)
-    return card.customActivity.title || 'Untitled activity';
+    return card.customActivity.title || i18n.t('board.untitledActivity');
   if (card.kind === 'custom-meal' && card.customMeal)
-    return card.customMeal.name || 'Untitled meal';
-  return 'Card';
+    return card.customMeal.name || i18n.t('board.untitledMeal');
+  return i18n.t('nav.itinerary');
 }
 
 /** Only activities use the When / duration editor — not meals. */

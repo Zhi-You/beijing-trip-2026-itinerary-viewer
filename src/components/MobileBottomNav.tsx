@@ -2,7 +2,6 @@ import { useTranslation } from 'react-i18next';
 
 const NAV_ITEMS = [
   { href: '#overview', key: 'overview' as const },
-  { href: '#packing', key: 'packing' as const },
   { href: '#itinerary', key: 'itinerary' as const },
   { href: '#bookings', key: 'bookings' as const },
   { href: '#pokemon', key: 'pokemon' as const },

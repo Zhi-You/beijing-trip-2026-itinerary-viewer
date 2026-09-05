@@ -32,70 +32,116 @@ const itineraryEn: ItineraryData = {
   ],
   bookingChecklist: [
     {
-      id: 'forbidden-city',
-      item: 'Palace Museum (Forbidden City) — timed tickets',
-      deadline: 'Book as soon as your dates open (often ~7 days ahead on the official channel / WeChat mini-program)',
-      urgency: 'critical',
-      link: 'https://intl.dpm.org.cn/',
+      id: 'flights',
+      when: 'Already booked',
+      what: 'SQ 810 → PKX (1 Nov) and SQ 805 ← PEK T3 (9 Nov) — ref DTVXGS',
+      dayIds: ['day-1', 'day-9'],
+      urgency: 'medium',
       notes:
-        'Closed Mondays (except national holidays). Your Forbidden City day is Tue 3 Nov (open). Real-name tickets; passport names must match. Enter from Meridian Gate (south); exit north toward Jingshan. Aim for morning entry.',
-    },
-    {
-      id: 'mao-memorial',
-      item: 'Chairman Mao Memorial Hall — queue timing',
-      deadline: 'No ticket purchase, but go early',
-      urgency: 'high',
-      notes:
-        'Typically open Tue–Sun mornings only (~08:00–12:00; closed Mon). Your visit is Thu 5 Nov with the National Museum (same Tiananmen cluster). Bags / phones often restricted — use lockers nearby. Confirm hours closer to travel; temporary closures happen. Note: closed for renovation Mar–Aug 2026, so November should be back to normal — still verify the week before.',
-    },
-    {
-      id: 'national-museum',
-      item: 'National Museum of China — free reservation',
-      deadline: 'Reserve online / WeChat when slots open (often a few days ahead)',
-      urgency: 'high',
-      link: 'https://www.chnmuseum.cn/',
-      notes:
-        'Free with passport reservation. Closed Mondays. Your museum day is Thu 5 Nov with Mao Memorial Hall first (mornings only), then the museum (open ~09:00–17:00), then Xihongmen Onix gym. Arrive early — security queues build by late morning.',
+        'Inbound SQ 810 lands at Daxing (PKX) Sun 1 Nov 06:35. Return SQ 805 departs Capital (PEK) T3 Mon 9 Nov 08:45. Allow extra transfer time on Day 9 — different airports.',
     },
     {
       id: 'great-wall',
-      item: 'Mutianyu Great Wall — tickets + cable car',
-      deadline: '1–2 weeks ahead (weekend slots fill faster)',
+      when: '23 Oct 2026 (2 weeks before; 30 Oct still OK if stock)',
+      what: 'Mutianyu entry + cable car for 6 Nov (group of 4)',
+      dayIds: ['day-6'],
       urgency: 'high',
+      link: 'https://www.trip.com/travel-guide/attraction/beijing/mutianyu-great-wall-78693/',
+      linkLabel: 'trip.com',
       notes:
-        'Mutianyu is the best balance for seniors (cable car / toboggan options, fewer stairs than some Badaling sections). Book entry + cable car up. Private DiDi / driver (~1.5–2 hrs each way) is easiest for a group of 4.',
+        'Visit Fri 6 Nov 2026. Mutianyu is the best balance for seniors (cable car / toboggan, fewer stairs than some Badaling sections). Book entry + cable car up. Private DiDi / driver (~1.5–2 hrs each way) is easiest for a group of 4. Windproof layer essential.',
     },
     {
-      id: 'summer-palace',
-      item: 'Summer Palace (颐和园) tickets',
-      deadline: 'Buy online day-before or morning-of',
-      urgency: 'medium',
+      id: 'forbidden-city',
+      when: '27 Oct 2026, 20:00 Beijing (7-day release — sells out)',
+      what: 'Palace Museum timed tickets for 3 Nov (group of 4, morning slot)',
+      dayIds: ['day-3'],
+      urgency: 'critical',
+      link: 'https://intl.dpm.org.cn/ticket_details.html',
+      linkLabel: 'intl.dpm.org.cn',
       notes:
-        'Through tickets cover major gardens + boat optional. Large site — plan 3.5–4.5 hrs with photo stops after the morning Pokemon gym. DiDi from Beixinqiao ~45–70 min depending on traffic.',
+        'TIME SENSITIVE. Official tickets release at 20:00 Beijing time exactly 7 days before the visit. Your visit is Tue 3 Nov 2026 (open; closed Mondays). No reliable same-day tickets. Real-name booking; passport names must match at Meridian Gate (south). Last entry ~15:30 in November (low season, ¥40). Enter south, exit north toward Jingshan. Aim for a morning slot.',
     },
     {
-      id: 'temple-heaven',
-      item: 'Temple of Heaven combo ticket',
-      deadline: 'Buy on-site or online morning-of',
-      urgency: 'medium',
+      id: 'national-museum',
+      when: '29 Oct 2026, 17:00 Beijing (7-day release)',
+      what: 'National Museum free reservation for 5 Nov (group of 4)',
+      dayIds: ['day-5'],
+      urgency: 'critical',
+      link: 'https://en.chnmuseum.cn/visit_692/',
+      linkLabel: 'en.chnmuseum.cn',
       notes:
-        'Park opens early; Hall of Prayer for Good Harvests is the icon. Morning light + locals exercising = best atmosphere.',
+        'TIME SENSITIVE. Free but mandatory real-name reservation. Slots open 7 days ahead; tickets are released daily at 17:00 Beijing time. Your visit is Thu 5 Nov 2026 (open; closed Mondays). Passport required at the gate. Hours ~09:00–17:00, last entry ~16:00. Do Mao Memorial first (mornings only), then the museum, then Xihongmen Onix gym.',
     },
     {
       id: 'didi-alipay',
-      item: 'Alipay / WeChat Pay + DiDi / Amap setup',
-      deadline: 'Before departure',
+      when: 'Before departure (by 30 Oct)',
+      what: 'Alipay / WeChat Pay + DiDi / Amap setup',
       urgency: 'critical',
+      link: 'https://intl.alipay.com/',
+      linkLabel: 'intl.alipay.com',
       notes:
-        'Link foreign cards if possible, or get a Chinese eSIM / tourist SIM. DiDi and Amap (高德) are the daily workhorses. Keep passport photos for hotel / attraction check-in.',
+        'Link foreign cards if possible, or get a Chinese eSIM / tourist SIM. DiDi and Amap (高德) are the daily workhorses. Keep passport photos for hotel / attraction check-in. Test a payment before you fly if you can.',
     },
     {
-      id: 'flights',
-      item: 'Singapore Airlines — note two Beijing airports',
-      deadline: 'Already booked (ref DTVXGS)',
+      id: 'temple-heaven',
+      when: '1 Nov evening or 2 Nov morning-of',
+      what: 'Temple of Heaven combo ticket for 2 Nov (walk-in usually OK on Monday)',
+      dayIds: ['day-2'],
+      urgency: 'medium',
+      link: 'https://www.trip.com/travel-guide/attraction/beijing/the-temple-of-heaven-78764/',
+      linkLabel: 'trip.com',
+      notes:
+        'Visit Mon 2 Nov. Park opens early; Hall of Prayer for Good Harvests is the icon. Combo ticket online or on site. Morning light + locals exercising = best atmosphere. Walk-in is usually fine on a Monday.',
+    },
+    {
+      id: 'summer-palace',
+      when: '3 Nov evening or 4 Nov morning-of',
+      what: 'Summer Palace through ticket for 4 Nov',
+      dayIds: ['day-4'],
+      urgency: 'medium',
+      link: 'https://www.summerpalace-china.com/',
+      linkLabel: 'summerpalace-china.com',
+      notes:
+        'Visit Wed 4 Nov after the Zhongguancun gym. Through tickets cover major gardens + boat optional. WeChat / official channel, or on site if queues are short. Large site — plan 3.5–4.5 hrs with photo stops. DiDi from Beixinqiao ~45–70 min depending on traffic.',
+    },
+    {
+      id: 'mao-memorial',
+      when: '5 Nov, arrive ~07:45–08:00 (no ticket)',
+      what: 'Mao Memorial Hall — mornings only, queue',
+      dayIds: ['day-5'],
+      urgency: 'high',
+      notes:
+        'No ticket purchase. Typically open Tue–Sun mornings only (~08:00–12:00; closed Mon). Bags / phones often restricted — use lockers nearby. Confirm hours the week before; it was closed for renovation Mar–Aug 2026, so November should be back to normal. If the queue exceeds ~60 minutes, skip and protect museum + gym time.',
+    },
+    {
+      id: 'duck-dinner',
+      when: '5 Nov or 6 Nov (weekend table of 4)',
+      what: '四季民福 or 全聚德 farewell duck for 8 Nov dinner',
+      dayIds: ['day-8'],
+      urgency: 'high',
+      notes:
+        'Weekend dinner for 4 fills quickly. Pick a convenient central branch (not a far detour). 四季民福 is often easier for visitors; 全聚德 is the classic. Book early evening so you can pack after.',
+    },
+    {
+      id: 'hotpot-dinner',
+      when: 'By 6 Nov',
+      what: '南门涮肉 · 后海 table of 4 for 7 Nov dinner',
+      dayIds: ['day-7'],
       urgency: 'medium',
       notes:
-        'Inbound SQ 810 lands at Daxing (PKX). Return SQ 805 departs Capital (PEK) T3 at 08:45. Allow extra transfer time on Day 9 — different airports.',
+        'Popular copper-pot hotpot near Houhai — book a table for 4, especially on Saturday. Skip if the group is too tired after Wangjing.',
+    },
+    {
+      id: 'campus-visits',
+      when: 'By 6 Nov (1–2 days ahead; rules change often)',
+      what: 'PKU + Tsinghua visitor reservations for 8 Nov',
+      dayIds: ['day-8'],
+      urgency: 'high',
+      link: 'https://visitor.pku.edu.cn/',
+      linkLabel: 'visitor.pku.edu.cn',
+      notes:
+        'TIME SENSITIVE — campus visitor rules change often. Passport / ID is commonly required at the gate. Check each university’s official visitor channel the week before and reserve if the system is open. If entry is refused, keep the duck dinner and pivot to a café / hutong backup.',
     },
   ],
   pokemonStrategy: [
@@ -1166,6 +1212,4 @@ const itineraryEn: ItineraryData = {
   ],
 };
 
-export function getItinerary(_locale: string): ItineraryData {
-  return itineraryEn;
-}
+export default itineraryEn;

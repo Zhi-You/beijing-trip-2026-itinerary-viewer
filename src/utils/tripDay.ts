@@ -28,3 +28,14 @@ export function findDayPlan(days: DayPlan[], dayId: string): DayPlan | undefined
 export function isValidDayId(days: DayPlan[], dayId: string | undefined): dayId is string {
   return Boolean(dayId && days.some((d) => d.id === dayId));
 }
+
+/** `day-1` → 1. Returns null if the id is not in that form. */
+export function getDayNumberFromId(dayId: string): number | null {
+  const match = /^day-(\d+)$/.exec(dayId);
+  if (!match) return null;
+  return Number(match[1]);
+}
+
+export function getDayNumber(day: Pick<DayPlan, 'id'>): number | null {
+  return getDayNumberFromId(day.id);
+}
