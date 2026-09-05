@@ -77,6 +77,12 @@ export function DayFocusActivityList({
                   {!item.hasCoordinates && (
                     <p className="mt-1 text-[11px] text-gold">{t('map.noCoordinates')}</p>
                   )}
+                  {item.note && (
+                    <p className="mt-1.5 text-xs leading-relaxed text-vermillion">
+                      <span className="font-bold">! </span>
+                      {item.note}
+                    </p>
+                  )}
                 </div>
                 {selected && (
                   <span className="shrink-0 rounded-full bg-gold/20 px-2 py-1 text-[10px] font-semibold uppercase text-gold">
@@ -88,11 +94,6 @@ export function DayFocusActivityList({
               {selected && card && (
                 <div className="border-t border-gold/20 bg-surface/80 px-3 py-3">
                   <TimelineCardContent card={card} index={index} mode="view" bare />
-                  {item.note && (
-                    <p className="mt-3 text-[11px] leading-relaxed text-ink-light/80">
-                      {item.note}
-                    </p>
-                  )}
                 </div>
               )}
             </div>
