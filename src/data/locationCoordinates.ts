@@ -27,7 +27,8 @@ export const PLACE_COORDINATES: Record<string, Coordinates> = {
   'zhongguancun-pokemon-gym': { lat: 39.9836, lng: 116.3135 },
   'wangjing-capitalmall': { lat: 39.9945, lng: 116.4738 },
   'xihongmen-onix-gym': { lat: 39.788, lng: 116.328 },
-  'beixinqiao': { lat: 39.9408, lng: 116.417 },
+  'beixinqiao': { lat: 39.9244, lng: 116.4173 },
+  'haiyou-nanfaxin': { lat: 40.1295, lng: 116.6105 },
   'peking-university': { lat: 39.9869, lng: 116.3059 },
   'tsinghua-university': { lat: 40.0024, lng: 116.3265 },
 };
@@ -35,6 +36,11 @@ export const PLACE_COORDINATES: Record<string, Coordinates> = {
 export const AREA_COORDINATES: Record<string, Coordinates> = {
   Beixinqiao: { lat: 39.9408, lng: 116.417 },
   '北新桥': { lat: 39.9408, lng: 116.417 },
+  '汉庭北京隆福寺东四地铁站酒店': { lat: 39.9244, lng: 116.4173 },
+  '海友北京首都机场南法信酒店': { lat: 40.1295, lng: 116.6105 },
+  '海友南法信': { lat: 40.1295, lng: 116.6105 },
+  Nanfaxin: { lat: 40.1295, lng: 116.6105 },
+  '南法信': { lat: 40.1295, lng: 116.6105 },
   Dongcheng: { lat: 39.9289, lng: 116.4164 },
   Tiananmen: { lat: 39.9055, lng: 116.3976 },
   Qianmen: { lat: 39.8977, lng: 116.3963 },

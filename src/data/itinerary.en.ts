@@ -11,7 +11,8 @@ const itineraryEn: ItineraryData = {
     subtitle: 'A photo-friendly itinerary for four — clustered neighbourhoods, DiDi hops, and classic northern flavours',
     dates: '1 – 9 November 2026',
     travellers: '4 people',
-    baseArea: 'Beixinqiao (北新桥) metro area — accommodation TBD',
+    baseArea:
+      '1–8 Nov: 汉庭北京隆福寺东四地铁站酒店 (Dongsi)\n9 Nov: 海友北京首都机场南法信酒店 (near PEK)',
     groupNote:
       'Pace is designed for mixed ages (2 young adults + 2 active seniors): clustered days, regular sit-down meals, DiDi between clusters, and “speed up” notes where skipping detail lets you cover more ground. Photo stops are built in — expect longer dwell times at Jingshan, Temple of Heaven, and the Great Wall.',
   },
@@ -103,7 +104,7 @@ const itineraryEn: ItineraryData = {
       link: 'https://www.summerpalace-china.com/',
       linkLabel: 'summerpalace-china.com',
       notes:
-        'Visit Wed 4 Nov after the Zhongguancun gym. Through tickets cover major gardens + boat optional. WeChat / official channel, or on site if queues are short. Large site — plan 3.5–4.5 hrs with photo stops. DiDi from Beixinqiao ~45–70 min depending on traffic.',
+        'Visit Wed 4 Nov after the Zhongguancun gym. Through tickets cover major gardens + boat optional. WeChat / official channel, or on site if queues are short. Large site — plan 3.5–4.5 hrs with photo stops. DiDi from 汉庭 / Dongsi ~45–70 min depending on traffic.',
     },
     {
       id: 'mao-memorial',
@@ -224,7 +225,7 @@ const itineraryEn: ItineraryData = {
       weekday: 'Sunday',
       title: 'Touchdown, Guozijian & Yonghegong',
       theme: 'Arrive · nearby temples · settle in',
-      area: 'PKX → Beixinqiao / Guozijian / Yonghegong',
+      area: 'PKX → 汉庭东四 / Guozijian / Yonghegong',
       intensity: 'moderate',
       weatherNote: 'Cool Sunday — early arrival leaves a full afternoon for nearby sights before an early night.',
       flightTimeline: [
@@ -267,12 +268,12 @@ const itineraryEn: ItineraryData = {
         {
           id: 'beixinqiao',
           name: 'Hotel drop-off & neighbourhood orientation',
-          area: 'Beixinqiao',
+          area: '汉庭北京隆福寺东四地铁站酒店',
           category: 'Neighbourhood',
           timeSlot: 'Morning',
           duration: '1–1.5 hrs',
           summary:
-            'Land at PKX early, DiDi to Beixinqiao, stash luggage, and do a short orientation walk — supermarket, pharmacy, DiDi pickup spots, and Guijie (簋街) nearby.',
+            'Land at PKX early, DiDi to 汉庭北京隆福寺东四地铁站酒店 (东四北大街537号, by Dongsi metro). Stash luggage and do a short orientation walk — supermarket, pharmacy, DiDi pickup spots, Longfu Temple street, and Guijie (簋街) nearby.',
           highlights: [
             'Locate supermarket / pharmacy / DiDi pickup spots',
             'Luggage storage if check-in is after 14:00',
@@ -373,9 +374,9 @@ const itineraryEn: ItineraryData = {
         },
       ],
       transport: [
-        'PKX → hotel: DiDi — for 4 people with luggage, usually least stressful (~¥120–200 depending on traffic).',
+        'PKX → 汉庭北京隆福寺东四地铁站酒店: DiDi — for 4 people with luggage, usually least stressful (~¥120–200 depending on traffic).',
         'Afternoon: walk or short DiDi along Yonghegong Street between Guozijian and Lama Temple.',
-        'Evening: walk only around Beixinqiao / Guijie.',
+        'Evening: walk only around Dongsi / Guijie.',
       ],
       dayTips: [
         'Booking ref DTVXGS — keep digital + paper passport copies handy for hotel.',
@@ -481,9 +482,9 @@ const itineraryEn: ItineraryData = {
         },
       ],
       transport: [
-        'Beixinqiao → Temple of Heaven: DiDi (~25–40 min).',
+        '汉庭 / Dongsi → Temple of Heaven: DiDi (~25–40 min).',
         'Tiantan → Qianmen: short DiDi or metro.',
-        'Return to Beixinqiao: DiDi.',
+        'Return to 汉庭 (Dongsi): DiDi.',
       ],
       dayTips: [
         'Good recovery day after arrival — strong food focus without museum Monday closures.',
@@ -604,7 +605,7 @@ const itineraryEn: ItineraryData = {
         },
       ],
       transport: [
-        'Beixinqiao → Tiananmen: DiDi (~15–25 min) or Metro Line 5 → transfer.',
+        '汉庭 / Dongsi → Tiananmen: DiDi (~15–25 min) or Metro Line 5 from Dongsi.',
         'Forbidden City exit → Jingshan: walk (~5–10 min).',
         'Jingshan → dinner → hotel: DiDi.',
       ],
@@ -652,8 +653,8 @@ const itineraryEn: ItineraryData = {
       ],
       food: [
         {
-          name: 'Hotel / Beixinqiao breakfast',
-          area: 'Beixinqiao',
+          name: 'Hotel breakfast at 汉庭',
+          area: 'Dongsi',
           cuisine: 'Whatever is fastest',
           priceRange: '¥',
           meal: 'breakfast',
@@ -677,9 +678,9 @@ const itineraryEn: ItineraryData = {
         },
       ],
       transport: [
-        'Beixinqiao → Zhongguancun Link CentralWalk: DiDi ~40–60 min.',
+        '汉庭 / Dongsi → Zhongguancun Link CentralWalk: DiDi ~40–60 min.',
         'Zhongguancun → Summer Palace East Gate: DiDi ~20–35 min.',
-        'Return to Beixinqiao: DiDi.',
+        'Return to 汉庭 (Dongsi): DiDi.',
       ],
       dayTips: [
         'Pokemon first for stock; Summer Palace second for autumn photos — reverse only if the gym opens late.',
@@ -787,10 +788,10 @@ const itineraryEn: ItineraryData = {
         },
       ],
       transport: [
-        'Beixinqiao → Tiananmen / Mao Memorial: DiDi.',
+        '汉庭 / Dongsi → Tiananmen / Mao Memorial: DiDi.',
         'Mao Memorial → National Museum: walk across the square cluster.',
         'Museum → Xihongmen Livat (Onix gym): DiDi (~45–70 min).',
-        'Evening: DiDi back to Beixinqiao — dinner of your choice near the hotel.',
+        'Evening: DiDi back to 汉庭 — dinner of your choice near Dongsi / Guijie.',
       ],
       dayTips: [
         'Mao Memorial first (mornings only), then National Museum, then Onix gym.',
@@ -825,7 +826,7 @@ const itineraryEn: ItineraryData = {
           ],
           tips: [
             'Private DiDi / hired driver for 4 is strongly recommended',
-            'Leave Beixinqiao by ~07:30–08:00',
+            'Leave 汉庭 / Dongsi by ~07:30–08:00',
             'Cable car up for everyone; toboggan down only if weather is dry and seniors are comfortable',
             'Bring water, snacks, tissues; toilets at base',
             'Card / Alipay for tickets — keep passport ready',
@@ -955,9 +956,9 @@ const itineraryEn: ItineraryData = {
         },
       ],
       transport: [
-        'Beixinqiao → CapitaMall Wangjing: DiDi ~30–45 min — aim for opening.',
+        '汉庭 / Dongsi → CapitaMall Wangjing: DiDi ~30–45 min — aim for opening.',
         'Wangjing → Beihai / Nanluoguxiang: DiDi back to central Beijing.',
-        'Return to Beixinqiao: DiDi.',
+        'Return to 汉庭 (Dongsi): DiDi.',
       ],
       dayTips: [
         'Wangjing pop-up at opening — hutongs are the bonus, not the must.',
@@ -1046,8 +1047,8 @@ const itineraryEn: ItineraryData = {
       ],
       food: [
         {
-          name: 'Hotel breakfast',
-          area: 'Beixinqiao',
+          name: 'Hotel breakfast at 汉庭',
+          area: 'Dongsi',
           cuisine: 'Whatever is fastest',
           priceRange: '¥',
           meal: 'breakfast',
@@ -1071,16 +1072,16 @@ const itineraryEn: ItineraryData = {
         },
       ],
       transport: [
-        'Beixinqiao → Xidan Joy City: DiDi — aim for opening.',
+        '汉庭 / Dongsi → Xidan Joy City: DiDi — aim for opening.',
         'Xidan → Peking University: DiDi ~30–50 min.',
         'PKU → Tsinghua: short DiDi (same Haidian cluster).',
-        'Dinner: DiDi to booked 四季民福 / 全聚德 branch; return to Beixinqiao.',
-        'Tonight: confirm morning DiDi to PEK Terminal 3 (leave hotel ~05:15–05:30).',
+        'Dinner: DiDi to booked 四季民福 / 全聚德 branch.',
+        'Tonight: check out of 汉庭 after dinner and DiDi to 海友北京首都机场南法信酒店 (pack before you go out).',
       ],
       dayTips: [
         'Return flight SQ 805 PEK 08:45 → SIN 15:30 — different airport from arrival (PKX).',
         'Xidan first for Pokemon stock, then campuses — keep a hard mall cutoff.',
-        'Book duck dinner for early evening so you can pack after.',
+        'Book duck dinner for early evening so you can pack and transfer to 海友 tonight.',
         'Pack liquids / souvenirs for cabin vs checked bags tonight.',
         'Campus visitor rules change — have a café backup if entry is refused.',
       ],
@@ -1091,22 +1092,22 @@ const itineraryEn: ItineraryData = {
       weekday: 'Monday',
       title: 'Capital Airport Departure',
       theme: 'Early PEK exit',
-      area: 'Beixinqiao → PEK T3',
+      area: '海友南法信 → PEK T3',
       intensity: 'light',
       flightTimelineAfterPlaces: true,
       places: [
         {
-          id: 'beixinqiao',
+          id: 'haiyou-nanfaxin',
           name: 'Hotel checkout & PEK transfer',
-          area: 'Beixinqiao',
+          area: '海友北京首都机场南法信酒店',
           category: 'Transit',
           timeSlot: 'Morning',
           duration: '30 mins at hotel',
           summary:
-            'Early checkout, DiDi to Beijing Capital International Airport Terminal 3 for SQ 805. Build buffer — Monday traffic and security queues.',
+            'Early checkout from 海友北京首都机场南法信酒店 (顺义南法信 / 顺平路), then a short DiDi to Beijing Capital International Airport Terminal 3 for SQ 805. Build buffer — Monday traffic and security queues.',
           highlights: ['Passport + tickets ready', 'Terminal 3 (not Daxing)'],
           tips: [
-            'Target hotel departure 05:15–05:30 for 08:45 flight',
+            'Target hotel departure ~06:15–06:30 for 08:45 flight (much closer than Dongsi)',
             'SQ check-in counters — follow airport screens',
             'Keep one warm layer until boarding; cabin can be cold',
           ],
@@ -1161,7 +1162,7 @@ const itineraryEn: ItineraryData = {
         },
       ],
       transport: [
-        'Beixinqiao → PEK T3: DiDi (~45–70 min; leave extra buffer on Monday morning).',
+        '海友南法信 → PEK T3: DiDi (~15–25 min; still leave a Monday-morning buffer).',
         'Do not go to PKX Daxing by mistake — that was the arrival airport only.',
       ],
       dayTips: [

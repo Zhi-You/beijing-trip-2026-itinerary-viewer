@@ -88,7 +88,7 @@
     "travellers": "Travellers",
     "base": "Home Base",
     "transport": "Getting Around",
-    "transportBody": "Mostly DiDi (ride-hailing) for a group of 4 — door-to-door between clusters. Metro is a backup for short hops near Beixinqiao. Set up Alipay / WeChat Pay and Amap (高德) before you land. Note: you arrive at Daxing (PKX) and depart from Capital (PEK)."
+    "transportBody": "Mostly DiDi (ride-hailing) for a group of 4 — door-to-door between clusters. Metro Line 5 at Dongsi is a backup for short hops from 汉庭. Set up Alipay / WeChat Pay and Amap (高德) before you land. Note: you arrive at Daxing (PKX) and depart from Capital (PEK). Move to 海友 near PEK on the evening of 8 Nov."
   },
   "pokemon": {
     "subtitle": "Official pop-ups, TCG gyms, and backup specialty shops in Beijing",
@@ -159,7 +159,7 @@
     "opensAt": "Opens"
   },
   "footer": {
-    "note": "Itinerary optimised for Beixinqiao base · Mostly DiDi · i18n-ready architecture",
+    "note": "Base: 汉庭东四 (1–8 Nov) then 海友南法信 (9 Nov) · Mostly DiDi",
     "built": "Built for your group of 4",
     "locale": "Language: English"
   },

@@ -33,7 +33,9 @@ export function TripOverview({ meta, seasonNotes }: TripOverviewProps) {
             <p className="text-sm font-medium uppercase tracking-wider text-ink-light/60">
               {stat.label}
             </p>
-            <p className="mt-1 font-serif text-lg font-semibold text-ink">{stat.value}</p>
+            <p className="mt-1 whitespace-pre-line font-serif text-base font-semibold leading-snug text-ink sm:text-lg">
+              {stat.value}
+            </p>
           </div>
         ))}
       </div>
