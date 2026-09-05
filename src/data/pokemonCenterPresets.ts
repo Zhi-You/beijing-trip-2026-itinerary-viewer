@@ -1,5 +1,21 @@
 /** Shared Pokemon stop helpers for Beijing pop-ups / TCG gyms. */
 
+export function rafflesPokemonPopup() {
+  return {
+    name: 'Pokemon Pop-up · Raffles City',
+    openTime: '10:00',
+    note: 'Official pop-up at 北京来福士中心 1F unit 23 (Dongzhimen) — closest mall to 汉庭 / 东四. Aim for 10:00 opening.',
+  };
+}
+
+export function guomaoPokemonPopup() {
+  return {
+    name: 'Pokemon Pop-up · China World Mall',
+    openTime: '10:00',
+    note: 'NEW official pop-up at 国贸商城南区 B1 WB120A/B — 10:00 opening, then DiDi south to Temple of Heaven.',
+  };
+}
+
 export function xidanPokemonBundle() {
   return {
     name: 'Pokemon Pop-up · Xidan Joy City',

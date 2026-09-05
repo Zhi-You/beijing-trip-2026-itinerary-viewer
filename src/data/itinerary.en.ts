@@ -1,8 +1,8 @@
 import type { ItineraryData } from '../types/itinerary';
 import {
-  wangjingPokemonPopup,
+  guomaoPokemonPopup,
+  rafflesPokemonPopup,
   xidanPokemonBundle,
-  zhongguancunPokemonGym,
 } from './pokemonCenterPresets';
 
 const itineraryEn: ItineraryData = {
@@ -131,7 +131,7 @@ const itineraryEn: ItineraryData = {
       dayIds: ['day-7'],
       urgency: 'medium',
       notes:
-        'Popular copper-pot hotpot near Houhai — book a table for 4, especially on Saturday. Skip if the group is too tired after Wangjing.',
+        'Popular copper-pot hotpot near Houhai — book a table for 4, especially on Saturday. Skip if the group is too tired after Raffles + Beihai.',
     },
     {
       id: 'campus-visits',
@@ -147,21 +147,40 @@ const itineraryEn: ItineraryData = {
   ],
   pokemonStrategy: [
     'Beijing has official pop-ups (not a permanent Pokemon Center like Tokyo). Cluster visits with nearby sightseeing so you do not cross the city twice.',
-    'Xidan Joy City: B1 official pop-up + F1 Relax Party — morning of Day 8 (before PKU / Tsinghua), best stock at opening.',
-    'Zhongguancun Link CentralWalk B1 hosts an Official Pokemon TCG Gym — morning for best stock, then Summer Palace (Day 4) in Haidian.',
-    'Day 5 (Thu): after Mao Memorial + National Museum, DiDi to Xihongmen Livat Onix gym (the other official gym stamp).',
-    'Day 7 (Sat): CapitaMall Wangjing pop-up at opening, then soft Beihai / hutong afternoon if energy remains.',
-    'Longfor Paradise Walk East B2-21 pop-up is lower priority if Wangjing + Xidan already covered.',
+    'Day 1 (Sun): Raffles City 来福士中心 1F-23 (Dongzhimen) at 10:00 — closest official pop-up to 汉庭 / 东四, then Guozijian / Yonghegong.',
+    'Day 2 (Mon): NEW China World Mall 国贸商城南区 B1 at 10:00, then Temple of Heaven / Qianmen.',
+    'Day 3 (Tue) night: CapitaMall Wangjing pop-up after Jingshan + hutong dinner — leftover official pop-up (Xidan is reserved for Day 4 opening stock).',
+    'Day 4 (Wed): Xidan Joy City pop-up at 10:00 (better stock than a gym), then Summer Palace.',
+    'Day 5 (Thu): after Mao Memorial + National Museum, DiDi to Xihongmen Livat Onix gym (the remaining official gym stamp).',
+    'Day 7 (Sat): Raffles City again at 10:00 — much closer to Beihai / Nanluoguxiang than Wangjing — then the soft afternoon.',
+    'Day 8 (Sun): Xidan Joy City B1 pop-up + F1 Relax Party before PKU / Tsinghua.',
+    'Longfor Paradise Walk East B2-21 is lower priority if the closer malls are already covered.',
     'TCG stock varies; Kalio TCG (Beitucheng) is a backup specialty shop if official gyms are quiet.',
   ],
   pokemonCenters: [
+    {
+      name: 'Pokemon Official Pop-up · Raffles City',
+      location: '北京来福士中心, Level 1 unit 23 (Dongzhimen)',
+      hours: 'Mall hours (typically 10:00–22:00)',
+      nearestStation: 'Dongzhimen / short DiDi from 汉庭',
+      assignedDay: '1 Nov (morning) + 7 Nov (morning)',
+      tcgNote: 'Closest official pop-up to the Dongsi hotel and to Beihai / Nanluoguxiang.',
+    },
+    {
+      name: 'Pokemon Official Pop-up · China World Mall',
+      location: '国贸商城南区 B1, shops WB120A / WB120B',
+      hours: 'Mall hours (typically 10:00–22:00); opened 1 Sep',
+      nearestStation: 'Guomao / DiDi',
+      assignedDay: '2 Nov (morning, before Temple of Heaven)',
+      tcgNote: 'NEW official pop-up — 10:00 opening, then DiDi to Tiantan.',
+    },
     {
       name: 'Pokemon Official Pop-up · Xidan Joy City',
       location: 'Beijing Xidan Joy City, Level B1',
       hours: 'Mall hours (typically 10:00–22:00)',
       nearestStation: 'Xidan / DiDi drop at Joy City',
-      assignedDay: '8 Nov (morning)',
-      tcgNote: 'Pair with Relax Party on F1 in the same building — go at opening before campuses.',
+      assignedDay: '4 Nov (morning) + 8 Nov (morning)',
+      tcgNote: 'Best central stock mall — Day 4 before Summer Palace; Day 8 also pairs with Relax Party on F1.',
     },
     {
       name: 'Pokemon Relax Party · Xidan Joy City',
@@ -176,16 +195,16 @@ const itineraryEn: ItineraryData = {
       location: 'Link CentralWalk, B1-05, Danleng Street, Haidian',
       hours: 'Confirm locally (often from 10:00)',
       nearestStation: 'Zhongguancun / DiDi',
-      assignedDay: '4 Nov (morning, before Summer Palace)',
-      tcgNote: 'Official card gym — go at opening for stock, then DiDi to Summer Palace.',
+      assignedDay: 'Optional (no longer on Day 4 — pop-up stock is better)',
+      tcgNote: 'Official card gym — skip unless you specifically want the gym stamp; Day 4 is Xidan instead.',
     },
     {
       name: 'Pokemon Pop-up · CapitaMall Wangjing',
       location: 'CapitaMall · Wangjing, Unit B1-27',
       hours: 'Mall hours (typically from 10:00)',
       nearestStation: 'Wangjing',
-      assignedDay: '7 Nov (morning)',
-      tcgNote: 'Morning stock run, then soft Beihai / hutongs if energy remains.',
+      assignedDay: '3 Nov (night, after Jingshan + dinner)',
+      tcgNote: 'Evening leftover-stock run — skip if the palace day has already emptied the group.',
     },
     {
       name: 'Pokemon Official TCG Gym · Xihongmen (Onix)',
@@ -227,6 +246,7 @@ const itineraryEn: ItineraryData = {
       theme: 'Arrive · nearby temples · settle in',
       area: 'PKX → 汉庭东四 / Guozijian / Yonghegong',
       intensity: 'moderate',
+      pokemonCenter: rafflesPokemonPopup(),
       weatherNote: 'Cool Sunday — early arrival leaves a full afternoon for nearby sights before an early night.',
       flightTimeline: [
         {
@@ -375,6 +395,7 @@ const itineraryEn: ItineraryData = {
       ],
       transport: [
         'PKX → 汉庭北京隆福寺东四地铁站酒店: DiDi — for 4 people with luggage, usually least stressful (~¥120–200 depending on traffic).',
+        '汉庭 → 来福士中心 (东直门): short DiDi — aim for 10:00 pop-up opening, then temples.',
         'Afternoon: walk or short DiDi along Yonghegong Street between Guozijian and Lama Temple.',
         'Evening: walk only around Dongsi / Guijie.',
       ],
@@ -393,6 +414,7 @@ const itineraryEn: ItineraryData = {
       theme: 'Ritual architecture + roast duck & street snacks',
       area: 'Tiantan / Qianmen',
       intensity: 'moderate',
+      pokemonCenter: guomaoPokemonPopup(),
       places: [
         {
           id: 'temple-of-heaven',
@@ -482,7 +504,8 @@ const itineraryEn: ItineraryData = {
         },
       ],
       transport: [
-        '汉庭 / Dongsi → Temple of Heaven: DiDi (~25–40 min).',
+        '汉庭 / Dongsi → 国贸商城: DiDi (~20–30 min) — aim for 10:00 pop-up opening.',
+        '国贸 → Temple of Heaven: DiDi (~15–25 min).',
         'Tiantan → Qianmen: short DiDi or metro.',
         'Return to 汉庭 (Dongsi): DiDi.',
       ],
@@ -577,6 +600,26 @@ const itineraryEn: ItineraryData = {
           photoNote: 'Bring a short telephoto if you have one; phone wide + 2x also works.',
           paceNote: 'This is the photo payoff of the day — don’t skip it even if tired.',
         },
+        {
+          id: 'wangjing-capitalmall',
+          name: 'Pokemon Pop-up · CapitaMall Wangjing',
+          area: 'Wangjing',
+          category: 'Shopping / Pokemon',
+          timeSlot: 'Night',
+          duration: '1–1.5 hrs',
+          summary:
+            'Official pop-up at CapitaMall Wangjing B1-27 — evening visit after Jingshan and hutong dinner. Skip if the palace day has already emptied the group.',
+          highlights: [
+            'Official pop-up merch / TCG check',
+            'Indoor sit-down after a long walking day',
+          ],
+          tips: [
+            'DiDi from Nanluoguxiang / 汉庭 (~25–40 min); confirm mall hours before you go',
+            'Set a hard leave time — Great Wall is in three days and tomorrow is Xidan at 10:00',
+          ],
+          ticket: { type: 'free', detail: 'Mall access free; products paid' },
+          paceNote: 'Optional night add-on — Xidan tomorrow morning is the better stock stop.',
+        },
       ],
       food: [
         {
@@ -608,6 +651,7 @@ const itineraryEn: ItineraryData = {
         '汉庭 / Dongsi → Tiananmen: DiDi (~15–25 min) or Metro Line 5 from Dongsi.',
         'Forbidden City exit → Jingshan: walk (~5–10 min).',
         'Jingshan → dinner → hotel: DiDi.',
+        'Optional night: 汉庭 / Nanluoguxiang → CapitaMall Wangjing pop-up, then DiDi home.',
       ],
       dayTips: [
         'Biggest walking day of the trip — wear broken-in shoes and bring a foldable stool if seniors want mid-queue rests.',
@@ -619,11 +663,11 @@ const itineraryEn: ItineraryData = {
       id: 'day-4',
       date: '4 Nov',
       weekday: 'Wednesday',
-      title: 'Zhongguancun Pokemon & Summer Palace',
-      theme: 'TCG gym at opening · imperial gardens after',
+      title: 'Xidan Pokemon & Summer Palace',
+      theme: 'Pop-up at opening · imperial gardens after',
       area: 'Haidian',
       intensity: 'full',
-      pokemonCenter: zhongguancunPokemonGym(),
+      pokemonCenter: xidanPokemonBundle(),
       places: [
         {
           id: 'summer-palace',
@@ -642,7 +686,7 @@ const itineraryEn: ItineraryData = {
           tips: [
             'Enter East Gate; through ticket recommended',
             'Boat across the lake saves walking for seniors (seasonal)',
-            'Bring snacks — food options inside are pricey; you will arrive after the Pokemon gym',
+            'Bring snacks — food options inside are pricey; you will arrive after the Xidan pop-up',
             'DiDi drop at East Gate; same for pickup',
           ],
           ticket: { type: 'advance_recommended', detail: 'Through ticket online / WeChat' },
@@ -658,7 +702,7 @@ const itineraryEn: ItineraryData = {
           cuisine: 'Whatever is fastest',
           priceRange: '¥',
           meal: 'breakfast',
-          note: 'Leave by ~09:00 for ~10:00 gym opening — still beats worst West Beijing traffic.',
+          note: 'Leave by ~09:15 for ~10:00 Xidan pop-up opening.',
         },
         {
           name: 'Summer Palace area lunch',
@@ -678,13 +722,13 @@ const itineraryEn: ItineraryData = {
         },
       ],
       transport: [
-        '汉庭 / Dongsi → Zhongguancun Link CentralWalk: DiDi ~40–60 min.',
-        'Zhongguancun → Summer Palace East Gate: DiDi ~20–35 min.',
+        '汉庭 / Dongsi → Xidan Joy City: DiDi ~15–25 min — aim for 10:00 pop-up opening.',
+        'Xidan → Summer Palace East Gate: DiDi ~35–50 min.',
         'Return to 汉庭 (Dongsi): DiDi.',
       ],
       dayTips: [
-        'Pokemon first for stock; Summer Palace second for autumn photos — reverse only if the gym opens late.',
-        'Full day outdoors after the gym — check AQI; if unhealthy, shorten the palace loop.',
+        'Xidan pop-up first for stock; Summer Palace second for autumn photos.',
+        'Full day outdoors after the mall — check AQI; if unhealthy, shorten the palace loop.',
         'Friday is Great Wall — sleep early the next nights too.',
       ],
     },
@@ -754,10 +798,10 @@ const itineraryEn: ItineraryData = {
           timeSlot: 'Afternoon',
           duration: '1–1.5 hrs',
           summary:
-            'The other official Beijing Pokemon TCG gym (Onix) at Livat Xihongmen — DiDi south after the National Museum for the second gym stamp (Zhongguancun is on Day 4).',
+            'The other official Beijing Pokemon TCG gym (Onix) at Livat Xihongmen — DiDi south after the National Museum for the remaining official gym stamp (Day 4 is the Xidan pop-up).',
           highlights: [
             'Official Onix gym stamp',
-            'TCG stock check after Zhongguancun (Day 4)',
+            'TCG stock check after the Xidan pop-up (Day 4)',
             'Indoor stop before an early night ahead of the Great Wall',
           ],
           tips: [
@@ -872,11 +916,11 @@ const itineraryEn: ItineraryData = {
       id: 'day-7',
       date: '7 Nov',
       weekday: 'Saturday',
-      title: 'Wangjing Pop-up & Soft Afternoon',
+      title: 'Raffles Pop-up & Soft Afternoon',
       theme: 'Pokemon morning · Beihai / hutongs if energy remains',
-      area: 'Wangjing → Beihai / Nanluoguxiang',
+      area: 'Dongzhimen → Beihai / Nanluoguxiang',
       intensity: 'moderate',
-      pokemonCenter: wangjingPokemonPopup(),
+      pokemonCenter: rafflesPokemonPopup(),
       places: [
         {
           id: 'beihai-park',
@@ -886,18 +930,18 @@ const itineraryEn: ItineraryData = {
           timeSlot: 'Afternoon',
           duration: '1.5–2 hrs',
           summary:
-            'Imperial garden lake with White Dagoba views. Soft outdoor wind-down after Wangjing — skip if knees need a full rest.',
+            'Imperial garden lake with White Dagoba views. Soft outdoor wind-down after Raffles City — skip if knees need a full rest.',
           highlights: [
             'Lake reflections',
             'Fangshan pastry tea house on the north shore (if open)',
             'White Dagoba views',
           ],
           tips: [
-            'Separate park ticket; DiDi from Wangjing back toward central Beijing',
+            'Separate park ticket; short DiDi from Dongzhimen / 来福士 toward Beihai',
             'Skip boat rides if temperature drops',
           ],
           ticket: { type: 'walk_in', detail: 'Park ticket on site' },
-          paceNote: 'Truly optional — Wangjing pop-up already makes a complete soft Pokemon morning.',
+          paceNote: 'Truly optional — Raffles pop-up already makes a complete soft Pokemon morning.',
         },
         {
           id: 'nanluoguxiang',
@@ -907,7 +951,7 @@ const itineraryEn: ItineraryData = {
           timeSlot: 'Late Afternoon',
           duration: '1–1.5 hrs',
           summary:
-            'Famous hutong spine — touristy main street, quieter side alleys. Good for snacks (紫光园 yogurt) near home if you still have energy after Wangjing.',
+            'Famous hutong spine — touristy main street, quieter side alleys. Good for snacks (紫光园 yogurt) near home if you still have energy after Raffles City.',
           highlights: [
             'Side-alley textures over the main souvenir strip',
             'Ziguangyuan yogurt stop',
@@ -928,15 +972,15 @@ const itineraryEn: ItineraryData = {
           cuisine: 'Halal baozi',
           priceRange: '¥',
           meal: 'breakfast',
-          note: 'Quick breakfast before DiDi to Wangjing for ~10:00 mall opening.',
+          note: 'Quick breakfast before the short hop to 来福士 for ~10:00 mall opening.',
         },
         {
-          name: 'CapitaMall Wangjing lunch',
-          area: 'Wangjing',
+          name: 'Raffles City lunch',
+          area: 'Dongzhimen',
           cuisine: 'Mall food court',
           priceRange: '¥¥',
           meal: 'lunch',
-          note: 'Eat at CapitaMall after the pop-up — easy sit-down before heading back west.',
+          note: 'Eat at 来福士 after the pop-up — easy sit-down before Beihai / hutongs.',
         },
         {
           name: '紫光园酸奶站 · 南锣鼓巷店',
@@ -956,12 +1000,12 @@ const itineraryEn: ItineraryData = {
         },
       ],
       transport: [
-        '汉庭 / Dongsi → CapitaMall Wangjing: DiDi ~30–45 min — aim for opening.',
-        'Wangjing → Beihai / Nanluoguxiang: DiDi back to central Beijing.',
+        '汉庭 / Dongsi → 来福士中心 (东直门): short DiDi — aim for 10:00 pop-up opening.',
+        '来福士 → Beihai / Nanluoguxiang: short DiDi.',
         'Return to 汉庭 (Dongsi): DiDi.',
       ],
       dayTips: [
-        'Wangjing pop-up at opening — hutongs are the bonus, not the must.',
+        'Raffles pop-up at opening — hutongs are the bonus, not the must.',
         'Saturday mall crowds: shop with a list, then leave.',
         'Tomorrow starts with Xidan Pokemon at opening, then PKU / Tsinghua + farewell duck — pack after dinner.',
       ],

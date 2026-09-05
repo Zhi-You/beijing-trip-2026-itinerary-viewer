@@ -74,14 +74,13 @@ export function DayFocusActivityList({
                       </>
                     ) : null}
                   </p>
-                  {!item.hasCoordinates && (
-                    <p className="mt-1 text-[11px] text-gold">{t('map.noCoordinates')}</p>
-                  )}
                   {item.note && (
-                    <p className="mt-1.5 text-xs leading-relaxed text-vermillion">
-                      <span className="font-bold">! </span>
+                    <p className="mt-1.5 whitespace-pre-line rounded-md bg-gold/10 px-2 py-1.5 text-xs leading-relaxed text-ink-light">
                       {item.note}
                     </p>
+                  )}
+                  {!item.hasCoordinates && (
+                    <p className="mt-1 text-[11px] text-gold">{t('map.noCoordinates')}</p>
                   )}
                 </div>
                 {selected && (

@@ -4,614 +4,118 @@
     "day-1": {
       "dayId": "day-1",
       "cardIds": [
-        "flight-inbound",
-        "haneda-touchdown",
-        "flight-inbound-hx606",
-        "narita-touchdown-hx",
-        "meal-1788605318275-61slo1m",
+        "sq810",
+        "pkx-touchdown",
+        "beixinqiao",
         "day-1-pokemon-center",
-        "ameyoko",
+        "yonghegong",
+        "day-1-meal-2",
+        "guozijian",
         "day-1-meal-0",
-        "ueno-park-lite",
         "day-1-meal-3",
-        "meal-1788605395690-o5g0d1r",
-        "meal-1788605453621-2lgbmxp"
+        "day-1-meal-1",
+        "day-1-meal-4"
       ],
       "cards": {
-        "flight-inbound": {
-          "id": "flight-inbound",
+        "sq810": {
+          "id": "sq810",
           "kind": "flight",
           "flight": {
-            "id": "flight-inbound",
-            "airline": "Scoot",
-            "flightNumber": "TR 882",
-            "aircraft": "B787-9",
+            "id": "sq810",
+            "airline": "Singapore Airlines",
+            "flightNumber": "SQ 810",
+            "aircraft": "Airbus A350-900",
             "departure": {
               "airportCode": "SIN",
-              "airportName": "Changi Airport",
-              "terminal": "T1",
-              "time": "17:15",
-              "dateLabel": "30 Sep"
+              "airportName": "Singapore Changi",
+              "terminal": "Terminal 3",
+              "time": "00:30",
+              "dateLabel": "Sun 1 Nov"
             },
             "arrival": {
-              "airportCode": "HND",
-              "airportName": "Haneda Airport",
-              "terminal": "T3",
-              "time": "01:05",
-              "dateLabel": "1 Oct"
+              "airportCode": "PKX",
+              "airportName": "Beijing Daxing Intl",
+              "time": "06:35",
+              "dateLabel": "Sun 1 Nov"
             },
-            "duration": "6h 50m",
-            "note": "2 of 4 travellers"
+            "duration": "~6h 05m"
           }
         },
-        "haneda-touchdown": {
-          "id": "haneda-touchdown",
+        "pkx-touchdown": {
+          "id": "pkx-touchdown",
           "kind": "airport-process",
           "airportProcess": {
-            "id": "haneda-touchdown",
+            "id": "pkx-touchdown",
             "type": "touchdown",
-            "airportCode": "HND",
-            "airportName": "Haneda Airport",
-            "terminal": "T3",
-            "time": "01:05",
-            "durationMinutes": 30
+            "airportCode": "PKX",
+            "airportName": "Beijing Daxing Intl",
+            "time": "06:35",
+            "durationMinutes": 90
           }
         },
-        "flight-inbound-hx606": {
-          "id": "flight-inbound-hx606",
-          "kind": "flight",
-          "flight": {
-            "id": "flight-inbound-hx606",
-            "airline": "Hong Kong Airlines",
-            "flightNumber": "HX 606",
-            "aircraft": "A321-200",
-            "departure": {
-              "airportCode": "HKG",
-              "airportName": "Hong Kong International Airport",
-              "terminal": "T2",
-              "time": "02:35",
-              "dateLabel": "1 Oct"
-            },
-            "arrival": {
-              "airportCode": "NRT",
-              "airportName": "Narita International Airport",
-              "terminal": "T1",
-              "time": "08:20",
-              "dateLabel": "1 Oct"
-            },
-            "duration": "4h 45m",
-            "note": "2 of 4 travellers"
-          }
-        },
-        "narita-touchdown-hx": {
-          "id": "narita-touchdown-hx",
-          "kind": "airport-process",
-          "airportProcess": {
-            "id": "narita-touchdown-hx",
-            "type": "touchdown",
-            "airportCode": "NRT",
-            "airportName": "Narita International Airport",
-            "terminal": "T1",
-            "time": "08:20",
-            "durationMinutes": 30
-          }
-        },
-        "day-1-pokemon-center": {
-          "id": "day-1-pokemon-center",
-          "kind": "pokemon-center",
-          "pokemonCenter": {
-            "name": "Pokemon Center Tokyo Station & Tokyo DX",
-            "openTime": "10:00",
-            "note": "Optional on arrival — both centres ~10 min apart. Tokyo Station opens 10:00, Tokyo DX 10:30. Skip if tired; more PC days ahead."
-          }
-        },
-        "ameyoko": {
-          "id": "ameyoko",
+        "beixinqiao": {
+          "id": "beixinqiao",
           "kind": "place",
           "place": {
-            "id": "ameyoko",
-            "name": "Ameyoko Market",
-            "area": "Ueno",
-            "category": "Market",
-            "timeSlot": "Afternoon",
-            "duration": "1–1.5 hrs",
-            "summary": "A lively post-war market street under the Yamanote tracks — street food, dried goods, sneakers, and bargain snacks. Less polished than department stores, very local energy.",
-            "highlights": [
-              "Sample grilled seafood skewers and fresh fruit",
-              "People-watching and neon-adjacent shop fronts",
-              "Short walk from Ueno Station"
-            ],
-            "tips": [
-              "Cash still preferred at smaller stalls",
-              "Go before 17:00 when stalls start closing",
-              "Watch your belongings — it gets crowded on weekends (today is quieter midweek)"
-            ],
-            "ticket": {
-              "type": "free",
-              "detail": "Free to walk"
-            },
-            "photoNote": "Colourful stall awnings and narrow alleys — allow extra time for photos."
-          }
-        },
-        "ueno-park-lite": {
-          "id": "ueno-park-lite",
-          "kind": "place",
-          "place": {
-            "id": "ueno-park-lite",
-            "name": "Ueno Park (exterior stroll)",
-            "area": "Ueno",
-            "category": "Park",
-            "timeSlot": "Late afternoon",
-            "duration": "45–60 min",
-            "summary": "One of Tokyo’s oldest public parks — ponds, shrines, and wide paths. Today is a gentle preview; full museum visit on Day 4.",
-            "highlights": [
-              "Shinobazu Pond lotus views",
-              "Saigo Takamori statue",
-              "Preview of museum buildings"
-            ],
-            "tips": [
-              "Benches throughout — good rest stop for seniors",
-              "Early October: greenery with occasional cosmos flowers, not yet peak autumn colour"
-            ],
-            "ticket": {
-              "type": "free",
-              "detail": "Park is free"
-            }
-          }
-        },
-        "day-1-meal-0": {
-          "id": "day-1-meal-0",
-          "kind": "meal",
-          "meal": {
-            "name": "Taimeiken (たいめいけん)",
-            "area": "Nihombashi",
-            "cuisine": "Yoshoku — Tampopo omurice",
-            "priceRange": "¥1,500–3,000",
-            "rating": "4.2★",
-            "meal": "lunch",
-            "note": "After Pokemon Center Tokyo Station / Tokyo DX. Founded 1931 — the Tampopo omurice from the film is the comfort-Japanese starter meal. 1F is walk-in (no booking); expect a queue. Closed Mondays — Thu 1 Oct is open. ~8 min walk from Mitsukoshimae / Tokyo DX. Official: taimeiken.co.jp"
-          }
-        },
-        "day-1-meal-3": {
-          "id": "day-1-meal-3",
-          "kind": "meal",
-          "meal": {
-            "name": "Gyukatsu Motomura Ueno",
-            "area": "Ueno",
-            "cuisine": "Beef cutlet (gyukatsu)",
-            "priceRange": "¥2,000–3,000",
-            "rating": "4.8★",
-            "meal": "dinner",
-            "note": "From your saved list. Deep-fried beef you finish on a hot stone — hearty after travel. Expect 20–40 min queue at peak; go early (~17:30)."
-          }
-        },
-        "meal-1788605318275-61slo1m": {
-          "id": "meal-1788605318275-61slo1m",
-          "kind": "custom-meal",
-          "customMeal": {
-            "name": "Ichiryu Ramen",
-            "location": "2 Chome-35-16 Asakusa, Taito City, Tokyo 111-0032, Japan",
-            "price": "",
-            "description": "If already late or hungry, can choose this for lunch",
-            "meal": "lunch"
-          }
-        },
-        "meal-1788605395690-o5g0d1r": {
-          "id": "meal-1788605395690-o5g0d1r",
-          "kind": "custom-meal",
-          "customMeal": {
-            "name": "izumo unagi rice",
-            "location": "Asakusa",
-            "price": "2000-3000",
-            "description": "",
-            "meal": "dinner"
-          }
-        },
-        "meal-1788605453621-2lgbmxp": {
-          "id": "meal-1788605453621-2lgbmxp",
-          "kind": "custom-meal",
-          "customMeal": {
-            "name": "Sasaya Asakusa",
-            "location": "Asakusa",
-            "price": "3000-7000",
-            "description": "Sukiyaki. More expensive",
-            "meal": "dinner"
-          }
-        }
-      },
-      "notes": {
-        "flight-inbound-hx606": {
-          "text": "Hotel booking has free taxi transport for us from NRT airport to our hotel. It tracks the airplane timing. \nBooking ref: 700609353",
-          "isOpen": false
-        },
-        "narita-touchdown-hx": {
-          "text": "Pick up Suica/Pasmo at the airport for seamless transit",
-          "isOpen": false
-        }
-      }
-    },
-    "day-2": {
-      "dayId": "day-2",
-      "cardIds": [
-        "kawaguchiko",
-        "chureito",
-        "fuji-q-area",
-        "day-2-meal-0"
-      ],
-      "cards": {
-        "kawaguchiko": {
-          "id": "kawaguchiko",
-          "kind": "place",
-          "place": {
-            "id": "kawaguchiko",
-            "name": "Lake Kawaguchiko & Oishi Park",
-            "area": "Fuji Five Lakes",
-            "category": "Nature / Scenic",
-            "timeSlot": "Morning (priority)",
-            "duration": "2–3 hrs",
-            "summary": "The classic northern Fuji viewpoint. Oishi Park’s lakeside promenade frames Fuji across the water — one of Japan’s most photographed compositions.",
-            "highlights": [
-              "Oishi Park seasonal flower fields (cosmos often in early Oct)",
-              "Lake Kawaguchiko shoreline walk",
-              "Fuji panoramic on clear days"
-            ],
-            "tips": [
-              "Check isfujivisible.com the night before — if visibility is “Poor”, swap to backup Day 3",
-              "Lake area is 5–10°C cooler than Tokyo — bring windbreaker",
-              "Morning 7:00–10:00 has best Fuji visibility; clouds often obscure by midday"
-            ],
-            "ticket": {
-              "type": "free",
-              "detail": "Oishi Park free"
-            },
-            "photoNote": "★ Photo-heavy zone — budget 2+ hrs if conditions are clear. If Fuji is hidden, spend less time and explore lakeside cafés.",
-            "paceNote": "If visibility is poor, accept it gracefully — lakeside is still pleasant but consider shortening to 1 hr."
-          }
-        },
-        "chureito": {
-          "id": "chureito",
-          "kind": "place",
-          "place": {
-            "id": "chureito",
-            "name": "Chureito Pagoda (Arakurayama Sengen Park)",
-            "area": "Fuji Five Lakes",
-            "category": "Scenic / Shrine",
-            "timeSlot": "Late morning",
-            "duration": "1.5–2 hrs",
-            "summary": "The iconic five-story pagoda with Fuji behind it — 398 steps up. One of the most famous views in Japan.",
-            "highlights": [
-              "Pagoda + Fuji composition",
-              "Seasonal cherry blossoms (not Oct) / early autumn tones"
-            ],
-            "tips": [
-              "398 steps — seniors can wait at the base while others climb (partial views still exist lower down)",
-              "Free entry; can be crowded mid-morning on clear days",
-              "Combine with Shimoyoshida station (Fujikyu line)"
-            ],
-            "ticket": {
-              "type": "free",
-              "detail": "Free — open park"
-            },
-            "photoNote": "Allow 30+ min for the perfect shot — viewpoint gets crowded. Weekday helps.",
-            "paceNote": "Recommend: young adults hike up, seniors rest at Fujisan Station café area if needed."
-          }
-        },
-        "fuji-q-area": {
-          "id": "fuji-q-area",
-          "kind": "place",
-          "place": {
-            "id": "fuji-q-area",
-            "name": "Kawaguchiko town & souvenir strip",
-            "area": "Kawaguchiko",
-            "category": "Town",
-            "timeSlot": "Afternoon",
-            "duration": "1 hr",
-            "summary": "Lakefront shops, local Hoto noodle restaurants, and souvenir hunting. Relaxed fallback if weather turns.",
-            "highlights": [
-              "Hoto noodle (Yamanashi specialty)",
-              "Local craft shops"
-            ],
-            "tips": [
-              "Buy return bus ticket early — evening buses sell out on clear Fuji days"
-            ],
-            "ticket": {
-              "type": "walk_in",
-              "detail": "No ticket needed"
-            }
-          }
-        },
-        "day-2-meal-0": {
-          "id": "day-2-meal-0",
-          "kind": "meal",
-          "meal": {
-            "name": "Hoto Fudo or Kawaguchiko Hoto",
-            "area": "Kawaguchiko",
-            "cuisine": "Hoto noodles (Yamanashi)",
-            "priceRange": "¥1,000–1,500",
-            "meal": "lunch",
-            "note": "Thick miso noodles in a hot pot — warming after lakeside wind. Famous rustic venues near the lake."
-          }
-        }
-      },
-      "notes": {}
-    },
-    "day-3": {
-      "dayId": "day-3",
-      "cardIds": [
-        "sensoji",
-        "day-3-meal-0",
-        "day-3-meal-3",
-        "sumida",
-        "day-3-pokemon-center",
-        "skytree-exterior",
-        "day-3-meal-1",
-        "day-3-meal-2",
-        "meal-1788605619124-17msdzp"
-      ],
-      "cards": {
-        "day-3-pokemon-center": {
-          "id": "day-3-pokemon-center",
-          "kind": "pokemon-center",
-          "pokemonCenter": {
-            "name": "Pokemon Center SKYTREE TOWN",
-            "openTime": "10:00",
-            "note": "After Senso-ji morning exploration — 15 min walk or 1 stop on Asakusa Line to Oshiage."
-          }
-        },
-        "sensoji": {
-          "id": "sensoji",
-          "kind": "place",
-          "place": {
-            "id": "sensoji",
-            "name": "Senso-ji Temple",
-            "area": "Asakusa",
-            "category": "Temple",
-            "timeSlot": "Early morning (best)",
-            "duration": "2–3 hrs",
-            "summary": "Tokyo’s oldest temple — thunder gate (Kaminarimon), Nakamise shopping street, and the main hall. The spiritual heart of Asakusa.",
-            "highlights": [
-              "Kaminarimon giant red lantern",
-              "Nakamise-dori traditional snacks & souvenirs",
-              "Main hall prayer and incense",
-              "Five-story pagoda views"
-            ],
-            "tips": [
-              "Arrive 6:30–7:30 for fewer crowds and soft morning light — best for photos",
-              "Main hall open 6:00–17:00 (Oct)",
-              "Draw an omikuji fortune (¥100) — fun group activity",
-              "Saturday crowds build from late morning — earlier is better for photos"
-            ],
-            "ticket": {
-              "type": "free",
-              "detail": "Free entry to temple grounds"
-            },
-            "photoNote": "★★ Major photo day. Budget 2–3 hrs. Nakamise can eat another hour if you browse every stall.",
-            "paceNote": "Speed-up tip: Focus on Kaminarimon → main hall → pagoda. Skip deep Nakamise browsing to save 45 min."
-          }
-        },
-        "sumida": {
-          "id": "sumida",
-          "kind": "place",
-          "place": {
-            "id": "sumida",
-            "name": "Sumida Park & river views",
-            "area": "Asakusa",
-            "category": "Park / Riverside",
-            "timeSlot": "Late morning",
-            "duration": "30–45 min",
-            "summary": "Riverside walk with Skytree backdrop — good angle for tower + temple area context shots.",
-            "highlights": [
-              "Skytree framing from riverbank",
-              "Azuma Bridge views"
-            ],
-            "tips": [
-              "Optional short river cruise from Asakusa pier if legs need a rest (~15 min)"
-            ],
-            "ticket": {
-              "type": "walk_in",
-              "detail": "Park free; cruise ~¥1,000+"
-            }
-          },
-          "schedule": {
-            "timeSlot": "Late Morning",
-            "duration": {
-              "min": 30,
-              "max": 45,
-              "unit": "mins"
-            }
-          }
-        },
-        "skytree-exterior": {
-          "id": "skytree-exterior",
-          "kind": "place",
-          "place": {
-            "id": "skytree-exterior",
-            "name": "Tokyo Skytree Town (exterior)",
-            "area": "Oshiage",
-            "category": "Landmark",
-            "timeSlot": "Afternoon",
-            "duration": "45 min",
-            "summary": "Browse Solamachi mall at the base — Pokemon Center is here. Skytree observation deck is optional (not a priority vs Shibuya Sky).",
-            "highlights": [
-              "Solamachi shopping",
-              "Pokemon Center Skytree Town"
-            ],
-            "tips": [
-              "Observation deck ticket not essential — you visit Shibuya Sky for sunset views"
-            ],
-            "ticket": {
-              "type": "advance_recommended",
-              "detail": "Deck: book ahead if desired; mall free"
-            }
-          },
-          "schedule": {
-            "timeSlot": "Late Afternoon",
-            "duration": {
-              "min": 45,
-              "max": 45,
-              "unit": "mins"
-            }
-          }
-        },
-        "day-3-meal-0": {
-          "id": "day-3-meal-0",
-          "kind": "meal",
-          "meal": {
-            "name": "Age.3 ASAKUSA",
-            "area": "Asakusa",
-            "cuisine": "Cafe — cream-filled pastries",
-            "priceRange": "¥1–1,000",
-            "rating": "4.9★",
-            "meal": "breakfast",
-            "note": "From your saved list. Viral cream puffs — go early before sell-out. Perfect post-temple treat."
-          }
-        },
-        "day-3-meal-1": {
-          "id": "day-3-meal-1",
-          "kind": "meal",
-          "meal": {
-            "name": "Maguro-to-Shari Asakusa",
-            "area": "Asakusa",
-            "cuisine": "Tuna rice bowls",
-            "priceRange": "¥2,000–3,000",
-            "rating": "4.9★",
-            "meal": "lunch",
-            "note": "From your saved list. Fresh tuna specialist — lunch sets are excellent value."
-          }
-        },
-        "day-3-meal-2": {
-          "id": "day-3-meal-2",
-          "kind": "meal",
-          "meal": {
-            "name": "Magurobito Asakusa",
-            "area": "Asakusa",
-            "cuisine": "Tuna / sashimi bowls",
-            "priceRange": "¥1,000–2,000",
-            "rating": "4.4★",
-            "meal": "lunch",
-            "note": "Budget-friendly alternative to Maguro-to-Shari — generous tuna bowls and sashimi sets without the longest queues. Good backup if Maguro-to-Shari is packed."
-          }
-        },
-        "day-3-meal-3": {
-          "id": "day-3-meal-3",
-          "kind": "meal",
-          "meal": {
-            "name": "Ichiran Asakusa",
-            "area": "Asakusa",
-            "cuisine": "Tonkotsu ramen (solo booths)",
-            "priceRange": "¥1,000–2,000",
-            "rating": "4.3★",
-            "meal": "lunch",
-            "note": "Alternative lunch. Solo booth format — group sits in separate stalls. Note from your list: many Ichiran branches exist; this one pairs with Asakusa day."
-          }
-        },
-        "meal-1788605619124-17msdzp": {
-          "id": "meal-1788605619124-17msdzp",
-          "kind": "custom-meal",
-          "customMeal": {
-            "name": "Sugimoto",
-            "location": "Skytree",
-            "price": "2000-5000",
-            "description": "Sukiyaki",
-            "meal": "dinner"
-          }
-        }
-      },
-      "notes": {
-        "day-3-meal-2": {
-          "text": "Optional - alr chosen ichiran",
-          "isOpen": false
-        },
-        "day-3-meal-1": {
-          "text": "Optional - alr chosen ichiran",
-          "isOpen": false
-        },
-        "sensoji": {
-          "text": "Combini for breakfast",
-          "isOpen": false
-        },
-        "day-3-meal-0": {
-          "text": "optional\n",
-          "isOpen": false
-        },
-        "meal-1788605619124-17msdzp": {
-          "text": "Can have some desert at sky tree, then go back asakusa for dinner or have the sukiyaki at sky tree F6 Sugimoto",
-          "isOpen": false
-        }
-      }
-    },
-    "day-4": {
-      "dayId": "day-4",
-      "cardIds": [
-        "nezu-shrine",
-        "yanaka",
-        "day-4-meal-0",
-        "meal-1788605669521-skjp02p",
-        "meal-1788605721231-omlcdjo",
-        "tnm",
-        "ueno-park-full",
-        "day-4-meal-3",
-        "day-4-meal-4"
-      ],
-      "cards": {
-        "nezu-shrine": {
-          "id": "nezu-shrine",
-          "kind": "place",
-          "place": {
-            "id": "nezu-shrine",
-            "name": "Nezu Shrine",
-            "area": "Nezu",
-            "category": "Shinto Shrine",
-            "timeSlot": "Early morning",
-            "duration": "1–1.5 hrs",
-            "summary": "A hidden gem with a tunnel of vermillion torii gates — reminiscent of Fushimi Inari but far less crowded. Azalea festival is April; October offers moss, lanterns, and tranquil gardens.",
-            "highlights": [
-              "Senbon Torii (torii gate path)",
-              "Historic main hall (National Important Cultural Property)",
-              "Small pond garden"
-            ],
-            "tips": [
-              "Opens at 6:00 — arrive 8:00 for best light (Sunday still gets busy by late morning)",
-              "10 min walk from Nezu Station (Chiyoda Line)",
-              "Combine with Yanaka — 15 min walk north"
-            ],
-            "ticket": {
-              "type": "free",
-              "detail": "Free"
-            },
-            "photoNote": "Torii tunnel is narrow — patient queueing for photos. Allow 45+ min for photography."
-          }
-        },
-        "yanaka": {
-          "id": "yanaka",
-          "kind": "place",
-          "place": {
-            "id": "yanaka",
-            "name": "Yanaka Ginza & district",
-            "area": "Yanaka",
-            "category": "Historic neighbourhood",
+            "id": "beixinqiao",
+            "name": "Hotel drop-off & neighbourhood orientation",
+            "area": "汉庭北京隆福寺东四地铁站酒店",
+            "category": "Neighbourhood",
             "timeSlot": "Morning",
-            "duration": "1.5–2 hrs",
-            "summary": "“Old Tokyo” survived the firebombing — wooden houses, temple cemeteries, artisan shops, and the famous Yanaka Ginza shopping street. Cats are unofficial mascots.",
+            "duration": "1–1.5 hrs",
+            "summary": "Land at PKX early, DiDi to 汉庭北京隆福寺东四地铁站酒店 (东四北大街537号, by Dongsi metro). Stash luggage and do a short orientation walk — supermarket, pharmacy, DiDi pickup spots, Longfu Temple street, and Guijie (簋街) nearby.",
             "highlights": [
-              "Yanaka Ginza shotengai (market street)",
-              "Cat-themed shops & street art",
-              "Yanaka Cemetery — peaceful tree-lined walks (respectful, quiet photos only)"
+              "Locate supermarket / pharmacy / DiDi pickup spots",
+              "Luggage storage if check-in is after 14:00",
+              "Light snack before temple walking"
             ],
             "tips": [
-              "Yanaka Ginza gets busy weekends after 11:00 — go earlier",
-              "Cash useful at small shops",
-              "Many stairs in side alleys — seniors may prefer main Yanaka Ginza flat street"
+              "Hotel check-in may be after 14:00 — use luggage storage if needed",
+              "Keep first meals within a short walk of the hotel"
             ],
             "ticket": {
               "type": "free",
-              "detail": "Free to explore"
+              "detail": "Public streets"
             },
-            "photoNote": "Charming retro streetscapes — budget extra time. Sunset cat-themed snacks (menchi-katsu) are famous.",
-            "paceNote": "Speed-up: Walk Yanaka Ginza main strip only (~45 min) to save energy for museum."
+            "paceNote": "Get settled, then head out — Guozijian and Yonghegong are minutes away."
           },
           "schedule": {
             "timeSlot": "Late Morning",
+            "duration": {
+              "min": 1,
+              "max": 1.5,
+              "unit": "hrs"
+            }
+          }
+        },
+        "guozijian": {
+          "id": "guozijian",
+          "kind": "place",
+          "place": {
+            "id": "guozijian",
+            "name": "Guozijian & Confucius Temple (国子监 · 孔庙)",
+            "area": "Guozijian",
+            "category": "Historic academy",
+            "timeSlot": "Late Morning",
+            "duration": "1.5–2 hrs",
+            "summary": "Imperial college and Confucius Temple — cypress trees, stele pavilions, and a calmer cultural stop than the palace. Very close to Beixinqiao / Yonghegong.",
+            "highlights": [
+              "Biyong Hall circular campus",
+              "Stone stele forest",
+              "Quiet courtyards for photos"
+            ],
+            "tips": [
+              "Combo ticket usually covers both sites",
+              "Pair immediately with Yonghegong next door — same street corridor"
+            ],
+            "ticket": {
+              "type": "walk_in",
+              "detail": "Tickets on site / easy online"
+            },
+            "photoNote": "Cypress + red walls — lovely on overcast days."
+          },
+          "schedule": {
+            "timeSlot": "Afternoon",
             "duration": {
               "min": 1.5,
               "max": 2,
@@ -619,33 +123,799 @@
             }
           }
         },
-        "tnm": {
-          "id": "tnm",
+        "yonghegong": {
+          "id": "yonghegong",
           "kind": "place",
           "place": {
-            "id": "tnm",
-            "name": "Tokyo National Museum",
-            "area": "Ueno",
-            "category": "Museum",
+            "id": "yonghegong",
+            "name": "Yonghegong Lama Temple (雍和宫)",
+            "area": "Yonghegong",
+            "category": "Temple",
             "timeSlot": "Afternoon",
-            "duration": "2–3 hrs",
-            "summary": "Japan’s oldest and largest art museum — samurai armour, ukiyo-e prints, ceramics, and Buddhist sculpture. Honkan (Japanese Gallery) is the essential wing.",
+            "duration": "1–1.5 hrs",
+            "summary": "Active Tibetan Buddhist temple minutes from Beixinqiao — incense courtyards and a towering Buddha. Ideal first-day sightseeing without long DiDi rides.",
             "highlights": [
-              "Honkan — Japanese art through the ages",
-              "Gallery of Horyuji Treasures",
-              "Japanese garden behind Honkan"
+              "Incense courtyards and prayer atmosphere",
+              "Tall Maitreya Buddha statue",
+              "Easy walk / short DiDi from the hotel"
             ],
             "tips": [
-              "Closed Mondays — Sunday 4 Oct open 9:30–17:00",
-              "Seniors 70+ and under-18 free with passport/ID",
-              "Buy online ticket to skip queue",
-              "Wheelchairs available — mostly flat within buildings"
+              "Modest dress; buy tickets on site or via WeChat if queues look long",
+              "Morning is calmer, but afternoon still works after Guozijian",
+              "Combine with Guozijian — both sit on the same Yonghegong Street corridor"
+            ],
+            "ticket": {
+              "type": "walk_in",
+              "detail": "Ticket on site / easy online"
+            },
+            "photoNote": "Courtyard incense smoke + red walls — respect no-flash rules indoors.",
+            "paceNote": "Keep it to the main halls if jet-lagged — no need to linger in every side court."
+          },
+          "schedule": {
+            "timeSlot": "Late Afternoon",
+            "duration": {
+              "min": 1,
+              "max": 1.5,
+              "unit": "hrs"
+            }
+          }
+        },
+        "day-1-meal-0": {
+          "id": "day-1-meal-0",
+          "kind": "meal",
+          "meal": {
+            "name": "茶饼斋 · 北新桥店",
+            "area": "Beixinqiao",
+            "cuisine": "Beijing snacks / pastries",
+            "priceRange": "¥",
+            "meal": "snack",
+            "note": "~200m from Beixinqiao Exit A — easy first taste after hotel drop-off."
+          }
+        },
+        "day-1-meal-1": {
+          "id": "day-1-meal-1",
+          "kind": "meal",
+          "meal": {
+            "name": "吴裕泰茶庄 · 北新桥总店",
+            "area": "Beixinqiao",
+            "cuisine": "Tea / tea ice cream",
+            "priceRange": "¥",
+            "meal": "snack",
+            "note": "Famous jasmine tea ice cream — light treat, photo-friendly packaging."
+          }
+        },
+        "day-1-meal-2": {
+          "id": "day-1-meal-2",
+          "kind": "meal",
+          "meal": {
+            "name": "七寻八找胡同菜 · 雍和宫店",
+            "area": "Yonghegong",
+            "cuisine": "Hutong home-style",
+            "priceRange": "¥¥",
+            "meal": "lunch",
+            "note": "Close to Guozijian / Yonghegong — share a few dishes for the table between temple stops."
+          }
+        },
+        "day-1-meal-3": {
+          "id": "day-1-meal-3",
+          "kind": "meal",
+          "meal": {
+            "name": "郭通天宫院小吃 · 簋街店",
+            "area": "Guijie",
+            "cuisine": "Beijing snacks",
+            "priceRange": "¥¥",
+            "meal": "dinner",
+            "note": "Close to Beixinqiao Exit B — classic snack sets without a long DiDi."
+          }
+        },
+        "day-1-meal-4": {
+          "id": "day-1-meal-4",
+          "kind": "meal",
+          "meal": {
+            "name": "酸正正奶制品集合店 · 簋街店",
+            "area": "Guijie",
+            "cuisine": "Yogurt / dairy",
+            "priceRange": "¥",
+            "meal": "snack",
+            "note": "Optional dessert crawl on Ghost Street if the group still has energy."
+          }
+        },
+        "day-1-pokemon-center": {
+          "id": "day-1-pokemon-center",
+          "kind": "pokemon-center",
+          "pokemonCenter": {
+            "name": "Pokemon Pop-up · Raffles City",
+            "openTime": "10:00",
+            "note": "Official pop-up at 北京来福士中心 1F unit 23 (Dongzhimen) — closest mall to 汉庭 / 东四. Aim for 10:00 opening."
+          }
+        }
+      },
+      "notes": {
+        "day-1-meal-1": {
+          "text": "Random order",
+          "isOpen": false
+        },
+        "day-1-meal-4": {
+          "text": "Random order",
+          "isOpen": false
+        },
+        "beixinqiao": {
+          "text": "Get simple breakfast anywhere",
+          "isOpen": false
+        },
+        "day-1-pokemon-center": {
+          "text": "Check stock availability for each popup before going. If news come up late, then nvm.\nTry to get good stock before week resets",
+          "isOpen": false
+        },
+        "day-1-meal-3": {
+          "text": "Some other dinner options lol, think this is a mistake.\nFind on map :)",
+          "isOpen": false
+        }
+      },
+      "removedCardIds": [
+        "activity-1788627084421-zscvwtt"
+      ]
+    },
+    "day-2": {
+      "dayId": "day-2",
+      "cardIds": [
+        "day-2-meal-0",
+        "day-2-meal-2",
+        "day-2-pokemon-center",
+        "temple-of-heaven",
+        "day-2-meal-1",
+        "qianmen-street",
+        "day-2-meal-4",
+        "day-2-meal-3",
+        "meal-1784475396433-bo7x24b",
+        "meal-1788625606685-d7cojsk",
+        "activity-1784470607072-ykcya1z"
+      ],
+      "cards": {
+        "activity-1784470607072-ykcya1z": {
+          "id": "activity-1784470607072-ykcya1z",
+          "kind": "custom-activity",
+          "customActivity": {
+            "title": "(Optional) Cycling along Tiananmen",
+            "location": "Tiananmen neighbourhood",
+            "description": "If have energy and time. But do note that tomorrow is a big day with a lot of walking. Might want to wake up early tomorrow as well for Flag Raising ceremony at Tiananmen",
+            "timeSlot": "Night",
+            "duration": {
+              "min": 1,
+              "max": 2,
+              "unit": "hrs"
+            }
+          }
+        },
+        "meal-1784475396433-bo7x24b": {
+          "id": "meal-1784475396433-bo7x24b",
+          "kind": "custom-meal",
+          "customMeal": {
+            "name": "萍姐火锅",
+            "location": "北京市东城区崇文门外大街5号新世界2期L2层",
+            "price": "",
+            "description": "",
+            "meal": "dinner"
+          }
+        },
+        "meal-1788625606685-d7cojsk": {
+          "id": "meal-1788625606685-d7cojsk",
+          "kind": "custom-meal",
+          "customMeal": {
+            "name": "刘记炙子烤肉/烤肉刘",
+            "location": "",
+            "price": "",
+            "description": "",
+            "meal": "dinner"
+          }
+        },
+        "temple-of-heaven": {
+          "id": "temple-of-heaven",
+          "kind": "place",
+          "place": {
+            "id": "temple-of-heaven",
+            "name": "Temple of Heaven Park (天坛公园)",
+            "area": "Tiantan",
+            "category": "UNESCO / Temple",
+            "timeSlot": "Morning",
+            "duration": "2.5–3.5 hrs",
+            "summary": "Ming–Qing complex where emperors prayed for good harvests. Circular Hall of Prayer for Good Harvests is Beijing’s most recognisable temple silhouette.",
+            "highlights": [
+              "Hall of Prayer for Good Harvests",
+              "Echo Wall & Imperial Vault",
+              "Locals practising tai chi / singing in the park (morning)"
+            ],
+            "tips": [
+              "Enter East Gate if using Tiantan Dongmen metro; DiDi can drop closer to the Hall",
+              "Combo ticket covers main halls",
+              "Morning light on the blue roof tiles is excellent for photos"
             ],
             "ticket": {
               "type": "advance_recommended",
-              "detail": "¥1,000 adults — buy online at tnm.jp"
+              "detail": "Combo ticket online or on site"
             },
-            "paceNote": "Focus on Honkan only (~90 min) if tired rather than all buildings."
+            "photoNote": "Walk a full circle around the Hall for symmetry shots; watch for drone bans.",
+            "paceNote": "Skip distant park corners if jet-lagged from Day 1 — the Hall + axis is enough."
+          },
+          "schedule": {
+            "timeSlot": "Morning",
+            "duration": {
+              "min": 3,
+              "max": 4,
+              "unit": "hrs"
+            }
+          }
+        },
+        "qianmen-street": {
+          "id": "qianmen-street",
+          "kind": "place",
+          "place": {
+            "id": "qianmen-street",
+            "name": "Qianmen / Dashilar stroll (前门 · 大栅栏)",
+            "area": "Qianmen",
+            "category": "Street / Shopping",
+            "timeSlot": "Afternoon",
+            "duration": "1.5–2 hrs",
+            "summary": "Rebuilt pedestrian street south of Tiananmen with snack shops and photo façades. Pair with your starred luzhu and dairy stops.",
+            "highlights": [
+              "Streetscape photos",
+              "Snack hopping without another long DiDi",
+              "Easy exit back toward metro / DiDi"
+            ],
+            "tips": [
+              "Touristy — treat it as atmosphere + food, not deep history",
+              "Keep valuables zipped in crowds"
+            ],
+            "ticket": {
+              "type": "free",
+              "detail": "Public street"
+            },
+            "paceNote": "Speed through souvenir shops; spend time on food instead."
+          },
+          "schedule": {
+            "timeSlot": "Afternoon",
+            "duration": {
+              "min": 1.5,
+              "max": 2,
+              "unit": "hrs"
+            }
+          }
+        },
+        "day-2-meal-0": {
+          "id": "day-2-meal-0",
+          "kind": "meal",
+          "meal": {
+            "name": "尹记门钉肉饼 · 天坛店",
+            "area": "Tiantan",
+            "cuisine": "Men ding rou bing",
+            "priceRange": "¥",
+            "meal": "breakfast",
+            "note": "Door-nail meat pies near Temple of Heaven — solid start before park entry."
+          }
+        },
+        "day-2-meal-1": {
+          "id": "day-2-meal-1",
+          "kind": "meal",
+          "meal": {
+            "name": "恭敬李烤鸭 · 天坛路店",
+            "area": "Tiantan",
+            "cuisine": "Peking duck",
+            "priceRange": "¥¥¥",
+            "meal": "lunch",
+            "note": "Starred roast duck near the park — book or arrive slightly early for a table of 4."
+          }
+        },
+        "day-2-meal-2": {
+          "id": "day-2-meal-2",
+          "kind": "meal",
+          "meal": {
+            "name": "味多美 · 天坛店",
+            "area": "Tiantan",
+            "cuisine": "Bakery",
+            "priceRange": "¥",
+            "meal": "snack",
+            "note": "Near Tiantan Donglu metro — coffee + pastry pause."
+          }
+        },
+        "day-2-meal-3": {
+          "id": "day-2-meal-3",
+          "kind": "meal",
+          "meal": {
+            "name": "陈记卤煮小肠 · 廊房二条店",
+            "area": "Qianmen",
+            "cuisine": "Luzhu (Beijing offal stew)",
+            "priceRange": "¥¥",
+            "meal": "dinner",
+            "note": "Your starred luzhu shop near Qianmen — adventurous classic; order carefully for the less adventurous eaters."
+          }
+        },
+        "day-2-meal-4": {
+          "id": "day-2-meal-4",
+          "kind": "meal",
+          "meal": {
+            "name": "三元梅园 · 前门店",
+            "area": "Qianmen",
+            "cuisine": "Imperial dairy / cheese",
+            "priceRange": "¥",
+            "meal": "snack",
+            "note": "Court-style milk desserts — sweet finish on Qianmen Street."
+          }
+        },
+        "day-2-pokemon-center": {
+          "id": "day-2-pokemon-center",
+          "kind": "pokemon-center",
+          "pokemonCenter": {
+            "name": "Pokemon Pop-up · China World Mall",
+            "openTime": "10:00",
+            "note": "NEW official pop-up at 国贸商城南区 B1 WB120A/B — 10:00 opening, then DiDi south to Temple of Heaven."
+          }
+        }
+      },
+      "notes": {
+        "day-2-pokemon-center": {
+          "text": "Check stock availability for each popup before going. If news come up late, then nvm.",
+          "isOpen": false
+        },
+        "day-2-meal-2": {
+          "text": "",
+          "isOpen": false
+        },
+        "day-2-meal-0": {
+          "text": "OR somewhere more convenient",
+          "isOpen": false
+        }
+      },
+      "removedCardIds": [
+        "activity-1788625655751-eu1kapl",
+        "activity-1788626941635-a2zrbaa"
+      ]
+    },
+    "day-3": {
+      "dayId": "day-3",
+      "cardIds": [
+        "day-3-meal-0",
+        "tiananmen-square",
+        "forbidden-city",
+        "day-3-meal-1",
+        "jingshan-park",
+        "meal-1788625050679-zp03ba2",
+        "day-3-meal-2",
+        "wangjing-capitalmall"
+      ],
+      "cards": {
+        "meal-1788625050679-zp03ba2": {
+          "id": "meal-1788625050679-zp03ba2",
+          "kind": "custom-meal",
+          "customMeal": {
+            "name": "大槐树烤肉馆(鼓楼店)",
+            "location": "北京市东城区鼓楼东大街与后鼓楼苑胡同交叉口西南60米",
+            "price": "",
+            "description": "Beijing style BBQ!!!",
+            "meal": "dinner"
+          }
+        },
+        "tiananmen-square": {
+          "id": "tiananmen-square",
+          "kind": "place",
+          "place": {
+            "id": "tiananmen-square",
+            "name": "Tiananmen Square (天安门广场)",
+            "area": "Tiananmen",
+            "category": "Landmark",
+            "timeSlot": "Morning",
+            "duration": "45–75 mins",
+            "summary": "World’s largest city square — flag, Monument to the People’s Heroes, and the axis that leads into the Forbidden City. Security checks at every entrance.",
+            "highlights": [
+              "National flag & Monument views",
+              "Orientation photos before entering the palace",
+              "Sense of Beijing’s ceremonial north–south axis"
+            ],
+            "tips": [
+              "Enter via security with passport; no large bags / liquids rules can be strict",
+              "Skip dawn flag-raising unless the group is keen — it means a 05:00 wake-up",
+              "DiDi drop near Qianmen or walk from metro exits with less queue if possible",
+              "Chairman Mao Memorial Hall is on Thu 5 Nov with the National Museum instead"
+            ],
+            "ticket": {
+              "type": "free",
+              "detail": "Security check with passport"
+            },
+            "photoNote": "Wide lenses help; morning haze is common — expose for the sky.",
+            "paceNote": "Keep moving — the palace is the main event."
+          },
+          "schedule": {
+            "timeSlot": "Morning",
+            "duration": {
+              "min": 1.5,
+              "max": 2,
+              "unit": "hrs"
+            }
+          }
+        },
+        "forbidden-city": {
+          "id": "forbidden-city",
+          "kind": "place",
+          "place": {
+            "id": "forbidden-city",
+            "name": "Palace Museum / Forbidden City (故宫博物院)",
+            "area": "Dongcheng",
+            "category": "UNESCO / Palace",
+            "timeSlot": "Late Morning",
+            "duration": "3–4 hrs",
+            "summary": "Ming–Qing imperial palace — courtyards, throne halls, and endless red walls. South → north walking route ends at the Gate of Divine Prowess, steps from Jingshan.",
+            "highlights": [
+              "Hall of Supreme Harmony & outer court grandeur",
+              "Inner court residential quarters",
+              "Treasure Gallery / Clock Gallery if time (extra ticket sometimes)"
+            ],
+            "tips": [
+              "Timed ticket required; passport name must match",
+              "Enter Meridian Gate (午门); exit Shenwu Gate (神武门) north",
+              "Rent audio guide or use a lightweight guidebook — reduces aimless walking for seniors",
+              "Rest on benches in side courts; don’t try to see every side gallery"
+            ],
+            "ticket": {
+              "type": "advance_required",
+              "detail": "Real-name timed ticket via official site / WeChat"
+            },
+            "photoNote": "Best red-wall / door details in soft late-morning light; watch for tour-group blocks.",
+            "paceNote": "Worth speeding through the outer court if crowds thicken — protect time for Jingshan sunset views."
+          }
+        },
+        "jingshan-park": {
+          "id": "jingshan-park",
+          "kind": "place",
+          "place": {
+            "id": "jingshan-park",
+            "name": "Jingshan Park (景山公园)",
+            "area": "Jingshan",
+            "category": "Park / Viewpoint",
+            "timeSlot": "Late Afternoon",
+            "duration": "1–1.5 hrs",
+            "summary": "Artificial hill north of the Forbidden City. Climb (or take it slow) to Wanchun Pavilion for the classic aerial photo of golden roofs.",
+            "highlights": [
+              "Panorama over the Palace Museum",
+              "Autumn foliage frames",
+              "City skyline beyond the palace walls"
+            ],
+            "tips": [
+              "Separate park ticket; enter south gate closest to Shenwu Gate exit",
+              "Stairs to the top — go at your own pace; one strong walker can scout while others rest mid-hill",
+              "Aim to arrive ~90 minutes before sunset for golden light"
+            ],
+            "ticket": {
+              "type": "walk_in",
+              "detail": "Inexpensive park ticket on site"
+            },
+            "photoNote": "Bring a short telephoto if you have one; phone wide + 2x also works.",
+            "paceNote": "This is the photo payoff of the day — don’t skip it even if tired."
+          },
+          "schedule": {
+            "timeSlot": "Late Afternoon",
+            "duration": {
+              "min": 2,
+              "max": 3,
+              "unit": "hrs"
+            }
+          }
+        },
+        "wangjing-capitalmall": {
+          "id": "wangjing-capitalmall",
+          "kind": "place",
+          "place": {
+            "id": "wangjing-capitalmall",
+            "name": "Pokemon Pop-up · CapitaMall Wangjing",
+            "area": "Wangjing",
+            "category": "Shopping / Pokemon",
+            "timeSlot": "Night",
+            "duration": "1–1.5 hrs",
+            "summary": "Official pop-up at CapitaMall Wangjing B1-27 — evening visit after Jingshan and hutong dinner. Skip if the palace day has already emptied the group.",
+            "highlights": [
+              "Official pop-up merch / TCG check",
+              "Indoor sit-down after a long walking day"
+            ],
+            "tips": [
+              "DiDi from Nanluoguxiang / 汉庭 (~25–40 min); confirm mall hours before you go",
+              "Set a hard leave time — Great Wall is in three days and tomorrow is Xidan at 10:00"
+            ],
+            "ticket": {
+              "type": "free",
+              "detail": "Mall access free; products paid"
+            },
+            "paceNote": "Optional night add-on — Xidan tomorrow morning is the better stock stop."
+          }
+        },
+        "day-3-meal-0": {
+          "id": "day-3-meal-0",
+          "kind": "meal",
+          "meal": {
+            "name": "贰柒松针包子",
+            "area": "Dongsi",
+            "cuisine": "Baozi",
+            "priceRange": "¥",
+            "meal": "breakfast",
+            "note": "Quick steam buns near Dongsi before heading to Tiananmen — or hotel breakfast if easier."
+          }
+        },
+        "day-3-meal-1": {
+          "id": "day-3-meal-1",
+          "kind": "meal",
+          "meal": {
+            "name": "Lunch near Forbidden City",
+            "area": "Tiananmen",
+            "cuisine": "Simple Chinese / cafe",
+            "priceRange": "¥¥",
+            "meal": "lunch",
+            "note": "Eat before or after palace entry — options inside are limited and crowded. DiDi 10 mins to Dongsi if needed."
+          }
+        },
+        "day-3-meal-2": {
+          "id": "day-3-meal-2",
+          "kind": "meal",
+          "meal": {
+            "name": "奇葩奶奶的烧鱼 · 酱肘子",
+            "area": "Nanluoguxiang",
+            "cuisine": "Home-style / braised fish",
+            "priceRange": "¥¥",
+            "meal": "dinner",
+            "note": "Hutong dinner after Jingshan — short DiDi north. Share fish + soy knuckle for the table."
+          }
+        }
+      },
+      "notes": {
+        "tiananmen-square": {
+          "text": "check 登城楼预约\nThose who want to see flag raising can go, otherwise sleep",
+          "isOpen": false
+        },
+        "day-3-meal-0": {
+          "text": "or any breakfast place nearby",
+          "isOpen": false
+        },
+        "forbidden-city": {
+          "text": "get priority pass",
+          "isOpen": false
+        },
+        "day-3-meal-1": {
+          "text": "can go 明园餐厅 if convenient, otherwise anywhere nearby is fine",
+          "isOpen": false
+        },
+        "day-3-meal-2": {
+          "text": "",
+          "isOpen": false
+        },
+        "wangjing-capitalmall": {
+          "text": "Or some other store that is more convenient like raffles city",
+          "isOpen": false
+        }
+      },
+      "removedCardIds": []
+    },
+    "day-4": {
+      "dayId": "day-4",
+      "cardIds": [
+        "day-4-pokemon-center",
+        "day-4-meal-1",
+        "summer-palace",
+        "activity-1788630740538-zlohaix",
+        "day-4-meal-2",
+        "activity-1788626853534-w4bb59k"
+      ],
+      "cards": {
+        "activity-1788626853534-w4bb59k": {
+          "id": "activity-1788626853534-w4bb59k",
+          "kind": "custom-activity",
+          "customActivity": {
+            "title": "(Can consider) Visit 鸟巢文化中心",
+            "location": "北京市朝阳区国家体育场南路1号",
+            "description": "",
+            "timeSlot": "Night",
+            "duration": {
+              "min": 1,
+              "max": 2,
+              "unit": "hrs"
+            }
+          }
+        },
+        "summer-palace": {
+          "id": "summer-palace",
+          "kind": "place",
+          "place": {
+            "id": "summer-palace",
+            "name": "Summer Palace (颐和园)",
+            "area": "Summer Palace",
+            "category": "UNESCO / Garden",
+            "timeSlot": "Late Morning",
+            "duration": "3.5–4.5 hrs",
+            "summary": "Vast Qing imperial garden around Kunming Lake — Long Corridor, Tower of Buddhist Incense, marble boat, and willow-lined shores. One of Beijing’s best autumn photo sites.",
+            "highlights": [
+              "Long Corridor painted beams",
+              "Seventeen-Arch Bridge views",
+              "Climb or view Tower of Buddhist Incense (pace yourself)"
+            ],
+            "tips": [
+              "Enter East Gate; through ticket recommended",
+              "Boat across the lake saves walking for seniors (seasonal)",
+              "Bring snacks — food options inside are pricey; you will arrive after the Xidan pop-up",
+              "DiDi drop at East Gate; same for pickup"
+            ],
+            "ticket": {
+              "type": "advance_recommended",
+              "detail": "Through ticket online / WeChat"
+            },
+            "photoNote": "Bridge reflections and willow + lake frames work well into early afternoon light.",
+            "paceNote": "Do not try to walk the entire lake circuit. Core loop: East Gate → Long Corridor → lakeside → exit. Skip distant Suzhou Street if tired."
+          },
+          "schedule": {
+            "timeSlot": "Afternoon",
+            "duration": {
+              "min": 3.5,
+              "max": 4.5,
+              "unit": "hrs"
+            }
+          }
+        },
+        "day-4-meal-1": {
+          "id": "day-4-meal-1",
+          "kind": "meal",
+          "meal": {
+            "name": "Summer Palace area lunch",
+            "area": "Haidian",
+            "cuisine": "Simple Chinese",
+            "priceRange": "¥¥",
+            "meal": "lunch",
+            "note": "Eat just outside the East Gate after exiting — more choice than inside."
+          }
+        },
+        "day-4-meal-2": {
+          "id": "day-4-meal-2",
+          "kind": "meal",
+          "meal": {
+            "name": "Dinner near Zhongguancun or back at Guijie",
+            "area": "Haidian / Guijie",
+            "cuisine": "Casual",
+            "priceRange": "¥¥",
+            "meal": "dinner",
+            "note": "After Summer Palace, return to 刘阿妹鸡公煲 or 佬婆猪脚饭 near Beixinqiao if Haidian options feel thin."
+          }
+        },
+        "day-4-pokemon-center": {
+          "id": "day-4-pokemon-center",
+          "kind": "pokemon-center",
+          "pokemonCenter": {
+            "name": "Pokemon Pop-up · Xidan Joy City",
+            "openTime": "10:00",
+            "note": "B1 official pop-up + F1 Relax Party in the same mall — one DiDi drop covers both."
+          }
+        },
+        "activity-1788630740538-zlohaix": {
+          "id": "activity-1788630740538-zlohaix",
+          "kind": "custom-activity",
+          "customActivity": {
+            "title": "(Can consider) Visit Zhonguancun pokemon gym",
+            "location": "",
+            "description": "",
+            "timeSlot": "Late Afternoon",
+            "duration": {
+              "min": 1,
+              "max": 2,
+              "unit": "hrs"
+            }
+          }
+        }
+      },
+      "notes": {
+        "day-4-pokemon-center": {
+          "text": "Check stock availability for each popup before going. If news come up late, then nvm.\n",
+          "isOpen": false
+        },
+        "day-4-meal-1": {
+          "text": "or just in the mall lol if hungry already",
+          "isOpen": false
+        },
+        "summer-palace": {
+          "text": "\nEither store goods in rented lockers in this mall or in summer palace. Recommend summer palace, maybe better lockers",
+          "isOpen": false
+        },
+        "activity-1788630740538-zlohaix": {
+          "text": "Its either this or 鸟巢文化中心. Higher priority to 鸟巢文化中心 bah cuz Zhonguancun pokemon gym can potentially visit on Day 8",
+          "isOpen": true
+        }
+      },
+      "removedCardIds": [
+        "day-4-meal-0",
+        "meal-1788626169212-46yxk4y",
+        "meal-1788626182540-32155d9"
+      ]
+    },
+    "day-5": {
+      "dayId": "day-5",
+      "cardIds": [
+        "meal-1788626387192-h7fp2pf",
+        "mao-memorial",
+        "day-5-meal-1",
+        "national-museum",
+        "xihongmen-onix-gym",
+        "meal-1788626570934-80j1wh4"
+      ],
+      "cards": {
+        "meal-1788626387192-h7fp2pf": {
+          "id": "meal-1788626387192-h7fp2pf",
+          "kind": "custom-meal",
+          "customMeal": {
+            "name": "quick bite nearby hotel",
+            "location": "",
+            "price": "",
+            "description": "",
+            "meal": "breakfast"
+          }
+        },
+        "meal-1788626570934-80j1wh4": {
+          "id": "meal-1788626570934-80j1wh4",
+          "kind": "custom-meal",
+          "customMeal": {
+            "name": "Find something in the mall",
+            "location": "Xihongmen ",
+            "price": "",
+            "description": "",
+            "meal": "dinner"
+          }
+        },
+        "mao-memorial": {
+          "id": "mao-memorial",
+          "kind": "place",
+          "place": {
+            "id": "mao-memorial",
+            "name": "Chairman Mao Memorial Hall (毛主席纪念堂)",
+            "area": "Tiananmen",
+            "category": "Memorial",
+            "timeSlot": "Morning",
+            "duration": "45–90 mins (incl. queue)",
+            "summary": "Mausoleum on the south side of Tiananmen Square — next door to the National Museum. Solemn visit with queue and locker requirements. Do this first: mornings only (~08:00–12:00).",
+            "highlights": [
+              "Queue culture tip: stay together as a group of 4",
+              "Lockers for bags / phones if required",
+              "Quiet, respectful pace inside"
+            ],
+            "tips": [
+              "Arrive near opening — hall typically closes by noon; closed Mondays",
+              "Thu 5 Nov is open (Tue–Sun). Confirm 2026 hours the week before",
+              "If temporarily closed, continue to the National Museum without guilt",
+              "No photography inside"
+            ],
+            "ticket": {
+              "type": "free",
+              "detail": "Free entry; lockers may charge a small fee"
+            },
+            "paceNote": "If the queue exceeds ~60 minutes, skip and protect time for the museum + Onix gym."
+          }
+        },
+        "national-museum": {
+          "id": "national-museum",
+          "kind": "place",
+          "place": {
+            "id": "national-museum",
+            "name": "National Museum of China (中国国家博物馆)",
+            "area": "Tiananmen",
+            "category": "Museum",
+            "timeSlot": "Late Morning",
+            "duration": "2–3 hrs",
+            "summary": "Massive state museum on the east side of Tiananmen Square — ancient China galleries, modern history, and rotating special exhibitions. Free with reservation. Same cluster as Mao Memorial Hall.",
+            "highlights": [
+              "Ancient China permanent exhibition highlights",
+              "Warm indoor stretch before tomorrow’s Great Wall",
+              "Square exterior photos on exit"
+            ],
+            "tips": [
+              "Reserve free tickets with passport names (Tue–Sun; closed Mondays — Thursday is fine)",
+              "Open ~09:00–17:00 (last entry ~16:00) — go after Mao Memorial",
+              "Pick 2–3 galleries max; the building is huge",
+              "Security queues — have passports ready"
+            ],
+            "ticket": {
+              "type": "advance_required",
+              "detail": "Free reservation via official site / WeChat"
+            },
+            "paceNote": "Speed is good here — quality over quantity so you still reach Xihongmen with energy."
           },
           "schedule": {
             "timeSlot": "Afternoon",
@@ -656,454 +926,143 @@
             }
           }
         },
-        "ueno-park-full": {
-          "id": "ueno-park-full",
+        "xihongmen-onix-gym": {
+          "id": "xihongmen-onix-gym",
           "kind": "place",
           "place": {
-            "id": "ueno-park-full",
-            "name": "Ueno Park",
-            "area": "Ueno",
-            "category": "Park",
-            "timeSlot": "Late afternoon",
-            "duration": "45 min",
-            "summary": "Stroll through the park connecting museum, Shinobazu Pond, and Ueno Zoo exterior paths.",
-            "highlights": [
-              "Shinobazu Pond",
-              "Statues and seasonal flowers"
-            ],
-            "tips": [
-              "Early Oct: still mostly green — peak autumn colour comes mid-Nov"
-            ],
-            "ticket": {
-              "type": "free",
-              "detail": "Free"
-            }
-          }
-        },
-        "day-4-meal-0": {
-          "id": "day-4-meal-0",
-          "kind": "meal",
-          "meal": {
-            "name": "Yanaka Ginza — menchi-katsu / croquettes",
-            "area": "Yanaka",
-            "cuisine": "Street food",
-            "priceRange": "¥200–500",
-            "meal": "snack",
-            "note": "Famous meat croquettes — eat while walking the shotengai."
-          }
-        },
-        "day-4-meal-3": {
-          "id": "day-4-meal-3",
-          "kind": "meal",
-          "meal": {
-            "name": "Uogashi Nihon-Ichi Ueno Okachimachi",
-            "area": "Ueno",
-            "cuisine": "Standing sushi / sashimi",
-            "priceRange": "¥800–1,500",
-            "rating": "4.3★",
-            "meal": "lunch",
-            "note": "Backup if you reach Ueno Park / the museum first and want a fast counter lunch — no reservation."
-          }
-        },
-        "day-4-meal-4": {
-          "id": "day-4-meal-4",
-          "kind": "meal",
-          "meal": {
-            "name": "Asakusa area izakaya or café",
-            "area": "Asakusa",
-            "cuisine": "Japanese casual",
-            "priceRange": "¥1,500–2,500",
-            "meal": "dinner",
-            "note": "Many options near Asakusa Station / the hotel after you return from Ueno — or Gyukatsu Motomura Ueno if you stay in the area for dinner."
-          }
-        },
-        "meal-1788605669521-skjp02p": {
-          "id": "meal-1788605669521-skjp02p",
-          "kind": "custom-meal",
-          "customMeal": {
-            "name": "Kitsune sushi",
-            "location": "Sendagi",
-            "price": "2000-6000",
-            "description": "Sushi",
-            "meal": "lunch"
-          }
-        },
-        "meal-1788605721231-omlcdjo": {
-          "id": "meal-1788605721231-omlcdjo",
-          "kind": "custom-meal",
-          "customMeal": {
-            "name": "Kiri Yanaka",
-            "location": "Sendagi",
-            "price": "4000-9000",
-            "description": "Unagi rice",
-            "meal": "lunch"
-          }
-        }
-      },
-      "notes": {
-        "yanaka": {
-          "text": "",
-          "isOpen": false
-        },
-        "nezu-shrine": {
-          "text": "",
-          "isOpen": false
-        },
-        "meal-1788605669521-skjp02p": {
-          "text": "For lunch, can see if there are nice options on road as well, dont have to follow these strictly",
-          "isOpen": false
-        },
-        "day-4-meal-4": {
-          "text": "Dinner can be somewhere near Ueno or Asakusa",
-          "isOpen": true
-        }
-      }
-    },
-    "day-5": {
-      "dayId": "day-5",
-      "cardIds": [
-        "day-5-pokemon-center",
-        "shibuya-crossing",
-        "day-5-meal-0",
-        "day-5-meal-1",
-        "meiji",
-        "shibuya-sky",
-        "day-5-meal-2",
-        "day-5-meal-3"
-      ],
-      "cards": {
-        "day-5-pokemon-center": {
-          "id": "day-5-pokemon-center",
-          "kind": "pokemon-center",
-          "pokemonCenter": {
-            "name": "Pokemon Center SHIBUYA",
-            "openTime": "10:00",
-            "note": "First stop — then Meiji Shrine → Harajuku → Shibuya crossing → Sky for sunset."
-          }
-        },
-        "meiji": {
-          "id": "meiji",
-          "kind": "place",
-          "place": {
-            "id": "meiji",
-            "name": "Meiji Jingu",
-            "area": "Harajuku",
-            "category": "Shinto Shrine",
-            "timeSlot": "Morning",
+            "id": "xihongmen-onix-gym",
+            "name": "Pokemon Official TCG Gym · Xihongmen (Onix)",
+            "area": "Xihongmen",
+            "category": "Pokemon / TCG",
+            "timeSlot": "Afternoon",
             "duration": "1–1.5 hrs",
-            "summary": "A forest shrine oasis in the city — towering trees, massive torii, and peaceful paths. Recommended add-on near Shibuya day.",
+            "summary": "The other official Beijing Pokemon TCG gym (Onix) at Livat Xihongmen — DiDi south after the National Museum for the remaining official gym stamp (Day 4 is the Xidan pop-up).",
             "highlights": [
-              "Forest approach through 100,000 trees",
-              "Main shrine building",
-              "Write wishes on ema plaques"
+              "Official Onix gym stamp",
+              "TCG stock check after the Xidan pop-up (Day 4)",
+              "Indoor stop before an early night ahead of the Great Wall"
             ],
             "tips": [
-              "Opens at sunrise (~5:30 in Oct) — shrine grounds always accessible",
-              "Flat main path — good for seniors; side gardens have more walking",
-              "Weekday mornings are calmer — occasional wedding processions still possible"
+              "DiDi from Tiananmen / museum area to Xihongmen Livat (~45–70 min depending on traffic)",
+              "Confirm mall / gym unit on Amap (丽泽 / 西红门 Livat) before you drop",
+              "Set a shopping time limit — Great Wall is tomorrow"
             ],
             "ticket": {
               "type": "free",
-              "detail": "Free"
+              "detail": "Mall access free; products paid"
             },
-            "photoNote": "Forest light dappling — beautiful but dark under canopy. Big torii at entrance is the hero shot."
-          }
-        },
-        "shibuya-crossing": {
-          "id": "shibuya-crossing",
-          "kind": "place",
-          "place": {
-            "id": "shibuya-crossing",
-            "name": "Shibuya Scramble Crossing",
-            "area": "Shibuya",
-            "category": "Landmark",
-            "timeSlot": "Afternoon & after dark",
-            "duration": "30–45 min total",
-            "summary": "The world’s busiest pedestrian crossing — up to 3,000 people per green light. View from ground level AND Shibuya Sky above.",
-            "highlights": [
-              "Cross at street level for the experience",
-              "Hachiko statue meeting point",
-              "Night neon version after sunset"
-            ],
-            "tips": [
-              "Shibuya Sky covers the aerial view — ground crossing complements it",
-              "Magnet by Shibuya Station Tsutaya 2F is a classic overhead photo spot (free)",
-              "Return after Shibuya Sky (~18:30) for neon photos"
-            ],
-            "ticket": {
-              "type": "free",
-              "detail": "Free"
-            }
-          }
-        },
-        "shibuya-sky": {
-          "id": "shibuya-sky",
-          "kind": "place",
-          "place": {
-            "id": "shibuya-sky",
-            "name": "Shibuya Sky",
-            "area": "Shibuya",
-            "category": "Observation deck",
-            "timeSlot": "Sunset (~16:00 entry)",
-            "duration": "1.5–2 hrs",
-            "summary": "Not just an elevator — escalator art tunnel, 46F indoor gallery, then the open-air rooftop (Sky Edge, hammocks, 360° views). Stay as long as you like once inside.",
-            "highlights": [
-              "Transit escalator tunnel + indoor 46F observation before the roof",
-              "Open-air Sky Edge corner — iconic photo spot above Shibuya crossing",
-              "360° panorama; Mt Fuji sometimes visible at dusk on clear days",
-              "No time limit after entry — stay through sunset into neon hour"
-            ],
-            "tips": [
-              "★ Official tickets release 14 days ahead at 00:00 JST (book 21 Sep for 5 Oct)",
-              "Target sunset entry 16:00–16:30 for 17:20 sunset",
-              "Bring ¥100 coin for locker (bags not allowed on rooftop)",
-              "No tripods/selfie sticks on roof — phone only",
-              "Rooftop closes in high wind/rain — no refund; check forecast"
-            ],
-            "ticket": {
-              "type": "advance_required",
-              "detail": "¥2,700–3,400 online — 14 days ahead at 00:00 JST on shibuya-scramble-square.com"
-            },
-            "photoNote": "★★★ Top photo moment of the trip. Arrive 30 min before sunset. Windy — secure hats."
-          }
-        },
-        "day-5-meal-0": {
-          "id": "day-5-meal-0",
-          "kind": "meal",
-          "meal": {
-            "name": "Spontini Cascade Harajuku",
-            "area": "Harajuku",
-            "cuisine": "Italian pizza",
-            "priceRange": "¥1,000–2,000",
-            "rating": "4.1★",
-            "meal": "lunch",
-            "note": "From your saved list. Thick Milanese-style slices — quick lunch between Meiji and Shibuya."
+            "paceNote": "Gym with purpose — not an all-day mall crawl before the Wall."
           }
         },
         "day-5-meal-1": {
           "id": "day-5-meal-1",
           "kind": "meal",
           "meal": {
-            "name": "Sushi no Midori Shibuya",
-            "area": "Shibuya",
-            "cuisine": "Sashimi / sushi sets",
-            "priceRange": "¥1,500–2,500",
-            "rating": "4.3★",
+            "name": "Museum-area or Xihongmen mall lunch",
+            "area": "Tiananmen / Xihongmen",
+            "cuisine": "Casual / mall food court",
+            "priceRange": "¥¥",
             "meal": "lunch",
-            "note": "Famous budget sushi — generous lunch sets with sashimi. Expect 30–60 min queue at peak; go before noon or late afternoon. Great value alternative to Spontini if you prefer Japanese."
-          }
-        },
-        "day-5-meal-2": {
-          "id": "day-5-meal-2",
-          "kind": "meal",
-          "meal": {
-            "name": "Ramen Afro Beats Shinjuku",
-            "area": "Shinjuku",
-            "cuisine": "Ramen",
-            "priceRange": "¥1,000–2,000",
-            "rating": "4.4★",
-            "meal": "dinner",
-            "note": "From your saved list. Post-sunset dinner — 2 stops from Shibuya on JR."
-          }
-        },
-        "day-5-meal-3": {
-          "id": "day-5-meal-3",
-          "kind": "meal",
-          "meal": {
-            "name": "Izumo Shinjuku",
-            "area": "Shinjuku",
-            "cuisine": "Izakaya",
-            "priceRange": "¥2,000–3,000",
-            "rating": "4.8★",
-            "meal": "dinner",
-            "note": "Alternative dinner from saved list. Lively izakaya — good for groups, reserve if possible."
-          }
-        },
-        "imperial-east": {
-          "id": "imperial-east",
-          "kind": "place",
-          "place": {
-            "id": "imperial-east",
-            "name": "Imperial Palace East Gardens",
-            "area": "Otemachi",
-            "category": "Historic garden",
-            "timeSlot": "Morning (opens 9:00)",
-            "duration": "1.5–2 hrs",
-            "summary": "The Edo Castle ruins transformed into imperial gardens — stone walls, moats, manicured lawns, and the foundation of the former keep. Free and tranquil.",
-            "highlights": [
-              "Tenshudai (castle keep foundation) — elevated city views",
-              "Ninomaru Garden",
-              "Historic stone walls and gates"
-            ],
-            "tips": [
-              "CLOSED Mondays & Fridays — Tuesday 7 Oct is OPEN",
-              "Oct hours: 9:00–16:30, last entry 16:00",
-              "Enter via Otemon Gate — flat paths, good for seniors",
-              "Peak autumn foliage here is late Nov — expect green in early Oct"
-            ],
-            "ticket": {
-              "type": "free",
-              "detail": "Free — pick up entry slip at gate"
-            },
-            "photoNote": "Wide garden compositions — less crowded than Senso-ji. Morning light on stone walls is best."
-          }
-        },
-        "ginza-stroll": {
-          "id": "ginza-stroll",
-          "kind": "place",
-          "place": {
-            "id": "ginza-stroll",
-            "name": "Ginza district stroll",
-            "area": "Ginza",
-            "category": "Shopping / Architecture",
-            "timeSlot": "Late morning",
-            "duration": "45 min",
-            "summary": "Upscale shopping boulevard — flagship stores, art deco buildings, and people-watching. Window shopping is free entertainment.",
-            "highlights": [
-              "Ginza crossing",
-              "Itoya stationery (if time)",
-              "Department store food halls (depachika)"
-            ],
-            "tips": [
-              "Most shops open 11:00 — morning is for architecture walks"
-            ],
-            "ticket": {
-              "type": "free",
-              "detail": "Free"
-            }
-          }
-        },
-        "akihabara-tcg": {
-          "id": "akihabara-tcg",
-          "kind": "place",
-          "place": {
-            "id": "akihabara-tcg",
-            "name": "Akihabara TCG district",
-            "area": "Akihabara",
-            "category": "Shopping / Hobby",
-            "timeSlot": "Afternoon",
-            "duration": "2–3 hrs",
-            "summary": "Electric Town’s card shop cluster — Hareruya2 Tower (6 floors), Poketown, Ninnin, and dozens more. Your main Pokemon card hunting ground beyond official Centers.",
-            "highlights": [
-              "Hareruya2 Akihabara Tower — largest Pokemon TCG store",
-              "Poketown — tax-free, social media favourite",
-              "Kanda Tamagoken nearby for dinner"
-            ],
-            "tips": [
-              "Poketown opens 12:00 — do Imperial Palace & Ginza first",
-              "Hareruya open 10:00–22:00 — start here if Poketown not yet open",
-              "Tax-free at Poketown — bring passport",
-              "Compare prices — Hareruya singles often better value than sealed at PC"
-            ],
-            "ticket": {
-              "type": "walk_in",
-              "detail": "No tickets — cash/card accepted"
-            },
-            "photoNote": "Neon signs and multi-floor shops — fun documentary shots. Focus on shopping first."
+            "note": "Eat near the museum before DiDi south, or at Livat after the Onix gym if the museum run goes long."
           }
         }
       },
       "notes": {
-        "meiji": {
-          "text": "OPTIONAL if tired. Otherwise maybe before pokemon center or after pokemon center. \nOtherwise just shop around shibuya!",
-          "isOpen": false
-        },
-        "day-5-meal-3": {
-          "text": "Unagi! Might be preferred by bobbimenz",
-          "isOpen": false
-        },
-        "day-5-meal-0": {
-          "text": "Lunch either sushi or red rock harajuku or afuri ramen or wagyu ramen",
+        "day-5-meal-1": {
+          "text": "Search for your own!",
           "isOpen": false
         }
-      }
+      },
+      "removedCardIds": [
+        "meal-1784474457751-u9ro0kj",
+        "day-5-meal-0",
+        "activity-1788626384160-djioxzy"
+      ]
     },
     "day-6": {
       "dayId": "day-6",
       "cardIds": [
-        "toshogu",
-        "kegon-falls",
-        "lake-chuzenji",
+        "meal-1788626690571-urp8pjz",
+        "mutianyu-great-wall",
         "day-6-meal-0",
-        "day-6-meal-1"
+        "meal-1784475225336-tcfp4v2",
+        "day-6-meal-1",
+        "activity-1788628037341-4v8uv5x"
       ],
       "cards": {
-        "toshogu": {
-          "id": "toshogu",
-          "kind": "place",
-          "place": {
-            "id": "toshogu",
-            "name": "Nikko Toshogu Shrine",
-            "area": "Nikko",
-            "category": "UNESCO Shrine",
-            "timeSlot": "Morning (on tour)",
-            "duration": "1.5–2 hrs",
-            "summary": "Japan’s most lavish shrine — gold leaf, carvings of the “see no evil” monkeys, and the tomb of Tokugawa Ieyasu. A masterpiece of Edo craftsmanship.",
-            "highlights": [
-              "Yomeimon Gate — “sunset gate” with 500 carvings",
-              "Three Wise Monkeys carving",
-              "Nemuri-neko (Sleeping Cat)"
-            ],
-            "tips": [
-              "Many stairs throughout — seniors may prefer main courtyard level",
-              "Admission ~¥1,300 (often included in tours)",
-              "Early October: beginning of autumn colour at shrine cedar grove"
-            ],
-            "ticket": {
-              "type": "advance_recommended",
-              "detail": "Usually bundled in tour; solo entry ¥1,300"
-            },
-            "photoNote": "Detailed carvings reward close-up photography — allow time at Yomeimon."
+        "meal-1784475225336-tcfp4v2": {
+          "id": "meal-1784475225336-tcfp4v2",
+          "kind": "custom-meal",
+          "customMeal": {
+            "name": "刘记炙子烤肉",
+            "location": "",
+            "price": "",
+            "description": "if haven't eaten earlier on",
+            "meal": "dinner"
           }
         },
-        "kegon-falls": {
-          "id": "kegon-falls",
-          "kind": "place",
-          "place": {
-            "id": "kegon-falls",
-            "name": "Kegon Falls",
-            "area": "Nikko",
-            "category": "Waterfall",
-            "timeSlot": "Afternoon (on tour)",
-            "duration": "45 min",
-            "summary": "97m waterfall at Lake Chuzenji outlet — one of Japan’s three finest falls. Elevator to observation platform.",
-            "highlights": [
-              "Observation deck view",
-              "Mountain scenery"
-            ],
-            "tips": [
-              "Elevator ¥570 — often included in tours",
-              "Cooler at altitude — extra layer"
-            ],
-            "ticket": {
-              "type": "walk_in",
-              "detail": "Elevator ~¥570 unless tour includes"
+        "meal-1788626690571-urp8pjz": {
+          "id": "meal-1788626690571-urp8pjz",
+          "kind": "custom-meal",
+          "customMeal": {
+            "name": "Quick bites near hotel",
+            "location": "",
+            "price": "",
+            "description": "",
+            "meal": "breakfast"
+          }
+        },
+        "activity-1788628037341-4v8uv5x": {
+          "id": "activity-1788628037341-4v8uv5x",
+          "kind": "custom-activity",
+          "customActivity": {
+            "title": "Other activities if have energy",
+            "location": "",
+            "description": "",
+            "timeSlot": "Night",
+            "duration": {
+              "min": 1,
+              "max": 2,
+              "unit": "hrs"
             }
           }
         },
-        "lake-chuzenji": {
-          "id": "lake-chuzenji",
+        "mutianyu-great-wall": {
+          "id": "mutianyu-great-wall",
           "kind": "place",
           "place": {
-            "id": "lake-chuzenji",
-            "name": "Lake Chuzenji & Irohazaka",
-            "area": "Nikko",
-            "category": "Scenic / Nature",
-            "timeSlot": "Afternoon (on tour)",
-            "duration": "1 hr",
-            "summary": "Mountain lake at 1,269m elevation — scenic drive via Irohazaka’s 48 hairpin turns. Akechidaira ropeway optional on some tours.",
+            "id": "mutianyu-great-wall",
+            "name": "Mutianyu Great Wall (慕田峪长城)",
+            "area": "Mutianyu",
+            "category": "UNESCO / Great Wall",
+            "timeSlot": "Morning",
+            "duration": "Full day (incl. transfers)",
+            "summary": "Scenic restored wall section northeast of Beijing. Cable car up (and optional toboggan down) makes this the best Great Wall choice for mixed ages versus crowded Badaling.",
             "highlights": [
-              "Lake panorama",
-              "Irohazaka winding road views",
-              "Akechidaira ropeway lookout (if included)"
+              "Watchtower views in both directions",
+              "Autumn hillsides",
+              "Cable car / toboggan logistics for the group"
             ],
             "tips": [
-              "Long bus day (~3 hrs each way from Tokyo) — bring neck pillow",
-              "Motion sickness sufferers: sit front of bus on Irohazaka"
+              "Private DiDi / hired driver for 4 is strongly recommended",
+              "Leave 汉庭 / Dongsi by ~07:30–08:00",
+              "Cable car up for everyone; toboggan down only if weather is dry and seniors are comfortable",
+              "Bring water, snacks, tissues; toilets at base",
+              "Card / Alipay for tickets — keep passport ready"
             ],
             "ticket": {
-              "type": "advance_required",
-              "detail": "Book full tour package"
+              "type": "advance_recommended",
+              "detail": "Entry + cable car booked online where possible"
+            },
+            "photoNote": "Best light mid-morning; haze can flatten distant ridges — embrace foreground towers.",
+            "paceNote": "Walk a short wall segment between 2–3 towers, then return. No need to hike the entire ridge."
+          },
+          "schedule": {
+            "timeSlot": "Morning",
+            "duration": {
+              "min": 6,
+              "max": 7,
+              "unit": "hrs"
             }
           }
         },
@@ -1111,440 +1070,444 @@
           "id": "day-6-meal-0",
           "kind": "meal",
           "meal": {
-            "name": "Tour-provided stops or local Nikko yuba",
-            "area": "Nikko",
-            "cuisine": "Japanese (yuba tofu skin)",
-            "priceRange": "¥1,000–1,500",
+            "name": "Packed snacks + base-area lunch",
+            "area": "Mutianyu",
+            "cuisine": "Simple / tourist restaurants",
+            "priceRange": "¥¥",
             "meal": "lunch",
-            "note": "Nikko specialty is yuba (tofu skin). Tours usually stop at a restaurant or convenience area."
+            "note": "Eat at the village / base after descending — quality is average; fuel matters more than flavour today."
           }
         },
         "day-6-meal-1": {
           "id": "day-6-meal-1",
           "kind": "meal",
           "meal": {
-            "name": "TAMAGO-KEN Ikebukuro",
-            "area": "Ikebukuro",
-            "cuisine": "Omurice",
-            "priceRange": "¥1,000–2,000",
-            "rating": "4.7★",
+            "name": "鼎香润 or 池记串吧",
+            "area": "Gulou / Deshengmen",
+            "cuisine": "Beijing classics / skewers",
+            "priceRange": "¥¥",
             "meal": "dinner",
-            "note": "From saved list — if tour returns by ~18:00. Famous fluffy omurice near Ikebukuro Station."
+            "note": "Hearty dinner back in town — chaogan / zhizi BBQ style comfort food."
           }
         }
       },
       "notes": {
-        "toshogu": {
-          "text": "Pack rain jacket",
-          "isOpen": true
+        "day-6-meal-1": {
+          "text": "",
+          "isOpen": false
+        },
+        "mutianyu-great-wall": {
+          "text": "OTOT, didi ourselves there",
+          "isOpen": false
         }
-      }
+      },
+      "removedCardIds": [
+        "activity-1784475161612-t6ksfz4"
+      ]
     },
     "day-7": {
       "dayId": "day-7",
       "cardIds": [
-        "day-7-pokemon-center",
-        "imperial-east",
         "day-7-meal-0",
-        "ginza-stroll",
+        "day-7-pokemon-center",
         "day-7-meal-1",
+        "nanluoguxiang",
         "day-7-meal-2",
-        "akihabara-tcg",
-        "day-7-meal-3",
-        "narita-hotel-transfer"
+        "beihai-park",
+        "day-7-meal-3"
       ],
       "cards": {
-        "day-7-pokemon-center": {
-          "id": "day-7-pokemon-center",
-          "kind": "pokemon-center",
-          "pokemonCenter": {
-            "name": "Pokemon Center Tokyo Station & Tokyo DX",
-            "openTime": "10:00",
-            "note": "After Imperial Palace — 10 min from Otemachi. Tokyo Station store (10:00) then Tokyo DX (10:30); ~10 min walk between."
-          }
-        },
-        "imperial-east": {
-          "id": "imperial-east",
+        "beihai-park": {
+          "id": "beihai-park",
           "kind": "place",
           "place": {
-            "id": "imperial-east",
-            "name": "Imperial Palace East Gardens",
-            "area": "Otemachi",
-            "category": "Historic garden",
-            "timeSlot": "Morning (opens 9:00)",
-            "duration": "1.5–2 hrs",
-            "summary": "The Edo Castle ruins transformed into imperial gardens — stone walls, moats, manicured lawns, and the foundation of the former keep. Free and tranquil.",
-            "highlights": [
-              "Tenshudai (castle keep foundation) — elevated city views",
-              "Ninomaru Garden",
-              "Historic stone walls and gates"
-            ],
-            "tips": [
-              "CLOSED Mondays & Fridays — Wednesday 7 Oct is OPEN",
-              "Oct hours: 9:00–16:30, last entry 16:00",
-              "Enter via Otemon Gate — flat paths, good for seniors",
-              "Peak autumn foliage here is late Nov — expect green in early Oct"
-            ],
-            "ticket": {
-              "type": "free",
-              "detail": "Free — pick up entry slip at gate"
-            },
-            "photoNote": "Wide garden compositions — less crowded than Senso-ji. Morning light on stone walls is best."
-          }
-        },
-        "ginza-stroll": {
-          "id": "ginza-stroll",
-          "kind": "place",
-          "place": {
-            "id": "ginza-stroll",
-            "name": "Ginza district stroll",
-            "area": "Ginza",
-            "category": "Shopping / Architecture",
-            "timeSlot": "Late morning",
-            "duration": "45 min",
-            "summary": "Upscale shopping boulevard — flagship stores, art deco buildings, and people-watching. Window shopping is free entertainment.",
-            "highlights": [
-              "Ginza crossing",
-              "Itoya stationery (if time)",
-              "Department store food halls (depachika)"
-            ],
-            "tips": [
-              "Most shops open 11:00 — morning is for architecture walks"
-            ],
-            "ticket": {
-              "type": "free",
-              "detail": "Free"
-            }
-          }
-        },
-        "akihabara-tcg": {
-          "id": "akihabara-tcg",
-          "kind": "place",
-          "place": {
-            "id": "akihabara-tcg",
-            "name": "Akihabara TCG district",
-            "area": "Akihabara",
-            "category": "Shopping / Hobby",
+            "id": "beihai-park",
+            "name": "Beihai Park (北海公园)",
+            "area": "Beihai",
+            "category": "Park",
             "timeSlot": "Afternoon",
-            "duration": "2–3 hrs",
-            "summary": "Electric Town’s card shop cluster — Hareruya2 Tower (6 floors), Poketown, Ninnin, and dozens more. Your main Pokemon card hunting ground beyond official Centers.",
+            "duration": "1.5–2 hrs",
+            "summary": "Imperial garden lake with White Dagoba views. Soft outdoor wind-down after Raffles City — skip if knees need a full rest.",
             "highlights": [
-              "Hareruya2 Akihabara Tower — largest Pokemon TCG store",
-              "Poketown — tax-free, social media favourite",
-              "Kanda Tamagoken nearby for dinner"
+              "Lake reflections",
+              "Fangshan pastry tea house on the north shore (if open)",
+              "White Dagoba views"
             ],
             "tips": [
-              "Poketown opens 12:00 — do Imperial Palace & Ginza first (Wed 7 Oct)",
-              "Ninnin is weekends only — closed today; focus on Hareruya2 & Poketown",
-              "Hareruya open 10:00–22:00 daily",
-              "Tax-free at Poketown — bring passport",
-              "Compare prices — Hareruya singles often better value than sealed at PC"
+              "Separate park ticket; short DiDi from Dongzhimen / 来福士 toward Beihai",
+              "Skip boat rides if temperature drops"
             ],
             "ticket": {
               "type": "walk_in",
-              "detail": "No tickets — cash/card accepted"
+              "detail": "Park ticket on site"
             },
-            "photoNote": "Neon signs and multi-floor shops — fun documentary shots. Focus on shopping first."
+            "paceNote": "Truly optional — Raffles pop-up already makes a complete soft Pokemon morning."
+          },
+          "schedule": {
+            "timeSlot": "Afternoon",
+            "duration": {
+              "min": 2,
+              "max": 3,
+              "unit": "hrs"
+            }
+          }
+        },
+        "nanluoguxiang": {
+          "id": "nanluoguxiang",
+          "kind": "place",
+          "place": {
+            "id": "nanluoguxiang",
+            "name": "Nanluoguxiang hutong loop (南锣鼓巷)",
+            "area": "Nanluoguxiang",
+            "category": "Hutong",
+            "timeSlot": "Late Afternoon",
+            "duration": "1–1.5 hrs",
+            "summary": "Famous hutong spine — touristy main street, quieter side alleys. Good for snacks (紫光园 yogurt) near home if you still have energy after Raffles City.",
+            "highlights": [
+              "Side-alley textures over the main souvenir strip",
+              "Ziguangyuan yogurt stop",
+              "Easy DiDi home"
+            ],
+            "tips": [
+              "Don’t walk the entire main street end-to-end — pick a short loop",
+              "Saturday is busier — stick to side alleys and keep the main strip short"
+            ],
+            "ticket": {
+              "type": "free",
+              "detail": "Public hutongs"
+            },
+            "paceNote": "Speed through the commercial strip; linger in quieter alleys for photos."
+          },
+          "schedule": {
+            "timeSlot": "Afternoon",
+            "duration": {
+              "min": 1.5,
+              "max": 2,
+              "unit": "hrs"
+            }
           }
         },
         "day-7-meal-0": {
           "id": "day-7-meal-0",
           "kind": "meal",
           "meal": {
-            "name": "Age.3 GINZA",
-            "area": "Ginza",
-            "cuisine": "Cafe — cream pastries",
-            "priceRange": "¥1–1,000",
-            "rating": "4.7★",
-            "meal": "snack",
-            "note": "From saved list. Second Age.3 location — snack between Palace and Akihabara."
+            "name": "穆羽斋清真包子铺",
+            "area": "Beixinqiao",
+            "cuisine": "Halal baozi",
+            "priceRange": "¥",
+            "meal": "breakfast",
+            "note": "Quick breakfast before the short hop to 来福士 for ~10:00 mall opening."
           }
         },
         "day-7-meal-1": {
           "id": "day-7-meal-1",
           "kind": "meal",
           "meal": {
-            "name": "Ginza Kagari — Soba",
-            "area": "Ginza",
-            "cuisine": "Chicken soba (tori paitan)",
-            "priceRange": "¥1,000–2,000",
-            "rating": "4.2★",
+            "name": "Raffles City lunch",
+            "area": "Dongzhimen",
+            "cuisine": "Mall food court",
+            "priceRange": "¥¥",
             "meal": "lunch",
-            "note": "From saved list. Famous rich chicken broth soba — expect 30–60 min queue. Split: 2 queue, 2 explore Ginza."
+            "note": "Eat at 来福士 after the pop-up — easy sit-down before Beihai / hutongs."
           }
         },
         "day-7-meal-2": {
           "id": "day-7-meal-2",
           "kind": "meal",
           "meal": {
-            "name": "Sushizanmai Tsukiji Outer Market",
-            "area": "Tsukiji",
-            "cuisine": "Sashimi / sushi",
-            "priceRange": "¥1,500–3,000",
-            "rating": "4.2★",
-            "meal": "lunch",
-            "note": "Tsukiji Outer Market is ~15 min from Ginza — fresh sashimi lunch sets (Wed 7 Oct; market stalls open weekdays). Arrive before 11:00. Perfect pre-Akihabara lunch."
+            "name": "紫光园酸奶站 · 南锣鼓巷店",
+            "area": "Nanluoguxiang",
+            "cuisine": "Yogurt",
+            "priceRange": "¥",
+            "meal": "snack",
+            "note": "Classic thick Beijing yogurt — easy afternoon stop if you reach the hutongs."
           }
         },
         "day-7-meal-3": {
           "id": "day-7-meal-3",
           "kind": "meal",
           "meal": {
-            "name": "Kanda Tamagoken Akihabara",
-            "area": "Akihabara",
-            "cuisine": "Omurice",
-            "priceRange": "¥1,000–2,000",
-            "rating": "4.5★",
+            "name": "南门涮肉 · 后海店",
+            "area": "Houhai",
+            "cuisine": "Copper-pot hotpot",
+            "priceRange": "¥¥¥",
             "meal": "dinner",
-            "note": "From saved list. Classic fluffy omurice — perfect post-card-shopping comfort food. Keep dinner reasonably early so you can collect bags in Asakusa and still leave by ~20:30."
+            "note": "Warming hotpot dinner — great for cool November evenings. Book ahead for 4."
           }
         },
-        "narita-hotel-transfer": {
-          "id": "narita-hotel-transfer",
-          "kind": "place",
-          "place": {
-            "id": "narita-hotel-transfer",
-            "name": "Luggage pickup & transfer to Toyoko Inn Narita",
-            "area": "Asakusa → Narita",
-            "category": "Transit",
-            "timeSlot": "Evening (leave Asakusa ~20:30)",
-            "duration": "1.5–2 hrs",
-            "summary": "Checkout EN House during the day and store bags there. After Akihabara dinner, collect luggage, then ride Keisei Access Express from Asakusa (Toei Asakusa Line through service) to Narita T1 (~50–60 min). Free Toyoko Inn shuttle from T1 bus stop 16 to Shinkan (~10 min). Stay at Toyoko Inn Narita Airport Shinkan (560 Tokko, Narita) tonight.",
-            "highlights": [
-              "Leave Asakusa by ~20:30–21:00 — comfortably before the last Access Express (~22:00)",
-              "Hotel shuttle from T1 runs until ~24:30 if a later train is needed"
-            ],
-            "tips": [
-              "Confirm last Access Express toward Narita on the day (bound for Airport, not Keisei-Ueno)",
-              "Pack a small overnight bag before sightseeing so the evening pickup is quick",
-              "Toyoko Inn check-in from 15:00; breakfast ~05:30–08:00 next morning"
-            ],
-            "ticket": {
-              "type": "walk_in",
-              "detail": "Access Express ~¥1,280 IC; hotel shuttle free"
-            }
-          }
-        },
-        "meiji": {
-          "id": "meiji",
-          "kind": "place",
-          "place": {
-            "id": "meiji",
-            "name": "Meiji Jingu",
-            "area": "Harajuku",
-            "category": "Shinto Shrine",
-            "timeSlot": "Morning",
-            "duration": "1–1.5 hrs",
-            "summary": "A forest shrine oasis in the city — towering trees, massive torii, and peaceful paths. Recommended add-on near Shibuya day.",
-            "highlights": [
-              "Forest approach through 100,000 trees",
-              "Main shrine building",
-              "Write wishes on ema plaques"
-            ],
-            "tips": [
-              "Opens at sunrise (~5:30 in Oct) — shrine grounds always accessible",
-              "Flat main path — good for seniors; side gardens have more walking",
-              "Sunday mornings can have wedding processions — photogenic"
-            ],
-            "ticket": {
-              "type": "free",
-              "detail": "Free"
-            },
-            "photoNote": "Forest light dappling — beautiful but dark under canopy. Big torii at entrance is the hero shot."
-          }
-        },
-        "shibuya-crossing": {
-          "id": "shibuya-crossing",
-          "kind": "place",
-          "place": {
-            "id": "shibuya-crossing",
-            "name": "Shibuya Scramble Crossing",
-            "area": "Shibuya",
-            "category": "Landmark",
-            "timeSlot": "Afternoon & after dark",
-            "duration": "30–45 min total",
-            "summary": "The world’s busiest pedestrian crossing — up to 3,000 people per green light. View from ground level AND Shibuya Sky above.",
-            "highlights": [
-              "Cross at street level for the experience",
-              "Hachiko statue meeting point",
-              "Night neon version after sunset"
-            ],
-            "tips": [
-              "Shibuya Sky covers the aerial view — ground crossing complements it",
-              "Magnet by Shibuya Station Tsutaya 2F is a classic overhead photo spot (free)",
-              "Return after Shibuya Sky (~18:30) for neon photos"
-            ],
-            "ticket": {
-              "type": "free",
-              "detail": "Free"
-            }
-          }
-        },
-        "shibuya-sky": {
-          "id": "shibuya-sky",
-          "kind": "place",
-          "place": {
-            "id": "shibuya-sky",
-            "name": "Shibuya Sky",
-            "area": "Shibuya",
-            "category": "Observation deck",
-            "timeSlot": "Sunset (~16:00 entry)",
-            "duration": "1.5–2 hrs",
-            "summary": "360° open-air rooftop 229m above Shibuya — the headline sunset experience. Watch Tokyo transition from golden hour to neon.",
-            "highlights": [
-              "Open-air Sky Edge corner — iconic photo spot",
-              "Mt. Fuji silhouette on clear winter days (rare in Oct but possible at dusk)",
-              "360° city panorama including Shibuya crossing below"
-            ],
-            "tips": [
-              "★ BOOK IN ADVANCE — sunset slot 16:00–16:30 entry for 17:20 sunset",
-              "Bring ¥100 coin for locker (bags not allowed on rooftop)",
-              "No tripods/selfie sticks on roof — phone only",
-              "Rooftop closes in high wind/rain — no refund; check forecast",
-              "Can stay past your slot until closing — no time limit once inside"
-            ],
-            "ticket": {
-              "type": "advance_required",
-              "detail": "¥2,700–3,400 online — book 28 days ahead at midnight JST"
-            },
-            "photoNote": "★★★ Top photo moment of the trip. Arrive 30 min before sunset. Windy — secure hats."
+        "day-7-pokemon-center": {
+          "id": "day-7-pokemon-center",
+          "kind": "pokemon-center",
+          "pokemonCenter": {
+            "name": "Pokemon Pop-up · Raffles City",
+            "openTime": "10:00",
+            "note": "Official pop-up at 北京来福士中心 1F unit 23 (Dongzhimen) — closest mall to 汉庭 / 东四. Aim for 10:00 opening."
           }
         }
       },
       "notes": {
-        "day-7-meal-2": {
-          "text": "Optional (if chosen Soba then no need this)",
+        "day-7-pokemon-center": {
+          "text": "Check stock availability for each popup before going. If news come up late, then nvm.\n",
           "isOpen": false
         }
-      }
+      },
+      "removedCardIds": []
     },
     "day-8": {
       "dayId": "day-8",
       "cardIds": [
-        "departure",
-        "narita-departure",
-        "flight-outbound",
-        "changi-touchdown",
-        "narita-departure-hx",
-        "flight-outbound-hx607"
+        "day-8-meal-0",
+        "day-8-pokemon-center",
+        "xidan-joy-city",
+        "day-8-meal-1",
+        "peking-university",
+        "tsinghua-university",
+        "day-8-meal-2"
       ],
       "cards": {
-        "departure": {
-          "id": "departure",
+        "xidan-joy-city": {
+          "id": "xidan-joy-city",
           "kind": "place",
           "place": {
-            "id": "departure",
-            "name": "Hotel shuttle to Narita T1",
-            "area": "Toyoko Inn → Narita T1",
-            "category": "Transit",
-            "timeSlot": "Early morning",
-            "duration": "15–25 min",
-            "summary": "You are already at Toyoko Inn Narita Airport Shinkan. Free shuttle: hotel → T2 → T1 (~10 min). Scoot TR 885 (2 travellers) departs T1 at 08:20 — take the 06:30 or 06:50 shuttle to be at the terminal by ~07:20. HX 607 (2 travellers) departs T1 at 09:30 — take the 08:00 or 08:20 shuttle to be there by ~08:30.",
-            "highlights": [],
+            "id": "xidan-joy-city",
+            "name": "Xidan Joy City — Pokemon Pop-up + Relax Party",
+            "area": "Xidan",
+            "category": "Shopping / Pokemon",
+            "timeSlot": "Morning",
+            "duration": "2–3 hrs",
+            "summary": "One mall, two Pokemon hits: official pop-up on B1 and Relax Party on F1. Best concentrated merch stop of the trip — do this at opening for stock before the campuses.",
+            "highlights": [
+              "Official pop-up stock check",
+              "Relax Party photo ops",
+              "Mall cafes for a sit-down"
+            ],
             "tips": [
-              "Shuttle from hotel: 06:10, 06:30, 06:50, 07:10, 07:30, 07:50, 08:00, 08:20… (confirm on the day)",
-              "International check-in typically closes ~60 min before departure",
-              "Free hotel breakfast ~05:30–08:00 — Scoot group should eat early or skip"
+              "Aim for mall opening (~10:00) — Sunday stock and queues are better early",
+              "Set a hard shopping cutoff so PKU / Tsinghua still get daylight",
+              "If pop-up queues are long, split the group (2 shop / 2 cafe)"
             ],
             "ticket": {
-              "type": "walk_in",
-              "detail": "Hotel shuttle free — no Skyliner needed"
+              "type": "free",
+              "detail": "Mall access free; products paid"
+            },
+            "photoNote": "Indoor lighting — phone cameras fine; watch flash rules."
+          }
+        },
+        "peking-university": {
+          "id": "peking-university",
+          "kind": "place",
+          "place": {
+            "id": "peking-university",
+            "name": "Peking University (北京大学)",
+            "area": "Haidian",
+            "category": "Campus",
+            "timeSlot": "Afternoon",
+            "duration": "1.5–2 hrs",
+            "summary": "China’s flagship university — Weiming Lake, traditional gates, and autumn ginkgo walks. Visitor entry rules change often; check reservation / ID requirements before you go.",
+            "highlights": [
+              "Weiming Lake (未名湖) photos",
+              "Autumn campus colour",
+              "Boyan / West Gate area landmarks"
+            ],
+            "tips": [
+              "Confirm current visitor policy / reservation the day before",
+              "Passport may be required at the gate",
+              "Keep it to a short photo loop — no need to cover the whole campus"
+            ],
+            "ticket": {
+              "type": "advance_recommended",
+              "detail": "Visitor rules change often — reserve if required"
+            },
+            "photoNote": "Lake reflections and ginkgo avenues — afternoon light still works.",
+            "paceNote": "One lake circuit + gate photos is enough before DiDi to Tsinghua."
+          },
+          "schedule": {
+            "timeSlot": "Afternoon",
+            "duration": {
+              "min": 1.5,
+              "max": 2,
+              "unit": "hrs"
             }
           }
         },
-        "narita-departure": {
-          "id": "narita-departure",
-          "kind": "airport-process",
-          "airportProcess": {
-            "id": "narita-departure",
-            "type": "departure",
-            "airportCode": "NRT",
-            "airportName": "Narita International Airport",
-            "terminal": "T1",
-            "time": "07:50",
-            "durationMinutes": 30
+        "tsinghua-university": {
+          "id": "tsinghua-university",
+          "kind": "place",
+          "place": {
+            "id": "tsinghua-university",
+            "name": "Tsinghua University (清华大学)",
+            "area": "Haidian",
+            "category": "Campus",
+            "timeSlot": "Late Afternoon",
+            "duration": "1–1.5 hrs",
+            "summary": "Neighbouring campus to PKU — grand auditorium, ginkgo avenues, and classic academic architecture. Same Haidian cluster; short DiDi between the two.",
+            "highlights": [
+              "Main auditorium / classic axes",
+              "Ginkgo avenues in autumn",
+              "Campus gate photos"
+            ],
+            "tips": [
+              "Check visitor entry rules (often reservation + ID)",
+              "Pair with PKU the same afternoon",
+              "Keep it shorter if Xidan ran long — one campus is still worthwhile"
+            ],
+            "ticket": {
+              "type": "advance_recommended",
+              "detail": "Visitor rules change often — reserve if required"
+            },
+            "photoNote": "Wide campus axes and tree tunnels — watch for bike traffic.",
+            "paceNote": "Skip if legs are tired after PKU — one campus still makes the day worthwhile."
           }
         },
-        "flight-outbound": {
-          "id": "flight-outbound",
-          "kind": "flight",
-          "flight": {
-            "id": "flight-outbound",
-            "airline": "Scoot",
-            "flightNumber": "TR 885",
-            "aircraft": "B787-9",
-            "departure": {
-              "airportCode": "NRT",
-              "airportName": "Narita International Airport",
-              "terminal": "T1",
-              "time": "08:20",
-              "dateLabel": "8 Oct"
-            },
-            "arrival": {
-              "airportCode": "SIN",
-              "airportName": "Changi Airport",
-              "terminal": "T1",
-              "time": "14:35",
-              "dateLabel": "8 Oct"
-            },
-            "duration": "7h 15m",
-            "note": "2 of 4 travellers"
+        "day-8-meal-0": {
+          "id": "day-8-meal-0",
+          "kind": "meal",
+          "meal": {
+            "name": "Hotel breakfast at 汉庭",
+            "area": "Dongsi",
+            "cuisine": "Whatever is fastest",
+            "priceRange": "¥",
+            "meal": "breakfast",
+            "note": "Leave in time for Xidan Joy City opening (~10:00)."
           }
         },
-        "changi-touchdown": {
-          "id": "changi-touchdown",
-          "kind": "airport-process",
-          "airportProcess": {
-            "id": "changi-touchdown",
-            "type": "touchdown",
-            "airportCode": "SIN",
-            "airportName": "Changi Airport",
-            "terminal": "T1",
-            "time": "14:35",
-            "durationMinutes": 30
+        "day-8-meal-1": {
+          "id": "day-8-meal-1",
+          "kind": "meal",
+          "meal": {
+            "name": "Museum / Xidan mall lunch",
+            "area": "Xidan",
+            "cuisine": "Mall food court",
+            "priceRange": "¥¥",
+            "meal": "lunch",
+            "note": "Joy City has plenty of sit-down options — easy for mixed diets before DiDi to Haidian."
           }
         },
-        "narita-departure-hx": {
-          "id": "narita-departure-hx",
-          "kind": "airport-process",
-          "airportProcess": {
-            "id": "narita-departure-hx",
-            "type": "departure",
-            "airportCode": "NRT",
-            "airportName": "Narita International Airport",
-            "terminal": "T1",
-            "time": "09:00",
-            "durationMinutes": 30
+        "day-8-meal-2": {
+          "id": "day-8-meal-2",
+          "kind": "meal",
+          "meal": {
+            "name": "四季民福 or 全聚德 (Peking duck)",
+            "area": "Central Beijing (book a convenient branch)",
+            "cuisine": "Peking duck",
+            "priceRange": "¥¥¥",
+            "meal": "dinner",
+            "note": "Farewell roast-duck dinner — pick 四季民福 (often easier for tourists / consistent quality) or classic 全聚德. Book a table for 4 ahead; choose a branch close to your evening route, not a far detour."
           }
         },
-        "flight-outbound-hx607": {
-          "id": "flight-outbound-hx607",
-          "kind": "flight",
-          "flight": {
-            "id": "flight-outbound-hx607",
-            "airline": "Hong Kong Airlines",
-            "flightNumber": "HX 607",
-            "aircraft": "A321-200",
-            "departure": {
-              "airportCode": "NRT",
-              "airportName": "Narita International Airport",
-              "terminal": "T1",
-              "time": "09:30",
-              "dateLabel": "8 Oct"
-            },
-            "arrival": {
-              "airportCode": "HKG",
-              "airportName": "Hong Kong International Airport",
-              "terminal": "T1",
-              "time": "13:30",
-              "dateLabel": "8 Oct"
-            },
-            "duration": "5h 0m",
-            "note": "2 of 4 travellers — Tokyo leg only"
+        "day-8-pokemon-center": {
+          "id": "day-8-pokemon-center",
+          "kind": "pokemon-center",
+          "pokemonCenter": {
+            "name": "Pokemon Pop-up · Xidan Joy City",
+            "openTime": "10:00",
+            "note": "B1 official pop-up + F1 Relax Party in the same mall — one DiDi drop covers both."
           }
         }
       },
-      "notes": {}
+      "notes": {
+        "peking-university": {
+          "text": "if cannot go into the uni we can do other things, like shopping or maybe zhong guan cun pokemon center",
+          "isOpen": false
+        },
+        "day-8-meal-0": {
+          "text": "* quick bites near hotel, unless we want to buy hotel de breakfast",
+          "isOpen": false
+        },
+        "day-8-pokemon-center": {
+          "text": "Check stock availability for each popup before going. If news come up late, then nvm.\n\nCan try guo mao if store restricts purchases per id\n",
+          "isOpen": false
+        }
+      },
+      "removedCardIds": []
+    },
+    "day-9": {
+      "dayId": "day-9",
+      "cardIds": [
+        "pek-departure",
+        "sq805",
+        "day-9-meal-0",
+        "haiyou-nanfaxin"
+      ],
+      "cards": {
+        "pek-departure": {
+          "id": "pek-departure",
+          "kind": "airport-process",
+          "airportProcess": {
+            "id": "pek-departure",
+            "type": "departure",
+            "airportCode": "PEK",
+            "airportName": "Beijing Capital Intl",
+            "terminal": "Terminal 3",
+            "time": "06:30",
+            "durationMinutes": 120
+          }
+        },
+        "sq805": {
+          "id": "sq805",
+          "kind": "flight",
+          "flight": {
+            "id": "sq805",
+            "airline": "Singapore Airlines",
+            "flightNumber": "SQ 805",
+            "aircraft": "Airbus A350-900",
+            "departure": {
+              "airportCode": "PEK",
+              "airportName": "Beijing Capital Intl",
+              "terminal": "Terminal 3",
+              "time": "08:45",
+              "dateLabel": "Mon 9 Nov"
+            },
+            "arrival": {
+              "airportCode": "SIN",
+              "airportName": "Singapore Changi",
+              "time": "15:30",
+              "dateLabel": "Mon 9 Nov"
+            },
+            "duration": "~6h 45m"
+          }
+        },
+        "haiyou-nanfaxin": {
+          "id": "haiyou-nanfaxin",
+          "kind": "place",
+          "place": {
+            "id": "haiyou-nanfaxin",
+            "name": "Hotel checkout & PEK transfer",
+            "area": "海友北京首都机场南法信酒店",
+            "category": "Transit",
+            "timeSlot": "Morning",
+            "duration": "30 mins at hotel",
+            "summary": "Early checkout from 海友北京首都机场南法信酒店 (顺义南法信 / 顺平路), then a short DiDi to Beijing Capital International Airport Terminal 3 for SQ 805. Build buffer — Monday traffic and security queues.",
+            "highlights": [
+              "Passport + tickets ready",
+              "Terminal 3 (not Daxing)"
+            ],
+            "tips": [
+              "Target hotel departure ~06:15–06:30 for 08:45 flight (much closer than Dongsi)",
+              "SQ check-in counters — follow airport screens",
+              "Keep one warm layer until boarding; cabin can be cold"
+            ],
+            "ticket": {
+              "type": "free",
+              "detail": "N/A"
+            }
+          }
+        },
+        "day-9-meal-0": {
+          "id": "day-9-meal-0",
+          "kind": "meal",
+          "meal": {
+            "name": "Hotel grab / PEK T3",
+            "area": "PEK",
+            "cuisine": "Airport",
+            "priceRange": "¥¥",
+            "meal": "breakfast",
+            "note": "Eat at the hotel if open, otherwise after security at T3."
+          }
+        }
+      },
+      "notes": {},
+      "removedCardIds": []
     }
   }
 }
