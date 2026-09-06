@@ -8,9 +8,9 @@
         "pkx-touchdown",
         "beixinqiao",
         "day-1-pokemon-center",
-        "yonghegong",
         "day-1-meal-2",
         "guozijian",
+        "yonghegong",
         "day-1-meal-0",
         "day-1-meal-3",
         "day-1-meal-1",
@@ -249,6 +249,10 @@
         },
         "day-1-meal-3": {
           "text": "Some other dinner options lol, think this is a mistake.\nFind on map :)",
+          "isOpen": false
+        },
+        "guozijian": {
+          "text": "2pm guided tour",
           "isOpen": false
         }
       },
@@ -716,6 +720,21 @@
             }
           }
         },
+        "activity-1788630740538-zlohaix": {
+          "id": "activity-1788630740538-zlohaix",
+          "kind": "custom-activity",
+          "customActivity": {
+            "title": "(Can consider) Visit Zhonguancun pokemon gym",
+            "location": "",
+            "description": "",
+            "timeSlot": "Late Afternoon",
+            "duration": {
+              "min": 1,
+              "max": 2,
+              "unit": "hrs"
+            }
+          }
+        },
         "summer-palace": {
           "id": "summer-palace",
           "kind": "place",
@@ -785,21 +804,6 @@
             "name": "Pokemon Pop-up · Xidan Joy City",
             "openTime": "10:00",
             "note": "B1 official pop-up + F1 Relax Party in the same mall — one DiDi drop covers both."
-          }
-        },
-        "activity-1788630740538-zlohaix": {
-          "id": "activity-1788630740538-zlohaix",
-          "kind": "custom-activity",
-          "customActivity": {
-            "title": "(Can consider) Visit Zhonguancun pokemon gym",
-            "location": "",
-            "description": "",
-            "timeSlot": "Late Afternoon",
-            "duration": {
-              "min": 1,
-              "max": 2,
-              "unit": "hrs"
-            }
           }
         }
       },
