@@ -252,7 +252,7 @@
           "isOpen": false
         },
         "guozijian": {
-          "text": "2pm guided tour",
+          "text": "2pm guided tour. Reach before that to partake",
           "isOpen": false
         }
       },
@@ -668,7 +668,7 @@
       },
       "notes": {
         "tiananmen-square": {
-          "text": "check 登城楼预约\nThose who want to see flag raising can go, otherwise sleep",
+          "text": "check 登城楼预约\nThose who want to see flag raising can go, otherwise sleep\n\nIf go sleep flag raising, can bring breakfast go inside eat during long waits",
           "isOpen": false
         },
         "day-3-meal-0": {
@@ -817,12 +817,12 @@
           "isOpen": false
         },
         "summer-palace": {
-          "text": "\nEither store goods in rented lockers in this mall or in summer palace. Recommend summer palace, maybe better lockers",
+          "text": "Either store goods in rented lockers in this mall or in summer palace. Recommend summer palace, maybe better lockers",
           "isOpen": false
         },
         "activity-1788630740538-zlohaix": {
-          "text": "Its either this or 鸟巢文化中心. Higher priority to 鸟巢文化中心 bah cuz Zhonguancun pokemon gym can potentially visit on Day 8",
-          "isOpen": true
+          "text": "Its either this or 鸟巢文化中心. Higher priority to 鸟巢文化中心 bah cuz Zhonguancun pokemon gym can potentially visit on Day 7",
+          "isOpen": false
         }
       },
       "removedCardIds": [
@@ -891,6 +891,14 @@
               "detail": "Free entry; lockers may charge a small fee"
             },
             "paceNote": "If the queue exceeds ~60 minutes, skip and protect time for the museum + Onix gym."
+          },
+          "schedule": {
+            "timeSlot": "Morning",
+            "duration": {
+              "min": 1,
+              "max": 2,
+              "unit": "hrs"
+            }
           }
         },
         "national-museum": {
@@ -1114,159 +1122,11 @@
       "cardIds": [
         "day-7-meal-0",
         "day-7-pokemon-center",
-        "day-7-meal-1",
-        "nanluoguxiang",
-        "day-7-meal-2",
-        "beihai-park",
-        "day-7-meal-3"
-      ],
-      "cards": {
-        "beihai-park": {
-          "id": "beihai-park",
-          "kind": "place",
-          "place": {
-            "id": "beihai-park",
-            "name": "Beihai Park (北海公园)",
-            "area": "Beihai",
-            "category": "Park",
-            "timeSlot": "Afternoon",
-            "duration": "1.5–2 hrs",
-            "summary": "Imperial garden lake with White Dagoba views. Soft outdoor wind-down after Raffles City — skip if knees need a full rest.",
-            "highlights": [
-              "Lake reflections",
-              "Fangshan pastry tea house on the north shore (if open)",
-              "White Dagoba views"
-            ],
-            "tips": [
-              "Separate park ticket; short DiDi from Dongzhimen / 来福士 toward Beihai",
-              "Skip boat rides if temperature drops"
-            ],
-            "ticket": {
-              "type": "walk_in",
-              "detail": "Park ticket on site"
-            },
-            "paceNote": "Truly optional — Raffles pop-up already makes a complete soft Pokemon morning."
-          },
-          "schedule": {
-            "timeSlot": "Afternoon",
-            "duration": {
-              "min": 2,
-              "max": 3,
-              "unit": "hrs"
-            }
-          }
-        },
-        "nanluoguxiang": {
-          "id": "nanluoguxiang",
-          "kind": "place",
-          "place": {
-            "id": "nanluoguxiang",
-            "name": "Nanluoguxiang hutong loop (南锣鼓巷)",
-            "area": "Nanluoguxiang",
-            "category": "Hutong",
-            "timeSlot": "Late Afternoon",
-            "duration": "1–1.5 hrs",
-            "summary": "Famous hutong spine — touristy main street, quieter side alleys. Good for snacks (紫光园 yogurt) near home if you still have energy after Raffles City.",
-            "highlights": [
-              "Side-alley textures over the main souvenir strip",
-              "Ziguangyuan yogurt stop",
-              "Easy DiDi home"
-            ],
-            "tips": [
-              "Don’t walk the entire main street end-to-end — pick a short loop",
-              "Saturday is busier — stick to side alleys and keep the main strip short"
-            ],
-            "ticket": {
-              "type": "free",
-              "detail": "Public hutongs"
-            },
-            "paceNote": "Speed through the commercial strip; linger in quieter alleys for photos."
-          },
-          "schedule": {
-            "timeSlot": "Afternoon",
-            "duration": {
-              "min": 1.5,
-              "max": 2,
-              "unit": "hrs"
-            }
-          }
-        },
-        "day-7-meal-0": {
-          "id": "day-7-meal-0",
-          "kind": "meal",
-          "meal": {
-            "name": "穆羽斋清真包子铺",
-            "area": "Beixinqiao",
-            "cuisine": "Halal baozi",
-            "priceRange": "¥",
-            "meal": "breakfast",
-            "note": "Quick breakfast before the short hop to 来福士 for ~10:00 mall opening."
-          }
-        },
-        "day-7-meal-1": {
-          "id": "day-7-meal-1",
-          "kind": "meal",
-          "meal": {
-            "name": "Raffles City lunch",
-            "area": "Dongzhimen",
-            "cuisine": "Mall food court",
-            "priceRange": "¥¥",
-            "meal": "lunch",
-            "note": "Eat at 来福士 after the pop-up — easy sit-down before Beihai / hutongs."
-          }
-        },
-        "day-7-meal-2": {
-          "id": "day-7-meal-2",
-          "kind": "meal",
-          "meal": {
-            "name": "紫光园酸奶站 · 南锣鼓巷店",
-            "area": "Nanluoguxiang",
-            "cuisine": "Yogurt",
-            "priceRange": "¥",
-            "meal": "snack",
-            "note": "Classic thick Beijing yogurt — easy afternoon stop if you reach the hutongs."
-          }
-        },
-        "day-7-meal-3": {
-          "id": "day-7-meal-3",
-          "kind": "meal",
-          "meal": {
-            "name": "南门涮肉 · 后海店",
-            "area": "Houhai",
-            "cuisine": "Copper-pot hotpot",
-            "priceRange": "¥¥¥",
-            "meal": "dinner",
-            "note": "Warming hotpot dinner — great for cool November evenings. Book ahead for 4."
-          }
-        },
-        "day-7-pokemon-center": {
-          "id": "day-7-pokemon-center",
-          "kind": "pokemon-center",
-          "pokemonCenter": {
-            "name": "Pokemon Pop-up · Raffles City",
-            "openTime": "10:00",
-            "note": "Official pop-up at 北京来福士中心 1F unit 23 (Dongzhimen) — closest mall to 汉庭 / 东四. Aim for 10:00 opening."
-          }
-        }
-      },
-      "notes": {
-        "day-7-pokemon-center": {
-          "text": "Check stock availability for each popup before going. If news come up late, then nvm.\n",
-          "isOpen": false
-        }
-      },
-      "removedCardIds": []
-    },
-    "day-8": {
-      "dayId": "day-8",
-      "cardIds": [
-        "day-8-meal-0",
-        "day-8-pokemon-center",
         "xidan-joy-city",
-        "day-8-meal-1",
+        "day-7-meal-1",
         "peking-university",
         "tsinghua-university",
-        "day-8-meal-2"
+        "day-7-meal-2"
       ],
       "cards": {
         "xidan-joy-city": {
@@ -1286,7 +1146,7 @@
               "Mall cafes for a sit-down"
             ],
             "tips": [
-              "Aim for mall opening (~10:00) — Sunday stock and queues are better early",
+              "Aim for mall opening (~10:00) — Saturday stock and queues are better early",
               "Set a hard shopping cutoff so PKU / Tsinghua still get daylight",
               "If pop-up queues are long, split the group (2 shop / 2 cafe)"
             ],
@@ -1363,8 +1223,8 @@
             "paceNote": "Skip if legs are tired after PKU — one campus still makes the day worthwhile."
           }
         },
-        "day-8-meal-0": {
-          "id": "day-8-meal-0",
+        "day-7-meal-0": {
+          "id": "day-7-meal-0",
           "kind": "meal",
           "meal": {
             "name": "Hotel breakfast at 汉庭",
@@ -1375,8 +1235,8 @@
             "note": "Leave in time for Xidan Joy City opening (~10:00)."
           }
         },
-        "day-8-meal-1": {
-          "id": "day-8-meal-1",
+        "day-7-meal-1": {
+          "id": "day-7-meal-1",
           "kind": "meal",
           "meal": {
             "name": "Museum / Xidan mall lunch",
@@ -1387,8 +1247,8 @@
             "note": "Joy City has plenty of sit-down options — easy for mixed diets before DiDi to Haidian."
           }
         },
-        "day-8-meal-2": {
-          "id": "day-8-meal-2",
+        "day-7-meal-2": {
+          "id": "day-7-meal-2",
           "kind": "meal",
           "meal": {
             "name": "四季民福 or 全聚德 (Peking duck)",
@@ -1399,8 +1259,8 @@
             "note": "Farewell roast-duck dinner — pick 四季民福 (often easier for tourists / consistent quality) or classic 全聚德. Book a table for 4 ahead; choose a branch close to your evening route, not a far detour."
           }
         },
-        "day-8-pokemon-center": {
-          "id": "day-8-pokemon-center",
+        "day-7-pokemon-center": {
+          "id": "day-7-pokemon-center",
           "kind": "pokemon-center",
           "pokemonCenter": {
             "name": "Pokemon Pop-up · Xidan Joy City",
@@ -1414,12 +1274,164 @@
           "text": "if cannot go into the uni we can do other things, like shopping or maybe zhong guan cun pokemon center",
           "isOpen": false
         },
-        "day-8-meal-0": {
+        "day-7-meal-0": {
           "text": "* quick bites near hotel, unless we want to buy hotel de breakfast",
           "isOpen": false
         },
-        "day-8-pokemon-center": {
+        "day-7-pokemon-center": {
           "text": "Check stock availability for each popup before going. If news come up late, then nvm.\n\nCan try guo mao if store restricts purchases per id\n",
+          "isOpen": false
+        }
+      },
+      "removedCardIds": []
+    },
+    "day-8": {
+      "dayId": "day-8",
+      "cardIds": [
+        "day-8-meal-0",
+        "day-8-pokemon-center",
+        "day-8-meal-1",
+        "nanluoguxiang",
+        "day-8-meal-2",
+        "beihai-park",
+        "day-8-meal-3"
+      ],
+      "cards": {
+        "beihai-park": {
+          "id": "beihai-park",
+          "kind": "place",
+          "place": {
+            "id": "beihai-park",
+            "name": "Beihai Park (北海公园)",
+            "area": "Beihai",
+            "category": "Park",
+            "timeSlot": "Afternoon",
+            "duration": "1.5–2 hrs",
+            "summary": "Imperial garden lake with White Dagoba views. Soft outdoor wind-down after Raffles City — skip if knees need a full rest.",
+            "highlights": [
+              "Lake reflections",
+              "Fangshan pastry tea house on the north shore (if open)",
+              "White Dagoba views"
+            ],
+            "tips": [
+              "Separate park ticket; short DiDi from Dongzhimen / 来福士 toward Beihai",
+              "Skip boat rides if temperature drops"
+            ],
+            "ticket": {
+              "type": "walk_in",
+              "detail": "Park ticket on site"
+            },
+            "paceNote": "Truly optional — Raffles pop-up already makes a complete soft Pokemon morning."
+          },
+          "schedule": {
+            "timeSlot": "Afternoon",
+            "duration": {
+              "min": 2,
+              "max": 3,
+              "unit": "hrs"
+            }
+          }
+        },
+        "nanluoguxiang": {
+          "id": "nanluoguxiang",
+          "kind": "place",
+          "place": {
+            "id": "nanluoguxiang",
+            "name": "Nanluoguxiang hutong loop (南锣鼓巷)",
+            "area": "Nanluoguxiang",
+            "category": "Hutong",
+            "timeSlot": "Late Afternoon",
+            "duration": "1–1.5 hrs",
+            "summary": "Famous hutong spine — touristy main street, quieter side alleys. Good for snacks (紫光园 yogurt) near home if you still have energy after Raffles City.",
+            "highlights": [
+              "Side-alley textures over the main souvenir strip",
+              "Ziguangyuan yogurt stop",
+              "Easy DiDi home"
+            ],
+            "tips": [
+              "Don’t walk the entire main street end-to-end — pick a short loop",
+              "Sunday is still busy — stick to side alleys and keep the main strip short"
+            ],
+            "ticket": {
+              "type": "free",
+              "detail": "Public hutongs"
+            },
+            "paceNote": "Speed through the commercial strip; linger in quieter alleys for photos."
+          },
+          "schedule": {
+            "timeSlot": "Afternoon",
+            "duration": {
+              "min": 1.5,
+              "max": 2,
+              "unit": "hrs"
+            }
+          }
+        },
+        "day-8-meal-0": {
+          "id": "day-8-meal-0",
+          "kind": "meal",
+          "meal": {
+            "name": "穆羽斋清真包子铺",
+            "area": "Beixinqiao",
+            "cuisine": "Halal baozi",
+            "priceRange": "¥",
+            "meal": "breakfast",
+            "note": "Quick breakfast before the short hop to 来福士 for ~10:00 mall opening."
+          }
+        },
+        "day-8-meal-1": {
+          "id": "day-8-meal-1",
+          "kind": "meal",
+          "meal": {
+            "name": "Raffles City lunch",
+            "area": "Dongzhimen",
+            "cuisine": "Mall food court",
+            "priceRange": "¥¥",
+            "meal": "lunch",
+            "note": "Eat at 来福士 after the pop-up — easy sit-down before Beihai / hutongs."
+          }
+        },
+        "day-8-meal-2": {
+          "id": "day-8-meal-2",
+          "kind": "meal",
+          "meal": {
+            "name": "紫光园酸奶站 · 南锣鼓巷店",
+            "area": "Nanluoguxiang",
+            "cuisine": "Yogurt",
+            "priceRange": "¥",
+            "meal": "snack",
+            "note": "Classic thick Beijing yogurt — easy afternoon stop if you reach the hutongs."
+          }
+        },
+        "day-8-meal-3": {
+          "id": "day-8-meal-3",
+          "kind": "meal",
+          "meal": {
+            "name": "南门涮肉 · 后海店",
+            "area": "Houhai",
+            "cuisine": "Copper-pot hotpot",
+            "priceRange": "¥¥¥",
+            "meal": "dinner",
+            "note": "Warming hotpot dinner — great for cool November evenings. Book ahead for 4."
+          }
+        },
+        "day-8-pokemon-center": {
+          "id": "day-8-pokemon-center",
+          "kind": "pokemon-center",
+          "pokemonCenter": {
+            "name": "Pokemon Pop-up · Raffles City",
+            "openTime": "10:00",
+            "note": "Official pop-up at 北京来福士中心 1F unit 23 (Dongzhimen) — closest mall to 汉庭 / 东四. Aim for 10:00 opening."
+          }
+        }
+      },
+      "notes": {
+        "day-8-pokemon-center": {
+          "text": "Check stock availability for each popup before going. If news come up late, then nvm.\n",
+          "isOpen": false
+        },
+        "day-8-meal-0": {
+          "text": "* quick bites near hotel, unless we want to buy hotel de breakfast",
           "isOpen": false
         }
       },
