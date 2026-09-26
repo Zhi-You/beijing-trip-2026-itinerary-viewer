@@ -29,9 +29,16 @@ interface DayBoardCustomizerProps {
   day: DayPlan;
   /** Slim layout for the day focus page (no header/map chrome). */
   embedded?: boolean;
+  collapsed?: boolean;
+  onToggleCollapsed?: () => void;
 }
 
-export function DayBoardCustomizer({ day, embedded = false }: DayBoardCustomizerProps) {
+export function DayBoardCustomizer({
+  day,
+  embedded = false,
+  collapsed = false,
+  onToggleCollapsed,
+}: DayBoardCustomizerProps) {
   const { t } = useTranslation();
   const {
     getDayCards,
@@ -85,6 +92,8 @@ export function DayBoardCustomizer({ day, embedded = false }: DayBoardCustomizer
           day={day}
           mapOpen={mapOpen}
           onToggleMap={() => setMapOpen((v) => !v)}
+          collapsed={collapsed}
+          onToggleCollapsed={onToggleCollapsed}
           extraBadge={
             <span className="rounded-full bg-indigo/10 px-2.5 py-0.5 text-xs font-medium text-indigo">
               {t('board.customizeMode')}
@@ -93,7 +102,7 @@ export function DayBoardCustomizer({ day, embedded = false }: DayBoardCustomizer
         />
       )}
 
-      {!embedded && mapOpen ? (
+      {embedded || !collapsed ? (!embedded && mapOpen ? (
         <DayMapPanel day={day} cards={cards} />
       ) : (
         <>
@@ -141,9 +150,9 @@ export function DayBoardCustomizer({ day, embedded = false }: DayBoardCustomizer
             </div>
           )}
         </>
-      )}
+      )) : null}
 
-      {!embedded && <DaySectionFooter day={day} />}
+      {!embedded && !collapsed && <DaySectionFooter day={day} />}
 
       <DeleteConfirmModal
         isOpen={pendingDelete !== null}

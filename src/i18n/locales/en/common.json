@@ -42,6 +42,8 @@
     "confirmDelete": "Delete",
     "show": "Show",
     "hide": "Hide",
+    "collapseDay": "Collapse",
+    "expandDay": "Expand",
     "untitledActivity": "Untitled activity",
     "untitledMeal": "Untitled meal",
     "notes": {

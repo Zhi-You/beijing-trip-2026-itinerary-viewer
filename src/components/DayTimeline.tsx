@@ -8,9 +8,11 @@ import { useDayMapOpen } from './map/useDayMapOpen';
 
 interface DayTimelineProps {
   days: DayPlan[];
+  isCollapsed: (dayId: string) => boolean;
+  onToggleCollapsed: (dayId: string) => void;
 }
 
-export function DayTimeline({ days }: DayTimelineProps) {
+export function DayTimeline({ days, isCollapsed, onToggleCollapsed }: DayTimelineProps) {
   const { getDayCards } = useBoard();
   const { isOpen, toggle } = useDayMapOpen();
 
@@ -23,10 +25,11 @@ export function DayTimeline({ days }: DayTimelineProps) {
     <div className="relative">
       <div className="absolute left-4 top-0 hidden h-full w-0.5 bg-gradient-to-b from-vermillion via-indigo to-gold md:left-8 md:block" />
 
-      <div className="space-y-12">
+      <div className="space-y-4">
         {activeDays.map((day) => {
           const cards = getDayCards(day.id);
           const mapOpen = isOpen(day.id);
+          const collapsed = isCollapsed(day.id);
 
           return (
             <div key={day.id} className="relative md:pl-20">
@@ -37,9 +40,11 @@ export function DayTimeline({ days }: DayTimelineProps) {
                   day={day}
                   mapOpen={mapOpen}
                   onToggleMap={() => toggle(day.id)}
+                  collapsed={collapsed}
+                  onToggleCollapsed={() => onToggleCollapsed(day.id)}
                 />
 
-                {mapOpen ? (
+                {collapsed ? null : mapOpen ? (
                   <DayMapPanel day={day} cards={cards} />
                 ) : (
                   <div className="mt-6 space-y-4">
@@ -56,7 +61,7 @@ export function DayTimeline({ days }: DayTimelineProps) {
                   </div>
                 )}
 
-                <DaySectionFooter day={day} />
+                {!collapsed && <DaySectionFooter day={day} />}
               </div>
             </div>
           );

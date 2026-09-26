@@ -9,6 +9,8 @@ interface DaySectionHeaderProps {
   mapOpen: boolean;
   onToggleMap: () => void;
   extraBadge?: ReactNode;
+  collapsed?: boolean;
+  onToggleCollapsed?: () => void;
 }
 
 export function DaySectionHeader({
@@ -16,6 +18,8 @@ export function DaySectionHeader({
   mapOpen,
   onToggleMap,
   extraBadge,
+  collapsed = false,
+  onToggleCollapsed,
 }: DaySectionHeaderProps) {
   const { t } = useTranslation();
   const dayNumber = getDayNumber(day);
@@ -23,6 +27,28 @@ export function DaySectionHeader({
   return (
     <>
       <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+        {onToggleCollapsed && (
+          <button
+            type="button"
+            onClick={onToggleCollapsed}
+            aria-expanded={!collapsed}
+            aria-label={collapsed ? t('board.expandDay') : t('board.collapseDay')}
+            className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-washi-dark bg-surface text-ink-light transition hover:border-vermillion hover:text-vermillion"
+          >
+            <svg
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+              className={`h-4 w-4 transition-transform ${collapsed ? '' : 'rotate-180'}`}
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.75"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M5 7.5 10 12.5 15 7.5" />
+            </svg>
+          </button>
+        )}
         <div className="rounded-lg bg-banner px-3 py-1 font-serif text-sm font-bold text-banner-fg">
           {day.date}
         </div>

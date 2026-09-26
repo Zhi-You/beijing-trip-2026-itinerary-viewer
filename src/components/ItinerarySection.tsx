@@ -6,6 +6,7 @@ import { parseImportedBoardState } from '../utils/boardStorage';
 import { DayBoardCustomizer } from './board/DayBoardCustomizer';
 import { RestorePublishedButton } from './board/RestorePublishedButton';
 import { DayTimeline } from './DayTimeline';
+import { useCollapsedDays } from './map/useCollapsedDays';
 
 interface ItinerarySectionProps {
   days: DayPlan[];
@@ -19,6 +20,7 @@ export function ItinerarySection({ days }: ItinerarySectionProps) {
   const [mode, setMode] = useState<ViewMode>('view');
   const [savedHint, setSavedHint] = useState(false);
   const importInputRef = useRef<HTMLInputElement>(null);
+  const { isCollapsed, toggleCollapsed } = useCollapsedDays('beijing-itinerary-collapsed-days');
   const activeDays = days;
 
   const switchToView = () => {
@@ -137,11 +139,20 @@ export function ItinerarySection({ days }: ItinerarySectionProps) {
 
         <div className="relative mt-8 sm:mt-12">
           {mode === 'view' ? (
-            <DayTimeline days={days} />
+            <DayTimeline
+              days={days}
+              isCollapsed={isCollapsed}
+              onToggleCollapsed={toggleCollapsed}
+            />
           ) : (
-            <div className="space-y-12">
+            <div className="space-y-4">
               {activeDays.map((day) => (
-                <DayBoardCustomizer key={day.id} day={day} />
+                <DayBoardCustomizer
+                  key={day.id}
+                  day={day}
+                  collapsed={isCollapsed(day.id)}
+                  onToggleCollapsed={() => toggleCollapsed(day.id)}
+                />
               ))}
             </div>
           )}
