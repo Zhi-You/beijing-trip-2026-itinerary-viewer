@@ -1,4 +1,5 @@
 import { Header, Footer } from '../components/Layout';
+import { BackToTop } from '../components/BackToTop';
 import { Hero } from '../components/Hero';
 import { TripOverview } from '../components/TripOverview';
 import { BookingChecklist } from '../components/BookingChecklist';
@@ -31,6 +32,7 @@ export function HomePage({ itinerary }: HomePageProps) {
         <TipsSection backupPlans={itinerary.backupPlans} extras={itinerary.recommendedExtras} />
       </main>
       <Footer />
+      <BackToTop />
     </div>
   );
 }
