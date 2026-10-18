@@ -330,6 +330,21 @@
             "meal": "breakfast"
           }
         },
+        "activity-1792340901861-th157tv": {
+          "id": "activity-1792340901861-th157tv",
+          "kind": "custom-activity",
+          "customActivity": {
+            "title": "Remember to sleep early for flag raising tmr!",
+            "location": "",
+            "description": "",
+            "timeSlot": "Night",
+            "duration": {
+              "min": 1,
+              "max": 2,
+              "unit": "hrs"
+            }
+          }
+        },
         "temple-of-heaven": {
           "id": "temple-of-heaven",
           "kind": "place",
@@ -469,21 +484,6 @@
             "name": "Pokemon Pop-up · China World Mall",
             "openTime": "10:00",
             "note": "NEW official pop-up at 国贸商城南区 B1 WB120A/B — 10:00 opening, then DiDi south to Temple of Heaven."
-          }
-        },
-        "activity-1792340901861-th157tv": {
-          "id": "activity-1792340901861-th157tv",
-          "kind": "custom-activity",
-          "customActivity": {
-            "title": "Remember to sleep early for flag raising tmr!",
-            "location": "",
-            "description": "",
-            "timeSlot": "Night",
-            "duration": {
-              "min": 1,
-              "max": 2,
-              "unit": "hrs"
-            }
           }
         }
       },
@@ -754,6 +754,47 @@
             "meal": "breakfast"
           }
         },
+        "meal-1792340560820-s4gjm8x": {
+          "id": "meal-1792340560820-s4gjm8x",
+          "kind": "custom-meal",
+          "customMeal": {
+            "name": "Small snack",
+            "location": "China World Mall",
+            "price": "",
+            "description": "",
+            "meal": "lunch"
+          }
+        },
+        "activity-1792340579268-uyuav5c": {
+          "id": "activity-1792340579268-uyuav5c",
+          "kind": "custom-activity",
+          "customActivity": {
+            "title": "Train: 1236pm depart from 北京 | G8807",
+            "location": "北京站",
+            "description": "",
+            "timeSlot": "Noon",
+            "duration": {
+              "min": 1,
+              "max": 2,
+              "unit": "hrs"
+            }
+          }
+        },
+        "activity-1792340634934-z06hfkr": {
+          "id": "activity-1792340634934-z06hfkr",
+          "kind": "custom-activity",
+          "customActivity": {
+            "title": "Train: 935pm depart from 唐山 | G8826",
+            "location": "唐山 Train station",
+            "description": "",
+            "timeSlot": "Night",
+            "duration": {
+              "min": 1,
+              "max": 2,
+              "unit": "hrs"
+            }
+          }
+        },
         "hetou-old-street": {
           "id": "hetou-old-street",
           "kind": "place",
@@ -817,47 +858,6 @@
             "openTime": "10:00",
             "note": "国贸商城南区 B1 WB120A/B, right after breakfast. Leave the mall by ~11:20 — DiDi to 北京站 for G8807 at 12:36."
           }
-        },
-        "meal-1792340560820-s4gjm8x": {
-          "id": "meal-1792340560820-s4gjm8x",
-          "kind": "custom-meal",
-          "customMeal": {
-            "name": "Small snack",
-            "location": "China World Mall",
-            "price": "",
-            "description": "",
-            "meal": "lunch"
-          }
-        },
-        "activity-1792340579268-uyuav5c": {
-          "id": "activity-1792340579268-uyuav5c",
-          "kind": "custom-activity",
-          "customActivity": {
-            "title": "Train: 1236pm depart from 北京 | G8807",
-            "location": "北京站",
-            "description": "",
-            "timeSlot": "Noon",
-            "duration": {
-              "min": 1,
-              "max": 2,
-              "unit": "hrs"
-            }
-          }
-        },
-        "activity-1792340634934-z06hfkr": {
-          "id": "activity-1792340634934-z06hfkr",
-          "kind": "custom-activity",
-          "customActivity": {
-            "title": "Train: 935pm depart from 唐山 | G8826",
-            "location": "唐山 Train station",
-            "description": "",
-            "timeSlot": "Night",
-            "duration": {
-              "min": 1,
-              "max": 2,
-              "unit": "hrs"
-            }
-          }
         }
       },
       "notes": {
@@ -871,6 +871,10 @@
         },
         "summer-palace": {
           "text": "Either store goods in rented lockers in this mall or in summer palace. Recommend summer palace, maybe better lockers",
+          "isOpen": false
+        },
+        "meal-1792340560820-s4gjm8x": {
+          "text": "grab a small snack / if got time can eat proper meal, but make sure can reach train station 30 mins ahead of departure",
           "isOpen": false
         }
       },
@@ -903,6 +907,32 @@
             "price": "",
             "description": "",
             "meal": "breakfast"
+          }
+        },
+        "activity-1792341289512-np8iqw5": {
+          "id": "activity-1792341289512-np8iqw5",
+          "kind": "custom-activity",
+          "customActivity": {
+            "title": "OR go to 王府井步行街 for shopping instead ",
+            "location": "王府井步行街",
+            "description": "",
+            "timeSlot": "Evening",
+            "duration": {
+              "min": 1,
+              "max": 2,
+              "unit": "hrs"
+            }
+          }
+        },
+        "meal-1792341350884-m89jcm2": {
+          "id": "meal-1792341350884-m89jcm2",
+          "kind": "custom-meal",
+          "customMeal": {
+            "name": "Dinner OTOT based on starred places on map",
+            "location": "",
+            "price": "",
+            "description": "",
+            "meal": "dinner"
           }
         },
         "mao-memorial": {
@@ -1025,32 +1055,6 @@
             "priceRange": "¥¥",
             "meal": "lunch",
             "note": "Eat near the museum before DiDi south, or at Livat after the Onix gym if the museum run goes long."
-          }
-        },
-        "activity-1792341289512-np8iqw5": {
-          "id": "activity-1792341289512-np8iqw5",
-          "kind": "custom-activity",
-          "customActivity": {
-            "title": "OR go to 王府井步行街 for shopping instead ",
-            "location": "王府井步行街",
-            "description": "",
-            "timeSlot": "Evening",
-            "duration": {
-              "min": 1,
-              "max": 2,
-              "unit": "hrs"
-            }
-          }
-        },
-        "meal-1792341350884-m89jcm2": {
-          "id": "meal-1792341350884-m89jcm2",
-          "kind": "custom-meal",
-          "customMeal": {
-            "name": "Dinner OTOT based on starred places on map",
-            "location": "",
-            "price": "",
-            "description": "",
-            "meal": "dinner"
           }
         }
       },
