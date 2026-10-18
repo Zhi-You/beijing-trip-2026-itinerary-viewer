@@ -17,17 +17,77 @@ export interface TicketGroup {
 
 export const TICKET_GROUPS: TicketGroup[] = [
   {
-    id: 'inbox',
-    en: 'Your tickets',
-    zh: '你的票据',
-    blurbEn: 'Nothing is uploaded yet. The note below is only a marker for the folder.',
-    blurbZh: '还没有上传票据。下面这份说明只是用来标出文件夹的位置。',
+    id: 'flight',
+    en: 'Flights',
+    zh: '机票',
+    blurbEn: 'Singapore Airlines, booking DTVXGS. Out on 1 Nov, back on 9 Nov.',
+    blurbZh: '新加坡航空，订单 DTVXGS。11月1日去，11月9日回。',
     files: [
       {
-        id: 'placeholder',
-        path: 'tickets/put-tickets-here.txt',
-        en: 'Where to put ticket files',
-        zh: '票据文件放哪里',
+        id: 'flight-departure',
+        path: 'tickets/Flight/departure.jpg',
+        en: 'SQ 810 · SIN T3 00:30 → PKX 06:35 · Sun 1 Nov',
+        zh: 'SQ 810 · 樟宜 T3 00:30 → 大兴 06:35 · 11月1日周日',
+      },
+      {
+        id: 'flight-return',
+        path: 'tickets/Flight/return.jpg',
+        en: 'SQ 805 · PEK T3 08:45 → SIN 15:20 · Mon 9 Nov',
+        zh: 'SQ 805 · 首都 T3 08:45 → 樟宜 15:20 · 11月9日周一',
+      },
+    ],
+  },
+  {
+    id: 'hotel',
+    en: 'Hotels',
+    zh: '酒店',
+    blurbEn: '汉庭 for 1–8 Nov, then 海友 for the night of 8 Nov. Each booking is two screenshots.',
+    blurbZh: '11月1–8日住汉庭，8日晚转海友。每家酒店两张截图。',
+    files: [
+      {
+        id: 'hanting-1',
+        path: 'tickets/Hotel/hanting_1.jpg',
+        en: '汉庭 · 1–8 Nov · 2 superior king rooms · check-in from 14:00',
+        zh: '汉庭 · 11月1–8日 · 高级大床房 2 间 · 14:00 起入住',
+      },
+      {
+        id: 'hanting-2',
+        path: 'tickets/Hotel/hanting_2.jpg',
+        en: '汉庭 · order details · Tang/Zhi You, Tang/Kiun Ching',
+        zh: '汉庭 · 订单信息 · Tang/Zhi You、Tang/Kiun Ching',
+      },
+      {
+        id: 'haiyou-1',
+        path: 'tickets/Hotel/haiyou_1.jpg',
+        en: '海友南法信 · 8–9 Nov · 2 queen rooms · check-in from 12:00',
+        zh: '海友南法信 · 11月8–9日 · 大床房 2 间 · 12:00 起入住',
+      },
+      {
+        id: 'haiyou-2',
+        path: 'tickets/Hotel/haiyou_2.jpg',
+        en: '海友南法信 · order details · Tang/Zhi You, Tang/Kiun Ching',
+        zh: '海友南法信 · 订单信息 · Tang/Zhi You、Tang/Kiun Ching',
+      },
+    ],
+  },
+  {
+    id: 'insurance',
+    en: 'Insurance',
+    zh: '保险',
+    blurbEn: 'FWD policies, one PDF per pair.',
+    blurbZh: 'FWD 保单，每对一份 PDF。',
+    files: [
+      {
+        id: 'insurance-parents',
+        path: 'tickets/Insurance/Beijing_FWD_Insurance_Mom&Dad.pdf',
+        en: 'FWD · Mom & Dad',
+        zh: 'FWD · 爸爸妈妈',
+      },
+      {
+        id: 'insurance-pair',
+        path: 'tickets/Insurance/Beijing_FWD_Insurance_Zy&Xy.pdf',
+        en: 'FWD · Zy & Xy',
+        zh: 'FWD · Zy & Xy',
       },
     ],
   },

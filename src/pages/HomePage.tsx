@@ -21,7 +21,7 @@ export function HomePage({ itinerary }: HomePageProps) {
       <main>
         <Hero meta={itinerary.meta} todayDayId={getDefaultDayId(itinerary.days)} />
         <TripOverview meta={itinerary.meta} seasonNotes={itinerary.seasonNotes} />
-        <BookingChecklist items={itinerary.bookingChecklist} />
+        <BookingChecklist items={itinerary.bookingChecklist} days={itinerary.days} />
         <ItinerarySection days={itinerary.days} />
         <PokemonSection
           strategy={itinerary.pokemonStrategy}

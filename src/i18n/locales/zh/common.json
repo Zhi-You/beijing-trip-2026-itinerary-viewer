@@ -14,7 +14,7 @@
   },
   "tickets": {
     "title": "票据",
-    "subtitle": "还没有上传票据。把 PDF 和照片放进 public/tickets，再在 src/data/tickets.ts 里登记。文件夹里的说明只是位置标记。",
+    "subtitle": "这次行程已经保存的确认单。打开分类即可查看或下载。",
     "view": "查看",
     "download": "下载",
     "openTab": "在新标签页打开"
@@ -121,11 +121,21 @@
     "scheduled": "安排：{{day}}（{{dayTitle}}）"
   },
   "bookings": {
-    "title": "待购门票（时间均为北京时间，除非另注）",
-    "subtitle": "时间均为北京时间，除非另注",
-    "colWhen": "何时",
-    "colWhat": "项目",
-    "colLink": "链接",
+    "title": "待购门票",
+    "subtitle": "北京时间，按先买什么排序。最上面一行是下一张要买的票。",
+    "colWhen": "何时买",
+    "colDay": "行程日",
+    "colTicket": "票",
+    "colDetail": "怎么买",
+    "next": "下一张",
+    "phaseNow": "现在就能买",
+    "phaseNowHint": "已经开售，或明天上午开售。",
+    "phaseRelease": "固定放票时间",
+    "phaseReleaseHint": "准点在页面上等。按日期先后排列。",
+    "phaseLater": "参观前买",
+    "phaseLaterHint": "没有准点放票。提前买好，少在门口排队。",
+    "phaseDayof": "当天再买",
+    "phaseDayofHint": "只在登上慕田峪官方巴士之后。",
     "bookOnline": "在线预订 →"
   },
   "prefs": {

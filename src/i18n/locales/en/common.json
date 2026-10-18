@@ -14,7 +14,7 @@
   },
   "tickets": {
     "title": "Tickets",
-    "subtitle": "Nothing is uploaded yet. Put PDFs and photos in public/tickets, then add each file in src/data/tickets.ts. The note in that folder is only a marker.",
+    "subtitle": "Saved confirmations for the trip. Open a section to view or download the file.",
     "view": "View",
     "download": "Download",
     "openTab": "Open in a new tab"
@@ -122,10 +122,20 @@
   },
   "bookings": {
     "title": "Tickets to buy",
-    "subtitle": "",
-    "colWhen": "When",
-    "colWhat": "What",
-    "colLink": "Link",
+    "subtitle": "Beijing time, from what to buy next. The top row is the one to do first.",
+    "colWhen": "When to buy",
+    "colDay": "Trip day",
+    "colTicket": "Ticket",
+    "colDetail": "What to do",
+    "next": "Next",
+    "phaseNow": "Already on sale",
+    "phaseNowHint": "Open now, or opens tomorrow morning.",
+    "phaseRelease": "Fixed release times",
+    "phaseReleaseHint": "Be on the page at the clock. These are in date order.",
+    "phaseLater": "Buy before the visit",
+    "phaseLaterHint": "No drop time. Do them early enough to skip the gate queue.",
+    "phaseDayof": "Buy on the day",
+    "phaseDayofHint": "Only after you are on the official Mutianyu bus.",
     "bookOnline": "Book online →"
   },
   "prefs": {

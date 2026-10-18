@@ -90,10 +90,14 @@ export interface BookingItem {
   id: string;
   /** When to buy / reserve (table “When” column). */
   when: string;
-  /** What to buy (table “What” column; Day N is prefixed in the UI). */
+  /** What to buy (table “What” column). */
   what: string;
-  /** Visit day ids such as `day-3` — rendered as “Day 3”. */
+  /** Visit day ids such as `day-3` — rendered with that day’s date. */
   dayIds?: string[];
+  /** Buy-next grouping. Items stay in array order inside each phase. */
+  phase: 'now' | 'release' | 'later' | 'dayof';
+  /** The single row to do before the others. */
+  next?: boolean;
   urgency: 'critical' | 'high' | 'medium';
   link?: string;
   linkLabel?: string;
