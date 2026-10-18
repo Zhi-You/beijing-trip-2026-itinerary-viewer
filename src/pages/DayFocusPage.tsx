@@ -8,7 +8,7 @@ import {
   extractMapPins,
   resolveCardCoordinates,
 } from '../utils/mapLocations';
-import { googleMapsUrlForStop } from '../utils/googleMaps';
+import { amapUrlForStop } from '../utils/amap';
 import { findDayPlan, getDayNumber, getDefaultDayId, isValidDayId } from '../utils/tripDay';
 import { DayBoardCustomizer } from '../components/board/DayBoardCustomizer';
 import { RestorePublishedButton } from '../components/board/RestorePublishedButton';
@@ -56,9 +56,9 @@ export function DayFocusPage({ days }: DayFocusPageProps) {
     (selectedCard ? resolveCardCoordinates(selectedCard) : null);
   const selectedActivity = activities.find((a) => a.id === selectedId);
 
-  const googleMapsUrl =
+  const amapUrl =
     selectedActivity && (selectedCoords || selectedActivity.title)
-      ? googleMapsUrlForStop(
+      ? amapUrlForStop(
           selectedCoords,
           selectedActivity.title,
           selectedActivity.locationLabel,
@@ -194,18 +194,18 @@ export function DayFocusPage({ days }: DayFocusPageProps) {
             </p>
           </div>
 
-          {selectedId && googleMapsUrl && (
+          {selectedId && amapUrl && (
             <div
               className="fixed inset-x-0 bottom-0 z-50 border-t border-washi-dark bg-surface/95 p-3 backdrop-blur-md"
               style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom, 0px))' }}
             >
               <a
-                href={googleMapsUrl}
+                href={amapUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-indigo px-4 py-3 text-sm font-semibold text-white shadow-lg"
               >
-                🗺 {t('focus.openGoogleMaps')}
+                🗺 {t('focus.openAmap')}
               </a>
               <button
                 type="button"
