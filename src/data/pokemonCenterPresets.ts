@@ -8,11 +8,13 @@ export function rafflesPokemonPopup() {
   };
 }
 
-export function guomaoPokemonPopup() {
+export function guomaoPokemonPopup(note?: string) {
   return {
     name: 'Pokemon Pop-up · China World Mall',
     openTime: '10:00',
-    note: 'NEW official pop-up at 国贸商城南区 B1 WB120A/B — 10:00 opening, then DiDi south to Temple of Heaven.',
+    note:
+      note ??
+      'NEW official pop-up at 国贸商城南区 B1 WB120A/B — 10:00 opening, then DiDi south to Temple of Heaven.',
   };
 }
 

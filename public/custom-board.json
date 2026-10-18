@@ -232,11 +232,11 @@
       },
       "notes": {
         "day-1-meal-1": {
-          "text": "Random order",
+          "text": "Random order, if see liao can try",
           "isOpen": false
         },
         "day-1-meal-4": {
-          "text": "Random order",
+          "text": "Random order, if see liao can try",
           "isOpen": false
         },
         "beixinqiao": {
@@ -248,11 +248,15 @@
           "isOpen": false
         },
         "day-1-meal-3": {
-          "text": "Some other dinner options lol, think this is a mistake.\nFind on map :)",
+          "text": "Good Bao, but maybe not meant for dinner.\nFor dinner, can select any of the starred options on the day itself",
           "isOpen": false
         },
         "guozijian": {
           "text": "2pm guided tour. Reach before that to partake",
+          "isOpen": false
+        },
+        "yonghegong": {
+          "text": "Optional to go in, can simply walk outside",
           "isOpen": false
         }
       },
@@ -263,9 +267,10 @@
     "day-2": {
       "dayId": "day-2",
       "cardIds": [
+        "meal-1792316492421-sf7rhxs",
+        "day-2-pokemon-center",
         "day-2-meal-0",
         "day-2-meal-2",
-        "day-2-pokemon-center",
         "temple-of-heaven",
         "day-2-meal-1",
         "qianmen-street",
@@ -273,7 +278,8 @@
         "day-2-meal-3",
         "meal-1784475396433-bo7x24b",
         "meal-1788625606685-d7cojsk",
-        "activity-1784470607072-ykcya1z"
+        "activity-1784470607072-ykcya1z",
+        "activity-1792340901861-th157tv"
       ],
       "cards": {
         "activity-1784470607072-ykcya1z": {
@@ -311,6 +317,17 @@
             "price": "",
             "description": "",
             "meal": "dinner"
+          }
+        },
+        "meal-1792316492421-sf7rhxs": {
+          "id": "meal-1792316492421-sf7rhxs",
+          "kind": "custom-meal",
+          "customMeal": {
+            "name": "Breakfast near Hotel",
+            "location": "Near Hotel",
+            "price": "",
+            "description": "Since we are going to pokemon Popup, just eat nearby first",
+            "meal": "breakfast"
           }
         },
         "temple-of-heaven": {
@@ -453,6 +470,21 @@
             "openTime": "10:00",
             "note": "NEW official pop-up at 国贸商城南区 B1 WB120A/B — 10:00 opening, then DiDi south to Temple of Heaven."
           }
+        },
+        "activity-1792340901861-th157tv": {
+          "id": "activity-1792340901861-th157tv",
+          "kind": "custom-activity",
+          "customActivity": {
+            "title": "Remember to sleep early for flag raising tmr!",
+            "location": "",
+            "description": "",
+            "timeSlot": "Night",
+            "duration": {
+              "min": 1,
+              "max": 2,
+              "unit": "hrs"
+            }
+          }
         }
       },
       "notes": {
@@ -465,7 +497,7 @@
           "isOpen": false
         },
         "day-2-meal-0": {
-          "text": "OR somewhere more convenient",
+          "text": "Snack",
           "isOpen": false
         }
       },
@@ -479,8 +511,8 @@
       "cardIds": [
         "day-3-meal-0",
         "tiananmen-square",
-        "forbidden-city",
         "day-3-meal-1",
+        "forbidden-city",
         "jingshan-park",
         "meal-1788625050679-zp03ba2",
         "day-3-meal-2",
@@ -515,14 +547,14 @@
               "Sense of Beijing’s ceremonial north–south axis"
             ],
             "tips": [
-              "Enter via security with passport; no large bags / liquids rules can be strict",
+              "Book a free daytime slot 1–7 days ahead (from 27 Oct, around 12:00). Same-day entry is not accepted",
               "Skip dawn flag-raising unless the group is keen — it means a 05:00 wake-up",
               "DiDi drop near Qianmen or walk from metro exits with less queue if possible",
               "Chairman Mao Memorial Hall is on Thu 5 Nov with the National Museum instead"
             ],
             "ticket": {
-              "type": "free",
-              "detail": "Security check with passport"
+              "type": "advance_required",
+              "detail": "Free; real-name slot 1–7 days ahead, not same-day"
             },
             "photoNote": "Wide lenses help; morning haze is common — expose for the sky.",
             "paceNote": "Keep moving — the palace is the main event."
@@ -620,13 +652,13 @@
             ],
             "tips": [
               "DiDi from Nanluoguxiang / 汉庭 (~25–40 min); confirm mall hours before you go",
-              "Set a hard leave time — Great Wall is in three days and tomorrow is Xidan at 10:00"
+              "Set a hard leave time — tomorrow is the 12:36 Tangshan train from 北京站, not an early mall morning"
             ],
             "ticket": {
               "type": "free",
               "detail": "Mall access free; products paid"
             },
-            "paceNote": "Optional night add-on — Xidan tomorrow morning is the better stock stop."
+            "paceNote": "Optional night add-on — the Xidan stock stop is Saturday, before Summer Palace."
           }
         },
         "day-3-meal-0": {
@@ -688,7 +720,11 @@
           "isOpen": false
         },
         "wangjing-capitalmall": {
-          "text": "Or some other store that is more convenient like raffles city",
+          "text": "Most likely will skip this. Can replace with some other store that is more convenient like raffles city",
+          "isOpen": false
+        },
+        "jingshan-park": {
+          "text": "AIM FOR SUNSET VIEW.\nCheck again but should be around 530pm",
           "isOpen": false
         }
       },
@@ -697,20 +733,123 @@
     "day-4": {
       "dayId": "day-4",
       "cardIds": [
+        "meal-1792318724883-qjmc4k1",
         "day-4-pokemon-center",
+        "meal-1792340560820-s4gjm8x",
+        "activity-1792340579268-uyuav5c",
         "day-4-meal-1",
-        "summer-palace",
-        "activity-1788630740538-zlohaix",
+        "hetou-old-street",
         "day-4-meal-2",
-        "activity-1788626853534-w4bb59k"
+        "activity-1792340634934-z06hfkr"
       ],
       "cards": {
-        "activity-1788626853534-w4bb59k": {
-          "id": "activity-1788626853534-w4bb59k",
+        "meal-1792318724883-qjmc4k1": {
+          "id": "meal-1792318724883-qjmc4k1",
+          "kind": "custom-meal",
+          "customMeal": {
+            "name": "(Optional) Breakfast near hotel",
+            "location": "",
+            "price": "",
+            "description": "",
+            "meal": "breakfast"
+          }
+        },
+        "hetou-old-street": {
+          "id": "hetou-old-street",
+          "kind": "place",
+          "place": {
+            "id": "hetou-old-street",
+            "name": "Hetou Old Street (河头老街)",
+            "area": "Fengnan, Tangshan",
+            "category": "Theme street / night market",
+            "timeSlot": "Afternoon",
+            "duration": "6 hrs",
+            "summary": "A built Tang-dynasty canal street in Fengnan, not a rides park. Freestyle afternoon and evening: wander, eat, and watch whatever is on that day’s sheet. Gate opens 14:00. Leave around 20:30 so the group can make a ~21:22–21:36 train back.",
+            "highlights": [
+              "Lanterns on the canal from about 17:15, and the lighting ritual around 18:30",
+              "Huaiyuan Bridge and the red-lantern corridor for photos",
+              "Street NPC shows at Shengshi Wharf — join only if the group feels like it",
+              "Weekday 《唐王东征》 is listed at 19:00–19:30 and includes iron-flower sparks (separate ticket, standing)"
+            ],
+            "tips": [
+              "Taxi from 唐山站 is about 20 minutes. Use the north gate. Do not go to 唐山北.",
+              "Pick up the day’s program at the gate. Show times move. If 《唐王东征》 is only at 21:00, skip it — that show misses the train.",
+              "Canal wind in November is cold. The paid boat, ferris wheel, and the battle show are optional.",
+              "Dinner is inside the water market (棋子烧饼, 小山炸糕). Order the return DiDi before 20:30."
+            ],
+            "ticket": {
+              "type": "advance_recommended",
+              "detail": "Weekday gate about ¥78; 《唐王东征》 extra, about ¥38 on weekdays"
+            },
+            "photoNote": "Best frames are after the lights: bridge reflections and the lantern corridor.",
+            "paceNote": "No set route. Stay together, sit when the street shows allow, and hard-stop around 20:30."
+          }
+        },
+        "day-4-meal-1": {
+          "id": "day-4-meal-1",
+          "kind": "meal",
+          "meal": {
+            "name": "Tangshan station or first stalls in the park",
+            "area": "唐山站 / 河头老街",
+            "cuisine": "Snacks",
+            "priceRange": "¥",
+            "meal": "lunch",
+            "note": "The train gets in at 13:40 and the park opens at 14:00. Eat a light lunch on arrival, then graze inside."
+          }
+        },
+        "day-4-meal-2": {
+          "id": "day-4-meal-2",
+          "kind": "meal",
+          "meal": {
+            "name": "Dinner inside 河头老街",
+            "area": "Fengnan",
+            "cuisine": "Jidong snacks / water-market stalls",
+            "priceRange": "¥¥",
+            "meal": "dinner",
+            "note": "Eat in the park. 棋子烧饼 and 小山炸糕 are the local bites. Finish in time to taxi back to 唐山站."
+          }
+        },
+        "day-4-pokemon-center": {
+          "id": "day-4-pokemon-center",
+          "kind": "pokemon-center",
+          "pokemonCenter": {
+            "name": "Pokemon Pop-up · China World Mall",
+            "openTime": "10:00",
+            "note": "国贸商城南区 B1 WB120A/B, right after breakfast. Leave the mall by ~11:20 — DiDi to 北京站 for G8807 at 12:36."
+          }
+        },
+        "meal-1792340560820-s4gjm8x": {
+          "id": "meal-1792340560820-s4gjm8x",
+          "kind": "custom-meal",
+          "customMeal": {
+            "name": "Small snack",
+            "location": "China World Mall",
+            "price": "",
+            "description": "",
+            "meal": "lunch"
+          }
+        },
+        "activity-1792340579268-uyuav5c": {
+          "id": "activity-1792340579268-uyuav5c",
           "kind": "custom-activity",
           "customActivity": {
-            "title": "(Can consider) Visit 鸟巢文化中心",
-            "location": "北京市朝阳区国家体育场南路1号",
+            "title": "Train: 1236pm depart from 北京 | G8807",
+            "location": "北京站",
+            "description": "",
+            "timeSlot": "Noon",
+            "duration": {
+              "min": 1,
+              "max": 2,
+              "unit": "hrs"
+            }
+          }
+        },
+        "activity-1792340634934-z06hfkr": {
+          "id": "activity-1792340634934-z06hfkr",
+          "kind": "custom-activity",
+          "customActivity": {
+            "title": "Train: 935pm depart from 唐山 | G8826",
+            "location": "唐山 Train station",
             "description": "",
             "timeSlot": "Night",
             "duration": {
@@ -718,92 +857,6 @@
               "max": 2,
               "unit": "hrs"
             }
-          }
-        },
-        "activity-1788630740538-zlohaix": {
-          "id": "activity-1788630740538-zlohaix",
-          "kind": "custom-activity",
-          "customActivity": {
-            "title": "(Can consider) Visit Zhonguancun pokemon gym",
-            "location": "",
-            "description": "",
-            "timeSlot": "Late Afternoon",
-            "duration": {
-              "min": 1,
-              "max": 2,
-              "unit": "hrs"
-            }
-          }
-        },
-        "summer-palace": {
-          "id": "summer-palace",
-          "kind": "place",
-          "place": {
-            "id": "summer-palace",
-            "name": "Summer Palace (颐和园)",
-            "area": "Summer Palace",
-            "category": "UNESCO / Garden",
-            "timeSlot": "Late Morning",
-            "duration": "3.5–4.5 hrs",
-            "summary": "Vast Qing imperial garden around Kunming Lake — Long Corridor, Tower of Buddhist Incense, marble boat, and willow-lined shores. One of Beijing’s best autumn photo sites.",
-            "highlights": [
-              "Long Corridor painted beams",
-              "Seventeen-Arch Bridge views",
-              "Climb or view Tower of Buddhist Incense (pace yourself)"
-            ],
-            "tips": [
-              "Enter East Gate; through ticket recommended",
-              "Boat across the lake saves walking for seniors (seasonal)",
-              "Bring snacks — food options inside are pricey; you will arrive after the Xidan pop-up",
-              "DiDi drop at East Gate; same for pickup"
-            ],
-            "ticket": {
-              "type": "advance_recommended",
-              "detail": "Through ticket online / WeChat"
-            },
-            "photoNote": "Bridge reflections and willow + lake frames work well into early afternoon light.",
-            "paceNote": "Do not try to walk the entire lake circuit. Core loop: East Gate → Long Corridor → lakeside → exit. Skip distant Suzhou Street if tired."
-          },
-          "schedule": {
-            "timeSlot": "Afternoon",
-            "duration": {
-              "min": 3.5,
-              "max": 4.5,
-              "unit": "hrs"
-            }
-          }
-        },
-        "day-4-meal-1": {
-          "id": "day-4-meal-1",
-          "kind": "meal",
-          "meal": {
-            "name": "Summer Palace area lunch",
-            "area": "Haidian",
-            "cuisine": "Simple Chinese",
-            "priceRange": "¥¥",
-            "meal": "lunch",
-            "note": "Eat just outside the East Gate after exiting — more choice than inside."
-          }
-        },
-        "day-4-meal-2": {
-          "id": "day-4-meal-2",
-          "kind": "meal",
-          "meal": {
-            "name": "Dinner near Zhongguancun or back at Guijie",
-            "area": "Haidian / Guijie",
-            "cuisine": "Casual",
-            "priceRange": "¥¥",
-            "meal": "dinner",
-            "note": "After Summer Palace, return to 刘阿妹鸡公煲 or 佬婆猪脚饭 near Beixinqiao if Haidian options feel thin."
-          }
-        },
-        "day-4-pokemon-center": {
-          "id": "day-4-pokemon-center",
-          "kind": "pokemon-center",
-          "pokemonCenter": {
-            "name": "Pokemon Pop-up · Xidan Joy City",
-            "openTime": "10:00",
-            "note": "B1 official pop-up + F1 Relax Party in the same mall — one DiDi drop covers both."
           }
         }
       },
@@ -813,22 +866,20 @@
           "isOpen": false
         },
         "day-4-meal-1": {
-          "text": "or just in the mall lol if hungry already",
+          "text": "",
           "isOpen": false
         },
         "summer-palace": {
           "text": "Either store goods in rented lockers in this mall or in summer palace. Recommend summer palace, maybe better lockers",
-          "isOpen": false
-        },
-        "activity-1788630740538-zlohaix": {
-          "text": "Its either this or 鸟巢文化中心. Higher priority to 鸟巢文化中心 bah cuz Zhonguancun pokemon gym can potentially visit on Day 7",
           "isOpen": false
         }
       },
       "removedCardIds": [
         "day-4-meal-0",
         "meal-1788626169212-46yxk4y",
-        "meal-1788626182540-32155d9"
+        "meal-1788626182540-32155d9",
+        "activity-1788630740538-zlohaix",
+        "activity-1788626853534-w4bb59k"
       ]
     },
     "day-5": {
@@ -839,7 +890,8 @@
         "day-5-meal-1",
         "national-museum",
         "xihongmen-onix-gym",
-        "meal-1788626570934-80j1wh4"
+        "activity-1792341289512-np8iqw5",
+        "meal-1792341350884-m89jcm2"
       ],
       "cards": {
         "meal-1788626387192-h7fp2pf": {
@@ -851,17 +903,6 @@
             "price": "",
             "description": "",
             "meal": "breakfast"
-          }
-        },
-        "meal-1788626570934-80j1wh4": {
-          "id": "meal-1788626570934-80j1wh4",
-          "kind": "custom-meal",
-          "customMeal": {
-            "name": "Find something in the mall",
-            "location": "Xihongmen ",
-            "price": "",
-            "description": "",
-            "meal": "dinner"
           }
         },
         "mao-memorial": {
@@ -881,14 +922,14 @@
               "Quiet, respectful pace inside"
             ],
             "tips": [
-              "Arrive near opening — hall typically closes by noon; closed Mondays",
-              "Thu 5 Nov is open (Tue–Sun). Confirm 2026 hours the week before",
+              "Reserve 1–6 days ahead (30 Oct–4 Nov). You cannot book on the morning itself",
+              "Thu 5 Nov is open: Tue–Sun 08:00–12:00. Reopened 1 Sep 2026",
               "If temporarily closed, continue to the National Museum without guilt",
               "No photography inside"
             ],
             "ticket": {
-              "type": "free",
-              "detail": "Free entry; lockers may charge a small fee"
+              "type": "advance_required",
+              "detail": "Free; real-name reservation 1–6 days ahead"
             },
             "paceNote": "If the queue exceeds ~60 minutes, skip and protect time for the museum + Onix gym."
           },
@@ -948,10 +989,10 @@
             "category": "Pokemon / TCG",
             "timeSlot": "Afternoon",
             "duration": "1–1.5 hrs",
-            "summary": "The other official Beijing Pokemon TCG gym (Onix) at Livat Xihongmen — DiDi south after the National Museum for the remaining official gym stamp (Day 4 is the Xidan pop-up).",
+            "summary": "The other official Beijing Pokemon TCG gym (Onix) at Livat Xihongmen — DiDi south after the National Museum for the remaining official gym stamp (Xidan pop-up is Saturday).",
             "highlights": [
               "Official Onix gym stamp",
-              "TCG stock check after the Xidan pop-up (Day 4)",
+              "TCG stock check before the Saturday Xidan pop-up",
               "Indoor stop before an early night ahead of the Great Wall"
             ],
             "tips": [
@@ -964,6 +1005,14 @@
               "detail": "Mall access free; products paid"
             },
             "paceNote": "Gym with purpose — not an all-day mall crawl before the Wall."
+          },
+          "schedule": {
+            "timeSlot": "Late Afternoon",
+            "duration": {
+              "min": 1,
+              "max": 1.5,
+              "unit": "hrs"
+            }
           }
         },
         "day-5-meal-1": {
@@ -977,18 +1026,49 @@
             "meal": "lunch",
             "note": "Eat near the museum before DiDi south, or at Livat after the Onix gym if the museum run goes long."
           }
+        },
+        "activity-1792341289512-np8iqw5": {
+          "id": "activity-1792341289512-np8iqw5",
+          "kind": "custom-activity",
+          "customActivity": {
+            "title": "OR go to 王府井步行街 for shopping instead ",
+            "location": "王府井步行街",
+            "description": "",
+            "timeSlot": "Evening",
+            "duration": {
+              "min": 1,
+              "max": 2,
+              "unit": "hrs"
+            }
+          }
+        },
+        "meal-1792341350884-m89jcm2": {
+          "id": "meal-1792341350884-m89jcm2",
+          "kind": "custom-meal",
+          "customMeal": {
+            "name": "Dinner OTOT based on starred places on map",
+            "location": "",
+            "price": "",
+            "description": "",
+            "meal": "dinner"
+          }
         }
       },
       "notes": {
         "day-5-meal-1": {
           "text": "Search for your own!",
           "isOpen": false
+        },
+        "xihongmen-onix-gym": {
+          "text": "Can skip if too far lol. \nIf skipping, find a dinner place and just chill maybe in a mall or 王府井步行街",
+          "isOpen": false
         }
       },
       "removedCardIds": [
         "meal-1784474457751-u9ro0kj",
         "day-5-meal-0",
-        "activity-1788626384160-djioxzy"
+        "activity-1788626384160-djioxzy",
+        "meal-1788626570934-80j1wh4"
       ]
     },
     "day-6": {
@@ -1109,7 +1189,7 @@
           "isOpen": false
         },
         "mutianyu-great-wall": {
-          "text": "OTOT, didi ourselves there",
+          "text": "Transportation: Bus\nRides: Ropeway and Slide\nWalk up from Wall Section 6 (ropeway) to around 20 and back to 6 or to slide section",
           "isOpen": false
         }
       },
@@ -1122,105 +1202,71 @@
       "cardIds": [
         "day-7-meal-0",
         "day-7-pokemon-center",
-        "xidan-joy-city",
         "day-7-meal-1",
-        "peking-university",
-        "tsinghua-university",
-        "day-7-meal-2"
+        "summer-palace",
+        "activity-1792340201495-p1znh8f",
+        "day-7-meal-2",
+        "activity-1792340220966-bv4zv78"
       ],
       "cards": {
-        "xidan-joy-city": {
-          "id": "xidan-joy-city",
-          "kind": "place",
-          "place": {
-            "id": "xidan-joy-city",
-            "name": "Xidan Joy City — Pokemon Pop-up + Relax Party",
-            "area": "Xidan",
-            "category": "Shopping / Pokemon",
-            "timeSlot": "Morning",
-            "duration": "2–3 hrs",
-            "summary": "One mall, two Pokemon hits: official pop-up on B1 and Relax Party on F1. Best concentrated merch stop of the trip — do this at opening for stock before the campuses.",
-            "highlights": [
-              "Official pop-up stock check",
-              "Relax Party photo ops",
-              "Mall cafes for a sit-down"
-            ],
-            "tips": [
-              "Aim for mall opening (~10:00) — Saturday stock and queues are better early",
-              "Set a hard shopping cutoff so PKU / Tsinghua still get daylight",
-              "If pop-up queues are long, split the group (2 shop / 2 cafe)"
-            ],
-            "ticket": {
-              "type": "free",
-              "detail": "Mall access free; products paid"
-            },
-            "photoNote": "Indoor lighting — phone cameras fine; watch flash rules."
-          }
-        },
-        "peking-university": {
-          "id": "peking-university",
-          "kind": "place",
-          "place": {
-            "id": "peking-university",
-            "name": "Peking University (北京大学)",
-            "area": "Haidian",
-            "category": "Campus",
-            "timeSlot": "Afternoon",
-            "duration": "1.5–2 hrs",
-            "summary": "China’s flagship university — Weiming Lake, traditional gates, and autumn ginkgo walks. Visitor entry rules change often; check reservation / ID requirements before you go.",
-            "highlights": [
-              "Weiming Lake (未名湖) photos",
-              "Autumn campus colour",
-              "Boyan / West Gate area landmarks"
-            ],
-            "tips": [
-              "Confirm current visitor policy / reservation the day before",
-              "Passport may be required at the gate",
-              "Keep it to a short photo loop — no need to cover the whole campus"
-            ],
-            "ticket": {
-              "type": "advance_recommended",
-              "detail": "Visitor rules change often — reserve if required"
-            },
-            "photoNote": "Lake reflections and ginkgo avenues — afternoon light still works.",
-            "paceNote": "One lake circuit + gate photos is enough before DiDi to Tsinghua."
-          },
-          "schedule": {
-            "timeSlot": "Afternoon",
+        "activity-1792340201495-p1znh8f": {
+          "id": "activity-1792340201495-p1znh8f",
+          "kind": "custom-activity",
+          "customActivity": {
+            "title": "(Can consider) Pokemon center at Zhongguancun ",
+            "location": "",
+            "description": "",
+            "timeSlot": "Evening",
             "duration": {
-              "min": 1.5,
+              "min": 1,
               "max": 2,
               "unit": "hrs"
             }
           }
         },
-        "tsinghua-university": {
-          "id": "tsinghua-university",
+        "activity-1792340220966-bv4zv78": {
+          "id": "activity-1792340220966-bv4zv78",
+          "kind": "custom-activity",
+          "customActivity": {
+            "title": "(Can consider) Visit 鸟巢文化中心",
+            "location": "北京市朝阳区国家体育场南路1号",
+            "description": "",
+            "timeSlot": "Night",
+            "duration": {
+              "min": 1,
+              "max": 2,
+              "unit": "hrs"
+            }
+          }
+        },
+        "summer-palace": {
+          "id": "summer-palace",
           "kind": "place",
           "place": {
-            "id": "tsinghua-university",
-            "name": "Tsinghua University (清华大学)",
-            "area": "Haidian",
-            "category": "Campus",
-            "timeSlot": "Late Afternoon",
-            "duration": "1–1.5 hrs",
-            "summary": "Neighbouring campus to PKU — grand auditorium, ginkgo avenues, and classic academic architecture. Same Haidian cluster; short DiDi between the two.",
+            "id": "summer-palace",
+            "name": "Summer Palace (颐和园)",
+            "area": "Summer Palace",
+            "category": "UNESCO / Garden",
+            "timeSlot": "Late Morning",
+            "duration": "3.5–4.5 hrs",
+            "summary": "Vast Qing imperial garden around Kunming Lake — Long Corridor, Tower of Buddhist Incense, marble boat, and willow-lined shores. One of Beijing’s best autumn photo sites.",
             "highlights": [
-              "Main auditorium / classic axes",
-              "Ginkgo avenues in autumn",
-              "Campus gate photos"
+              "Long Corridor painted beams",
+              "Seventeen-Arch Bridge views",
+              "Climb or view Tower of Buddhist Incense (pace yourself)"
             ],
             "tips": [
-              "Check visitor entry rules (often reservation + ID)",
-              "Pair with PKU the same afternoon",
-              "Keep it shorter if Xidan ran long — one campus is still worthwhile"
+              "Enter East Gate; through ticket recommended",
+              "Boat across the lake saves walking for seniors (seasonal)",
+              "Bring snacks — food options inside are pricey; you will arrive after the Xidan pop-up",
+              "DiDi drop at East Gate; same for pickup"
             ],
             "ticket": {
               "type": "advance_recommended",
-              "detail": "Visitor rules change often — reserve if required"
+              "detail": "Through ticket online / WeChat"
             },
-            "photoNote": "Wide campus axes and tree tunnels — watch for bike traffic.",
-            "paceNote": "Skip if legs are tired after PKU — one campus still makes the day worthwhile."
+            "photoNote": "Bridge reflections and willow + lake frames work well into early afternoon light.",
+            "paceNote": "Do not try to walk the entire lake circuit. Core loop: East Gate → Long Corridor → lakeside → exit. Skip distant Suzhou Street if tired."
           }
         },
         "day-7-meal-0": {
@@ -1232,31 +1278,31 @@
             "cuisine": "Whatever is fastest",
             "priceRange": "¥",
             "meal": "breakfast",
-            "note": "Leave in time for Xidan Joy City opening (~10:00)."
+            "note": "Leave by ~09:15 for ~10:00 Xidan pop-up opening. Saturday stock is better early."
           }
         },
         "day-7-meal-1": {
           "id": "day-7-meal-1",
           "kind": "meal",
           "meal": {
-            "name": "Museum / Xidan mall lunch",
-            "area": "Xidan",
-            "cuisine": "Mall food court",
+            "name": "Summer Palace area lunch",
+            "area": "Haidian",
+            "cuisine": "Simple Chinese",
             "priceRange": "¥¥",
             "meal": "lunch",
-            "note": "Joy City has plenty of sit-down options — easy for mixed diets before DiDi to Haidian."
+            "note": "Eat just outside the East Gate after exiting — more choice than inside."
           }
         },
         "day-7-meal-2": {
           "id": "day-7-meal-2",
           "kind": "meal",
           "meal": {
-            "name": "四季民福 or 全聚德 (Peking duck)",
-            "area": "Central Beijing (book a convenient branch)",
-            "cuisine": "Peking duck",
-            "priceRange": "¥¥¥",
+            "name": "Dinner near Zhongguancun or back at Guijie",
+            "area": "Haidian / Guijie",
+            "cuisine": "Casual",
+            "priceRange": "¥¥",
             "meal": "dinner",
-            "note": "Farewell roast-duck dinner — pick 四季民福 (often easier for tourists / consistent quality) or classic 全聚德. Book a table for 4 ahead; choose a branch close to your evening route, not a far detour."
+            "note": "After Summer Palace, return to 刘阿妹鸡公煲 or 佬婆猪脚饭 near Beixinqiao if Haidian options feel thin."
           }
         },
         "day-7-pokemon-center": {
@@ -1275,11 +1321,15 @@
           "isOpen": false
         },
         "day-7-meal-0": {
-          "text": "* quick bites near hotel, unless we want to buy hotel de breakfast",
+          "text": "Optional. If no time, just go to pokemon popup",
           "isOpen": false
         },
         "day-7-pokemon-center": {
           "text": "Check stock availability for each popup before going. If news come up late, then nvm.\n\nCan try guo mao if store restricts purchases per id\n",
+          "isOpen": false
+        },
+        "day-7-meal-1": {
+          "text": "庆丰包子铺(颐和园店) near summer palace OR just in the Xidan mall lol if hungry already",
           "isOpen": false
         }
       },
@@ -1288,15 +1338,75 @@
     "day-8": {
       "dayId": "day-8",
       "cardIds": [
+        "activity-1792320018768-u89dvqn",
         "day-8-meal-0",
         "day-8-pokemon-center",
+        "activity-1792320235574-gwu1qb4",
+        "meal-1792320497442-trf312g",
         "day-8-meal-1",
         "nanluoguxiang",
         "day-8-meal-2",
         "beihai-park",
-        "day-8-meal-3"
+        "day-8-meal-3",
+        "activity-1792320073207-095guc2"
       ],
       "cards": {
+        "activity-1792320018768-u89dvqn": {
+          "id": "activity-1792320018768-u89dvqn",
+          "kind": "custom-activity",
+          "customActivity": {
+            "title": "Check out of hotel but keep luggage",
+            "location": "",
+            "description": "",
+            "timeSlot": "Morning",
+            "duration": {
+              "min": 1,
+              "max": 1.5,
+              "unit": "hrs"
+            }
+          }
+        },
+        "activity-1792320073207-095guc2": {
+          "id": "activity-1792320073207-095guc2",
+          "kind": "custom-activity",
+          "customActivity": {
+            "title": "Check in to 海友北京首都机场南法信酒店",
+            "location": "",
+            "description": "",
+            "timeSlot": "Evening",
+            "duration": {
+              "min": 1,
+              "max": 2,
+              "unit": "hrs"
+            }
+          }
+        },
+        "activity-1792320235574-gwu1qb4": {
+          "id": "activity-1792320235574-gwu1qb4",
+          "kind": "custom-activity",
+          "customActivity": {
+            "title": "Shopping for Souvenirs",
+            "location": "Raffles City mall or 北京稻香村",
+            "description": "",
+            "timeSlot": "Late Morning",
+            "duration": {
+              "min": 1,
+              "max": 2,
+              "unit": "hrs"
+            }
+          }
+        },
+        "meal-1792320497442-trf312g": {
+          "id": "meal-1792320497442-trf312g",
+          "kind": "custom-meal",
+          "customMeal": {
+            "name": "Farewell Beijing Duck",
+            "location": "四季民福烤鸭店",
+            "price": "",
+            "description": "",
+            "meal": "lunch"
+          }
+        },
         "beihai-park": {
           "id": "beihai-park",
           "kind": "place",
@@ -1432,6 +1542,14 @@
         },
         "day-8-meal-0": {
           "text": "* quick bites near hotel, unless we want to buy hotel de breakfast",
+          "isOpen": false
+        },
+        "activity-1792320018768-u89dvqn": {
+          "text": "",
+          "isOpen": false
+        },
+        "day-8-meal-1": {
+          "text": "",
           "isOpen": false
         }
       },
