@@ -43,14 +43,25 @@ const itineraryEn: ItineraryData = {
     },
     {
       id: 'great-wall',
-      when: '23 Oct 2026 (2 weeks before; 30 Oct still OK if stock)',
+      when: 'On sale now (official site: up to 30 days ahead). Buy this weekend.',
       what: 'Mutianyu entry + cable car for 6 Nov (group of 4)',
       dayIds: ['day-6'],
       urgency: 'high',
-      link: 'https://www.trip.com/travel-guide/attraction/beijing/mutianyu-great-wall-78693/',
-      linkLabel: 'trip.com',
+      link: 'https://www.mutianyugreatwall.com/',
+      linkLabel: 'mutianyugreatwall.com',
       notes:
-        'Visit Fri 6 Nov 2026. Mutianyu is the best balance for seniors (cable car / toboggan, fewer stairs than some Badaling sections). Book entry + cable car up. Private DiDi / driver (~1.5–2 hrs each way) is easiest for a group of 4. Windproof layer essential.',
+        'Visit Fri 6 Nov 2026. The Chinese homepage says real-name tickets open 30 days ahead, so 6 Nov should already be on the calendar as of 17 Oct. An older English page still says 15 days — if 6 Nov is not listed yet, it should appear around 22 Oct. Book entry and the cable car as separate items, with passport numbers. Not a sell-out holiday, but do not leave it until the last week. Private DiDi / driver (~1.5–2 hrs each way) is easiest for a group of 4.',
+    },
+    {
+      id: 'tiananmen-square',
+      when: '27 Oct 2026, from 12:00 Beijing (1–7 days ahead; not on the day)',
+      what: 'Tiananmen Square daytime slot for 3 Nov (group of 4)',
+      dayIds: ['day-3'],
+      urgency: 'high',
+      link: 'https://tamgw.beijing.gov.cn/zhengwugongkai/tzgg/202609/t20260924_4880476.html',
+      linkLabel: 'tamgw.beijing.gov.cn',
+      notes:
+        'TIME SENSITIVE. Free, but the square is real-name reservation only. Official notice of 24 Sep 2026: book 1–7 days ahead; same-day booking is not accepted. Quota refreshes around 12:00. Book a morning slot that matches the Forbidden City entry, not the dawn flag-raising session. Passport names must match. A National Museum or Mao reservation does not cover 3 Nov — those are 5 Nov.',
     },
     {
       id: 'forbidden-city',
@@ -72,7 +83,7 @@ const itineraryEn: ItineraryData = {
       link: 'https://en.chnmuseum.cn/visit_692/',
       linkLabel: 'en.chnmuseum.cn',
       notes:
-        'TIME SENSITIVE. Free but mandatory real-name reservation. Slots open 7 days ahead; tickets are released daily at 17:00 Beijing time. Your visit is Thu 5 Nov 2026 (open; closed Mondays). Passport required at the gate. Hours ~09:00–17:00, last entry ~16:00. Do Mao Memorial first (mornings only), then the museum, then Xihongmen Onix gym.',
+        'TIME SENSITIVE. Free but mandatory real-name reservation. Slots open 7 days ahead; tickets are released daily at 17:00 Beijing time. Add all 4 passports as contacts before that minute — one account can book up to 5 people, once per week. Your visit is Thu 5 Nov 2026 (open; closed Mondays). Book 11:00–13:30 or 13:30–16:00, not the 09:00 slot: Mao Memorial is the same morning and only runs until noon. From 1 Nov, hours are about 09:00–17:00, last entry 16:00.',
     },
     {
       id: 'didi-alipay',
@@ -108,12 +119,14 @@ const itineraryEn: ItineraryData = {
     },
     {
       id: 'mao-memorial',
-      when: '5 Nov, arrive ~07:45–08:00 (no ticket)',
-      what: 'Mao Memorial Hall — mornings only, queue',
+      when: '30 Oct–4 Nov 2026 (1–6 days ahead; not on the day)',
+      what: 'Mao Memorial Hall free reservation for 5 Nov',
       dayIds: ['day-5'],
       urgency: 'high',
+      link: 'https://jnt.mfu.com.cn/',
+      linkLabel: 'jnt.mfu.com.cn',
       notes:
-        'No ticket purchase. Typically open Tue–Sun mornings only (~08:00–12:00; closed Mon). Bags / phones often restricted — use lockers nearby. Confirm hours the week before; it was closed for renovation Mar–Aug 2026, so November should be back to normal. If the queue exceeds ~60 minutes, skip and protect museum + gym time.',
+        'TIME SENSITIVE. Reopened 1 Sep 2026 after the Mar–Aug renovation. Free, but real-name reservation is required 1–6 days ahead — you cannot book on 5 Nov itself. Open Tue–Sun 08:00–12:00; Thu 5 Nov is an open morning. Bags / phones often restricted — use lockers nearby. If the slot or queue fails, skip and protect the museum + gym.',
     },
     {
       id: 'duck-dinner',
@@ -135,14 +148,14 @@ const itineraryEn: ItineraryData = {
     },
     {
       id: 'campus-visits',
-      when: 'By 5 Nov (1–2 days ahead; rules change often)',
+      when: 'From 30–31 Oct (about 7–8 days ahead; passport email)',
       what: 'PKU + Tsinghua visitor reservations for 7 Nov',
       dayIds: ['day-7'],
       urgency: 'high',
       link: 'https://visitor.pku.edu.cn/',
       linkLabel: 'visitor.pku.edu.cn',
       notes:
-        'TIME SENSITIVE — campus visitor rules change often. Passport / ID is commonly required at the gate. Check each university’s official visitor channel the week before and reserve if the system is open. If entry is refused, keep the duck dinner and pivot to a café / hutong backup.',
+        'TIME SENSITIVE. The WeChat mini programs only verify mainland ID cards. Passport holders email about 7 days ahead: PKU campus.visit@pku.edu.cn (older notices used pkuvisit@pku.edu.cn — use the address in that week’s visitor notice) and Tsinghua bwb@mail.tsinghua.edu.cn. Saturday 7 Nov is a normal campus-open day; Tsinghua’s weekend lottery can open 8 days ahead (30 Oct, 17:00). If entry is refused, keep the duck dinner and pivot to a café / hutong backup.',
     },
   ],
   pokemonStrategy: [
@@ -540,12 +553,12 @@ const itineraryEn: ItineraryData = {
             'Sense of Beijing’s ceremonial north–south axis',
           ],
           tips: [
-            'Enter via security with passport; no large bags / liquids rules can be strict',
+            'Book a free daytime slot 1–7 days ahead (from 27 Oct, around 12:00). Same-day entry is not accepted',
             'Skip dawn flag-raising unless the group is keen — it means a 05:00 wake-up',
             'DiDi drop near Qianmen or walk from metro exits with less queue if possible',
             'Chairman Mao Memorial Hall is on Thu 5 Nov with the National Museum instead',
           ],
-          ticket: { type: 'free', detail: 'Security check with passport' },
+          ticket: { type: 'advance_required', detail: 'Free; real-name slot 1–7 days ahead, not same-day' },
           photoNote: 'Wide lenses help; morning haze is common — expose for the sky.',
           paceNote: 'Keep moving — the palace is the main event.',
         },
@@ -756,12 +769,12 @@ const itineraryEn: ItineraryData = {
             'Quiet, respectful pace inside',
           ],
           tips: [
-            'Arrive near opening — hall typically closes by noon; closed Mondays',
-            'Thu 5 Nov is open (Tue–Sun). Confirm 2026 hours the week before',
+            'Reserve 1–6 days ahead (30 Oct–4 Nov). You cannot book on the morning itself',
+            'Thu 5 Nov is open: Tue–Sun 08:00–12:00. Reopened 1 Sep 2026',
             'If temporarily closed, continue to the National Museum without guilt',
             'No photography inside',
           ],
-          ticket: { type: 'free', detail: 'Free entry; lockers may charge a small fee' },
+          ticket: { type: 'advance_required', detail: 'Free; real-name reservation 1–6 days ahead' },
           paceNote: 'If the queue exceeds ~60 minutes, skip and protect time for the museum + Onix gym.',
         },
         {
