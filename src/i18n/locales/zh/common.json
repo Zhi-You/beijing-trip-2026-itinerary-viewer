@@ -4,11 +4,20 @@
     "packing": "随身备物",
     "itinerary": "行程",
     "bookings": "门票",
-    "pokemon": "宝可梦",
+    "pokemon": "宝可梦与卡牌",
     "food": "美食地图",
     "tips": "季节与备选",
     "planner": "规划",
+    "today": "今日计划与地图",
+    "tickets": "票据",
     "backToTop": "回到顶部"
+  },
+  "tickets": {
+    "title": "票据",
+    "subtitle": "还没有上传票据。把 PDF 和照片放进 public/tickets，再在 src/data/tickets.ts 里登记。文件夹里的说明只是位置标记。",
+    "view": "查看",
+    "download": "下载",
+    "openTab": "在新标签页打开"
   },
   "packing": {
     "subtitle": "出发前买好或装进行李 — 这些小物件能让长时间步行对全员更轻松。"

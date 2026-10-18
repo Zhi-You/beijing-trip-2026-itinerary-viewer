@@ -23,7 +23,7 @@ export function BackToTop() {
       }}
       aria-label={t('nav.backToTop')}
       title={t('nav.backToTop')}
-      className="fixed right-3 z-40 flex h-8 w-8 items-center justify-center rounded-full border border-washi-dark bg-surface/95 text-ink shadow-md backdrop-blur-md bottom-[calc(4.75rem+env(safe-area-inset-bottom,0px))] md:bottom-6 md:right-6 md:h-11 md:w-11"
+      className="fixed right-3 z-40 flex h-8 w-8 items-center justify-center rounded-full border border-washi-dark bg-surface/95 text-ink shadow-md backdrop-blur-md bottom-[calc(5.5rem+env(safe-area-inset-bottom,0px))] md:bottom-6 md:right-6 md:h-11 md:w-11"
     >
       <svg viewBox="0 0 20 20" className="h-4 w-4 md:h-5 md:w-5" aria-hidden="true">
         <path

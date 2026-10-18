@@ -4,11 +4,20 @@
     "packing": "Packing",
     "itinerary": "Itinerary",
     "bookings": "Tickets",
-    "pokemon": "Pokemon",
+    "pokemon": "Pokemon & TCG",
     "food": "Food Map",
     "tips": "Season & Tips",
     "planner": "Planner",
+    "today": "Today's plan & map",
+    "tickets": "Tickets",
     "backToTop": "Back to top"
+  },
+  "tickets": {
+    "title": "Tickets",
+    "subtitle": "Nothing is uploaded yet. Put PDFs and photos in public/tickets, then add each file in src/data/tickets.ts. The note in that folder is only a marker.",
+    "view": "View",
+    "download": "Download",
+    "openTab": "Open in a new tab"
   },
   "packing": {
     "subtitle": "Buy or pack these before you fly — small items that make long walking days easier for the whole group."

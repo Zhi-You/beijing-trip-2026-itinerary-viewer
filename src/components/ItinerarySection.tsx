@@ -48,7 +48,7 @@ export function ItinerarySection({ days }: ItinerarySectionProps) {
   };
 
   return (
-    <section id="itinerary" className="bg-surface py-10 sm:py-16">
+    <section id="itinerary" className="scroll-mt-20 bg-surface py-10 sm:py-16">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between">
           <div>

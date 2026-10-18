@@ -11,7 +11,7 @@ export function PokemonSection({ strategy, centers, shops }: PokemonSectionProps
   const { t } = useTranslation();
 
   return (
-    <section id="pokemon" className="bg-indigo py-10 text-banner-fg sm:py-16">
+    <section id="pokemon" className="scroll-mt-20 bg-indigo py-10 text-banner-fg sm:py-16">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <h2 className="font-serif text-2xl font-bold sm:text-3xl">⚡ {t('nav.pokemon')}</h2>
         <p className="mt-2 text-banner-fg/70">{t('pokemon.subtitle')}</p>
