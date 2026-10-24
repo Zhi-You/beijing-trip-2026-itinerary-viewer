@@ -18,11 +18,13 @@ export function guomaoPokemonPopup(note?: string) {
   };
 }
 
-export function xidanPokemonBundle() {
+export function xidanPokemonBundle(note?: string) {
   return {
     name: 'Pokemon Pop-up · Xidan Joy City',
     openTime: '10:00',
-    note: 'B1 official pop-up + F1 Relax Party in the same mall — one DiDi drop covers both.',
+    note:
+      note ??
+      'B1 official pop-up + F1 Relax Party in the same mall — one DiDi drop covers both.',
   };
 }
 

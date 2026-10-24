@@ -88,6 +88,43 @@ export function BoardProvider({ days, children }: BoardProviderProps) {
 
   const [boardReady, setBoardReady] = useState(() => Boolean(loadBoardState()));
 
+  // The day 2 / day 7 swap lives in custom-board.json. A browser that already
+  // had the old board keeps that order in localStorage, and merge then rewrites
+  // meal text without moving the cards. Copy the published days across once.
+  useEffect(() => {
+    if (!boardReady) return;
+
+    let cancelled = false;
+    loadBundledBoardState().then((bundled) => {
+      if (cancelled || !bundled) return;
+      const publishedDay2 = bundled.days['day-2'];
+      const publishedDay7 = bundled.days['day-7'];
+      const publishedIsSwapped =
+        publishedDay2?.cardIds.includes('summer-palace') === true &&
+        publishedDay7?.cardIds.includes('temple-of-heaven') === true &&
+        publishedDay7.cardIds[0] === 'meal-1792316492421-sf7rhxs';
+      if (!publishedDay2 || !publishedDay7 || !publishedIsSwapped) return;
+
+      setBoard((prev) => {
+        if (prev.appliedSwaps?.includes('day2-day7-content')) return prev;
+        const next: BoardState = {
+          ...prev,
+          appliedSwaps: [...(prev.appliedSwaps ?? []), 'day2-day7-content'],
+          days: {
+            ...prev.days,
+            'day-2': publishedDay2,
+            'day-7': publishedDay7,
+          },
+        };
+        return repairBoardState(mergeBoardWithDefaults(runBoardMigrations(next), days), days);
+      });
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [boardReady, days]);
+
   useEffect(() => {
     if (!boardReady) return;
     saveBoardState(board);

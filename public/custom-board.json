@@ -267,29 +267,23 @@
     "day-2": {
       "dayId": "day-2",
       "cardIds": [
-        "meal-1792316492421-sf7rhxs",
-        "day-2-pokemon-center",
         "day-2-meal-0",
-        "day-2-meal-2",
-        "temple-of-heaven",
+        "day-2-pokemon-center",
         "day-2-meal-1",
-        "qianmen-street",
-        "day-2-meal-4",
-        "day-2-meal-3",
-        "meal-1784475396433-bo7x24b",
-        "meal-1788625606685-d7cojsk",
-        "activity-1784470607072-ykcya1z",
-        "activity-1792340901861-th157tv"
+        "summer-palace",
+        "activity-1792340201495-p1znh8f",
+        "day-2-meal-2",
+        "activity-1792340220966-bv4zv78"
       ],
       "cards": {
-        "activity-1784470607072-ykcya1z": {
-          "id": "activity-1784470607072-ykcya1z",
+        "activity-1792340201495-p1znh8f": {
+          "id": "activity-1792340201495-p1znh8f",
           "kind": "custom-activity",
           "customActivity": {
-            "title": "(Optional) Cycling along Tiananmen",
-            "location": "Tiananmen neighbourhood",
-            "description": "If have energy and time. But do note that tomorrow is a big day with a lot of walking. Might want to wake up early tomorrow as well for Flag Raising ceremony at Tiananmen",
-            "timeSlot": "Night",
+            "title": "(Can consider) Pokemon center at Zhongguancun ",
+            "location": "",
+            "description": "",
+            "timeSlot": "Evening",
             "duration": {
               "min": 1,
               "max": 2,
@@ -297,45 +291,12 @@
             }
           }
         },
-        "meal-1784475396433-bo7x24b": {
-          "id": "meal-1784475396433-bo7x24b",
-          "kind": "custom-meal",
-          "customMeal": {
-            "name": "萍姐火锅",
-            "location": "北京市东城区崇文门外大街5号新世界2期L2层",
-            "price": "",
-            "description": "",
-            "meal": "dinner"
-          }
-        },
-        "meal-1788625606685-d7cojsk": {
-          "id": "meal-1788625606685-d7cojsk",
-          "kind": "custom-meal",
-          "customMeal": {
-            "name": "刘记炙子烤肉/烤肉刘",
-            "location": "",
-            "price": "",
-            "description": "",
-            "meal": "dinner"
-          }
-        },
-        "meal-1792316492421-sf7rhxs": {
-          "id": "meal-1792316492421-sf7rhxs",
-          "kind": "custom-meal",
-          "customMeal": {
-            "name": "Breakfast near Hotel",
-            "location": "Near Hotel",
-            "price": "",
-            "description": "Since we are going to pokemon Popup, just eat nearby first",
-            "meal": "breakfast"
-          }
-        },
-        "activity-1792340901861-th157tv": {
-          "id": "activity-1792340901861-th157tv",
+        "activity-1792340220966-bv4zv78": {
+          "id": "activity-1792340220966-bv4zv78",
           "kind": "custom-activity",
           "customActivity": {
-            "title": "Remember to sleep early for flag raising tmr!",
-            "location": "",
+            "title": "(Can consider) Visit 鸟巢文化中心",
+            "location": "北京市朝阳区国家体育场南路1号",
             "description": "",
             "timeSlot": "Night",
             "duration": {
@@ -345,166 +306,105 @@
             }
           }
         },
-        "temple-of-heaven": {
-          "id": "temple-of-heaven",
+        "summer-palace": {
+          "id": "summer-palace",
           "kind": "place",
           "place": {
-            "id": "temple-of-heaven",
-            "name": "Temple of Heaven Park (天坛公园)",
-            "area": "Tiantan",
-            "category": "UNESCO / Temple",
-            "timeSlot": "Morning",
-            "duration": "2.5–3.5 hrs",
-            "summary": "Ming–Qing complex where emperors prayed for good harvests. Circular Hall of Prayer for Good Harvests is Beijing’s most recognisable temple silhouette.",
+            "id": "summer-palace",
+            "name": "Summer Palace (颐和园)",
+            "area": "Summer Palace",
+            "category": "UNESCO / Garden",
+            "timeSlot": "Late Morning",
+            "duration": "3.5–4.5 hrs",
+            "summary": "Qing imperial garden around Kunming Lake. On this Monday the park, Long Corridor, and lakeshore are open. 佛香阁, 德和园, 苏州街, and the palace museum are closed.",
             "highlights": [
-              "Hall of Prayer for Good Harvests",
-              "Echo Wall & Imperial Vault",
-              "Locals practising tai chi / singing in the park (morning)"
+              "Long Corridor painted beams",
+              "Seventeen-Arch Bridge from the shore",
+              "Kunming Lake and the willow line — 佛香阁 stays closed today"
             ],
             "tips": [
-              "Enter East Gate if using Tiantan Dongmen metro; DiDi can drop closer to the Hall",
-              "Combo ticket covers main halls",
-              "Morning light on the blue roof tiles is excellent for photos"
+              "Enter East Gate. Buy the gate ticket, not the through ticket — the through ticket’s inner halls are closed on Monday",
+              "Boat across the lake saves walking for seniors, if boats are running",
+              "Bring snacks — food inside is pricey, and you arrive after the Xidan pop-up",
+              "DiDi drop and pickup at East Gate"
             ],
             "ticket": {
               "type": "advance_recommended",
-              "detail": "Combo ticket online or on site"
+              "detail": "Gate ticket ¥20 in November; 60+ free. Through ticket is poor value this Monday"
             },
-            "photoNote": "Walk a full circle around the Hall for symmetry shots; watch for drone bans.",
-            "paceNote": "Skip distant park corners if jet-lagged from Day 1 — the Hall + axis is enough."
-          },
-          "schedule": {
-            "timeSlot": "Morning",
-            "duration": {
-              "min": 3,
-              "max": 4,
-              "unit": "hrs"
-            }
-          }
-        },
-        "qianmen-street": {
-          "id": "qianmen-street",
-          "kind": "place",
-          "place": {
-            "id": "qianmen-street",
-            "name": "Qianmen / Dashilar stroll (前门 · 大栅栏)",
-            "area": "Qianmen",
-            "category": "Street / Shopping",
-            "timeSlot": "Afternoon",
-            "duration": "1.5–2 hrs",
-            "summary": "Rebuilt pedestrian street south of Tiananmen with snack shops and photo façades. Pair with your starred luzhu and dairy stops.",
-            "highlights": [
-              "Streetscape photos",
-              "Snack hopping without another long DiDi",
-              "Easy exit back toward metro / DiDi"
-            ],
-            "tips": [
-              "Touristy — treat it as atmosphere + food, not deep history",
-              "Keep valuables zipped in crowds"
-            ],
-            "ticket": {
-              "type": "free",
-              "detail": "Public street"
-            },
-            "paceNote": "Speed through souvenir shops; spend time on food instead."
-          },
-          "schedule": {
-            "timeSlot": "Afternoon",
-            "duration": {
-              "min": 1.5,
-              "max": 2,
-              "unit": "hrs"
-            }
+            "photoNote": "Bridge, willows, and the lake. Do not plan a climb of 佛香阁.",
+            "paceNote": "Core loop: East Gate → Long Corridor → lakeshore → Seventeen-Arch Bridge → exit. Skip 佛香阁, 德和园, and 苏州街 — they are closed."
           }
         },
         "day-2-meal-0": {
           "id": "day-2-meal-0",
           "kind": "meal",
           "meal": {
-            "name": "尹记门钉肉饼 · 天坛店",
-            "area": "Tiantan",
-            "cuisine": "Men ding rou bing",
+            "name": "Hotel breakfast at 汉庭",
+            "area": "Dongsi",
+            "cuisine": "Whatever is fastest",
             "priceRange": "¥",
             "meal": "breakfast",
-            "note": "Door-nail meat pies near Temple of Heaven — solid start before park entry."
+            "note": "Leave by ~09:15 for the 10:00 Xidan opening. Monday is quieter than the weekend."
           }
         },
         "day-2-meal-1": {
           "id": "day-2-meal-1",
           "kind": "meal",
           "meal": {
-            "name": "恭敬李烤鸭 · 天坛路店",
-            "area": "Tiantan",
-            "cuisine": "Peking duck",
-            "priceRange": "¥¥¥",
+            "name": "Summer Palace area lunch",
+            "area": "Haidian",
+            "cuisine": "Simple Chinese",
+            "priceRange": "¥¥",
             "meal": "lunch",
-            "note": "Starred roast duck near the park — book or arrive slightly early for a table of 4."
+            "note": "Eat just outside the East Gate after exiting — more choice than inside."
           }
         },
         "day-2-meal-2": {
           "id": "day-2-meal-2",
           "kind": "meal",
           "meal": {
-            "name": "味多美 · 天坛店",
-            "area": "Tiantan",
-            "cuisine": "Bakery",
-            "priceRange": "¥",
-            "meal": "snack",
-            "note": "Near Tiantan Donglu metro — coffee + pastry pause."
-          }
-        },
-        "day-2-meal-3": {
-          "id": "day-2-meal-3",
-          "kind": "meal",
-          "meal": {
-            "name": "陈记卤煮小肠 · 廊房二条店",
-            "area": "Qianmen",
-            "cuisine": "Luzhu (Beijing offal stew)",
+            "name": "Dinner near Zhongguancun or back at Guijie",
+            "area": "Haidian / Guijie",
+            "cuisine": "Casual",
             "priceRange": "¥¥",
             "meal": "dinner",
-            "note": "Your starred luzhu shop near Qianmen — adventurous classic; order carefully for the less adventurous eaters."
-          }
-        },
-        "day-2-meal-4": {
-          "id": "day-2-meal-4",
-          "kind": "meal",
-          "meal": {
-            "name": "三元梅园 · 前门店",
-            "area": "Qianmen",
-            "cuisine": "Imperial dairy / cheese",
-            "priceRange": "¥",
-            "meal": "snack",
-            "note": "Court-style milk desserts — sweet finish on Qianmen Street."
+            "note": "After Summer Palace, return to 刘阿妹鸡公煲 or 佬婆猪脚饭 near Beixinqiao if Haidian options feel thin."
           }
         },
         "day-2-pokemon-center": {
           "id": "day-2-pokemon-center",
           "kind": "pokemon-center",
           "pokemonCenter": {
-            "name": "Pokemon Pop-up · China World Mall",
+            "name": "Pokemon Pop-up · Xidan Joy City",
             "openTime": "10:00",
-            "note": "NEW official pop-up at 国贸商城南区 B1 WB120A/B — 10:00 opening, then DiDi south to Temple of Heaven."
+            "note": "B1 official pop-up + F1 Relax Party in the same mall, then DiDi to Summer Palace. Monday: the park is open; 佛香阁 is closed."
           }
         }
       },
       "notes": {
-        "day-2-pokemon-center": {
-          "text": "Check stock availability for each popup before going. If news come up late, then nvm.",
-          "isOpen": false
-        },
-        "day-2-meal-2": {
-          "text": "",
+        "peking-university": {
+          "text": "if cannot go into the uni we can do other things, like shopping or maybe zhong guan cun pokemon center",
           "isOpen": false
         },
         "day-2-meal-0": {
-          "text": "Snack",
+          "text": "Optional. If no time, just go to pokemon popup",
+          "isOpen": false
+        },
+        "day-2-pokemon-center": {
+          "text": "Check stock availability for each popup before going. If news come up late, then nvm.\n\nCan try guo mao if store restricts purchases per id\n",
+          "isOpen": false
+        },
+        "day-2-meal-1": {
+          "text": "庆丰包子铺(颐和园店) near summer palace OR just in the Xidan mall lol if hungry already",
+          "isOpen": false
+        },
+        "activity-1792340220966-bv4zv78": {
+          "text": "Or go after great wall",
           "isOpen": false
         }
       },
-      "removedCardIds": [
-        "activity-1788625655751-eu1kapl",
-        "activity-1788626941635-a2zrbaa"
-      ]
+      "removedCardIds": []
     },
     "day-3": {
       "dayId": "day-3",
@@ -658,7 +558,7 @@
               "type": "free",
               "detail": "Mall access free; products paid"
             },
-            "paceNote": "Optional night add-on — the Xidan stock stop is Saturday, before Summer Palace."
+            "paceNote": "Optional night add-on — the Xidan stock stop is Monday, before Summer Palace."
           }
         },
         "day-3-meal-0": {
@@ -1019,10 +919,10 @@
             "category": "Pokemon / TCG",
             "timeSlot": "Afternoon",
             "duration": "1–1.5 hrs",
-            "summary": "The other official Beijing Pokemon TCG gym (Onix) at Livat Xihongmen — DiDi south after the National Museum for the remaining official gym stamp (Xidan pop-up is Saturday).",
+            "summary": "The other official Beijing Pokemon TCG gym (Onix) at Livat Xihongmen — DiDi south after the National Museum for the remaining official gym stamp (Xidan pop-up was Monday).",
             "highlights": [
               "Official Onix gym stamp",
-              "TCG stock check before the Saturday Xidan pop-up",
+              "TCG stock check. The Xidan pop-up was already Monday.",
               "Indoor stop before an early night ahead of the Great Wall"
             ],
             "tips": [
@@ -1204,23 +1104,29 @@
     "day-7": {
       "dayId": "day-7",
       "cardIds": [
-        "day-7-meal-0",
+        "meal-1792316492421-sf7rhxs",
         "day-7-pokemon-center",
-        "day-7-meal-1",
-        "summer-palace",
-        "activity-1792340201495-p1znh8f",
+        "day-7-meal-0",
         "day-7-meal-2",
-        "activity-1792340220966-bv4zv78"
+        "temple-of-heaven",
+        "day-7-meal-1",
+        "qianmen-street",
+        "day-7-meal-4",
+        "day-7-meal-3",
+        "meal-1784475396433-bo7x24b",
+        "meal-1788625606685-d7cojsk",
+        "activity-1784470607072-ykcya1z",
+        "activity-1792340901861-th157tv"
       ],
       "cards": {
-        "activity-1792340201495-p1znh8f": {
-          "id": "activity-1792340201495-p1znh8f",
+        "activity-1784470607072-ykcya1z": {
+          "id": "activity-1784470607072-ykcya1z",
           "kind": "custom-activity",
           "customActivity": {
-            "title": "(Can consider) Pokemon center at Zhongguancun ",
-            "location": "",
-            "description": "",
-            "timeSlot": "Evening",
+            "title": "(Optional) Cycling along Tiananmen",
+            "location": "Tiananmen neighbourhood",
+            "description": "If have energy and time. But do note that tomorrow is a big day with a lot of walking. Might want to wake up early tomorrow as well for Flag Raising ceremony at Tiananmen",
+            "timeSlot": "Night",
             "duration": {
               "min": 1,
               "max": 2,
@@ -1228,12 +1134,45 @@
             }
           }
         },
-        "activity-1792340220966-bv4zv78": {
-          "id": "activity-1792340220966-bv4zv78",
+        "meal-1784475396433-bo7x24b": {
+          "id": "meal-1784475396433-bo7x24b",
+          "kind": "custom-meal",
+          "customMeal": {
+            "name": "萍姐火锅",
+            "location": "北京市东城区崇文门外大街5号新世界2期L2层",
+            "price": "",
+            "description": "",
+            "meal": "dinner"
+          }
+        },
+        "meal-1788625606685-d7cojsk": {
+          "id": "meal-1788625606685-d7cojsk",
+          "kind": "custom-meal",
+          "customMeal": {
+            "name": "刘记炙子烤肉/烤肉刘",
+            "location": "",
+            "price": "",
+            "description": "",
+            "meal": "dinner"
+          }
+        },
+        "meal-1792316492421-sf7rhxs": {
+          "id": "meal-1792316492421-sf7rhxs",
+          "kind": "custom-meal",
+          "customMeal": {
+            "name": "Breakfast near Hotel",
+            "location": "Near Hotel",
+            "price": "",
+            "description": "Since we are going to pokemon Popup, just eat nearby first",
+            "meal": "breakfast"
+          }
+        },
+        "activity-1792340901861-th157tv": {
+          "id": "activity-1792340901861-th157tv",
           "kind": "custom-activity",
           "customActivity": {
-            "title": "(Can consider) Visit 鸟巢文化中心",
-            "location": "北京市朝阳区国家体育场南路1号",
+            "title": "Remember to sleep early for flag raising tmr!",
+            "location": "",
             "description": "",
             "timeSlot": "Night",
             "duration": {
@@ -1243,101 +1182,166 @@
             }
           }
         },
-        "summer-palace": {
-          "id": "summer-palace",
+        "temple-of-heaven": {
+          "id": "temple-of-heaven",
           "kind": "place",
           "place": {
-            "id": "summer-palace",
-            "name": "Summer Palace (颐和园)",
-            "area": "Summer Palace",
-            "category": "UNESCO / Garden",
-            "timeSlot": "Late Morning",
-            "duration": "3.5–4.5 hrs",
-            "summary": "Vast Qing imperial garden around Kunming Lake — Long Corridor, Tower of Buddhist Incense, marble boat, and willow-lined shores. One of Beijing’s best autumn photo sites.",
+            "id": "temple-of-heaven",
+            "name": "Temple of Heaven Park (天坛公园)",
+            "area": "Tiantan",
+            "category": "UNESCO / Temple",
+            "timeSlot": "Morning",
+            "duration": "2.5–3.5 hrs",
+            "summary": "Ming–Qing complex where emperors prayed for good harvests. Saturday is the day the Hall of Prayer, Echo Wall, and Circular Mound are open.",
             "highlights": [
-              "Long Corridor painted beams",
-              "Seventeen-Arch Bridge views",
-              "Climb or view Tower of Buddhist Incense (pace yourself)"
+              "Hall of Prayer for Good Harvests (祈年殿)",
+              "Echo Wall and Imperial Vault (回音壁)",
+              "Circular Mound (圜丘)"
             ],
             "tips": [
-              "Enter East Gate; through ticket recommended",
-              "Boat across the lake saves walking for seniors (seasonal)",
-              "Bring snacks — food options inside are pricey; you will arrive after the Xidan pop-up",
-              "DiDi drop at East Gate; same for pickup"
+              "Enter East Gate if using Tiantan Dongmen metro; DiDi can drop closer to the Hall",
+              "Buy the combo. It is the ticket that includes these halls",
+              "Saturday is busy — the blue roof is still the photo"
             ],
             "ticket": {
               "type": "advance_recommended",
-              "detail": "Through ticket online / WeChat"
+              "detail": "November combo ¥28; 60+ free. Halls are open on Saturday"
             },
-            "photoNote": "Bridge reflections and willow + lake frames work well into early afternoon light.",
-            "paceNote": "Do not try to walk the entire lake circuit. Core loop: East Gate → Long Corridor → lakeside → exit. Skip distant Suzhou Street if tired."
+            "photoNote": "Walk a full circle around the Hall for symmetry shots; watch for drone bans.",
+            "paceNote": "The halls are the reason this day moved to Saturday. Do the axis. Skip distant park corners if the crowd is heavy."
+          },
+          "schedule": {
+            "timeSlot": "Morning",
+            "duration": {
+              "min": 3,
+              "max": 4,
+              "unit": "hrs"
+            }
+          }
+        },
+        "qianmen-street": {
+          "id": "qianmen-street",
+          "kind": "place",
+          "place": {
+            "id": "qianmen-street",
+            "name": "Qianmen / Dashilar stroll (前门 · 大栅栏)",
+            "area": "Qianmen",
+            "category": "Street / Shopping",
+            "timeSlot": "Afternoon",
+            "duration": "1.5–2 hrs",
+            "summary": "Rebuilt pedestrian street south of Tiananmen with snack shops and photo façades. Pair with the starred luzhu and dairy stops.",
+            "highlights": [
+              "Streetscape photos",
+              "Snack hopping without another long DiDi",
+              "Easy exit back toward metro / DiDi"
+            ],
+            "tips": [
+              "Touristy — treat it as atmosphere + food, not deep history",
+              "Saturday crowds. Keep valuables zipped"
+            ],
+            "ticket": {
+              "type": "free",
+              "detail": "Public street"
+            },
+            "paceNote": "Speed through souvenir shops; spend time on food instead."
+          },
+          "schedule": {
+            "timeSlot": "Afternoon",
+            "duration": {
+              "min": 1.5,
+              "max": 2,
+              "unit": "hrs"
+            }
           }
         },
         "day-7-meal-0": {
           "id": "day-7-meal-0",
           "kind": "meal",
           "meal": {
-            "name": "Hotel breakfast at 汉庭",
-            "area": "Dongsi",
-            "cuisine": "Whatever is fastest",
+            "name": "尹记门钉肉饼 · 天坛店",
+            "area": "Tiantan",
+            "cuisine": "Men ding rou bing",
             "priceRange": "¥",
             "meal": "breakfast",
-            "note": "Leave by ~09:15 for ~10:00 Xidan pop-up opening. Saturday stock is better early."
+            "note": "Door-nail meat pies near Temple of Heaven — solid start before park entry."
           }
         },
         "day-7-meal-1": {
           "id": "day-7-meal-1",
           "kind": "meal",
           "meal": {
-            "name": "Summer Palace area lunch",
-            "area": "Haidian",
-            "cuisine": "Simple Chinese",
-            "priceRange": "¥¥",
+            "name": "恭敬李烤鸭 · 天坛路店",
+            "area": "Tiantan",
+            "cuisine": "Peking duck",
+            "priceRange": "¥¥¥",
             "meal": "lunch",
-            "note": "Eat just outside the East Gate after exiting — more choice than inside."
+            "note": "Starred roast duck near the park — book or arrive slightly early. Saturday tables fill."
           }
         },
         "day-7-meal-2": {
           "id": "day-7-meal-2",
           "kind": "meal",
           "meal": {
-            "name": "Dinner near Zhongguancun or back at Guijie",
-            "area": "Haidian / Guijie",
-            "cuisine": "Casual",
+            "name": "味多美 · 天坛店",
+            "area": "Tiantan",
+            "cuisine": "Bakery",
+            "priceRange": "¥",
+            "meal": "snack",
+            "note": "Near Tiantan Donglu metro — coffee + pastry pause."
+          }
+        },
+        "day-7-meal-3": {
+          "id": "day-7-meal-3",
+          "kind": "meal",
+          "meal": {
+            "name": "陈记卤煮小肠 · 廊房二条店",
+            "area": "Qianmen",
+            "cuisine": "Luzhu (Beijing offal stew)",
             "priceRange": "¥¥",
             "meal": "dinner",
-            "note": "After Summer Palace, return to 刘阿妹鸡公煲 or 佬婆猪脚饭 near Beixinqiao if Haidian options feel thin."
+            "note": "Starred luzhu shop near Qianmen — adventurous classic; order carefully for the less adventurous eaters."
+          }
+        },
+        "day-7-meal-4": {
+          "id": "day-7-meal-4",
+          "kind": "meal",
+          "meal": {
+            "name": "三元梅园 · 前门店",
+            "area": "Qianmen",
+            "cuisine": "Imperial dairy / cheese",
+            "priceRange": "¥",
+            "meal": "snack",
+            "note": "Court-style milk desserts — sweet finish on Qianmen Street."
           }
         },
         "day-7-pokemon-center": {
           "id": "day-7-pokemon-center",
           "kind": "pokemon-center",
           "pokemonCenter": {
-            "name": "Pokemon Pop-up · Xidan Joy City",
+            "name": "Pokemon Pop-up · China World Mall",
             "openTime": "10:00",
-            "note": "B1 official pop-up + F1 Relax Party in the same mall — one DiDi drop covers both."
+            "note": "NEW official pop-up at 国贸商城南区 B1 WB120A/B — 10:00 opening, then DiDi south to Temple of Heaven."
           }
         }
       },
       "notes": {
-        "peking-university": {
-          "text": "if cannot go into the uni we can do other things, like shopping or maybe zhong guan cun pokemon center",
+        "day-7-pokemon-center": {
+          "text": "Check stock availability for each popup before going. If news come up late, then nvm.",
+          "isOpen": false
+        },
+        "day-7-meal-2": {
+          "text": "",
           "isOpen": false
         },
         "day-7-meal-0": {
-          "text": "Optional. If no time, just go to pokemon popup",
-          "isOpen": false
-        },
-        "day-7-pokemon-center": {
-          "text": "Check stock availability for each popup before going. If news come up late, then nvm.\n\nCan try guo mao if store restricts purchases per id\n",
-          "isOpen": false
-        },
-        "day-7-meal-1": {
-          "text": "庆丰包子铺(颐和园店) near summer palace OR just in the Xidan mall lol if hungry already",
+          "text": "Snack",
           "isOpen": false
         }
       },
-      "removedCardIds": []
+      "removedCardIds": [
+        "activity-1788625655751-eu1kapl",
+        "activity-1788626941635-a2zrbaa"
+      ]
     },
     "day-8": {
       "dayId": "day-8",
@@ -1647,5 +1651,8 @@
       "notes": {},
       "removedCardIds": []
     }
-  }
+  },
+  "appliedSwaps": [
+    "day2-day7-content"
+  ]
 }

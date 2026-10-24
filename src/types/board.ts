@@ -82,6 +82,8 @@ export interface DayBoard {
 export interface BoardState {
   version: 1;
   days: Record<string, DayBoard>;
+  /** One-time board fixes already written into this saved board. */
+  appliedSwaps?: string[];
 }
 
 export const TIME_SLOTS: TimeSlot[] = [

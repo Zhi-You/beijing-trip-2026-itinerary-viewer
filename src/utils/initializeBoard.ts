@@ -66,6 +66,7 @@ export function repairBoardState(state: BoardState, days: DayPlan[]): BoardState
   const next: BoardState = {
     version: state.version,
     days: {},
+    ...(state.appliedSwaps ? { appliedSwaps: [...state.appliedSwaps] } : {}),
   };
 
   for (const day of days) {
@@ -154,6 +155,7 @@ export function mergeBoardWithDefaults(
   defaultDays: DayPlan[],
 ): BoardState {
   const merged = initializeBoardState(defaultDays);
+  if (saved.appliedSwaps?.length) merged.appliedSwaps = [...saved.appliedSwaps];
 
   for (const day of defaultDays) {
     const savedDay = saved.days[day.id];

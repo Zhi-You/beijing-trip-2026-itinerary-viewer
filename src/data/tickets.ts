@@ -38,6 +38,27 @@ export const TICKET_GROUPS: TicketGroup[] = [
     ],
   },
   {
+    id: 'train-tangshan',
+    en: 'Trains · Tangshan',
+    zh: '火车 · 唐山',
+    blurbEn: 'Wed 4 Nov, 4 second-class seats each way. Out on G8807, back on G8826 to 北京站.',
+    blurbZh: '11月4日周三，来回各 4 张二等座。去程 G8807，回程 G8826 到北京站。',
+    files: [
+      {
+        id: 'train-to-tangshan',
+        path: 'tickets/Train To TangShan/To.jpg',
+        en: 'G8807 · 北京 12:36 → 唐山 13:40 · car 04 · waiting room 7',
+        zh: 'G8807 · 北京 12:36 → 唐山 13:40 · 04 车 · 第七候车室',
+      },
+      {
+        id: 'train-from-tangshan',
+        path: 'tickets/Train To TangShan/From.jpg',
+        en: 'G8826 · 唐山 21:35 → 北京 22:45 · car 03 · gate A11',
+        zh: 'G8826 · 唐山 21:35 → 北京 22:45 · 03 车 · 检票口 A11',
+      },
+    ],
+  },
+  {
     id: 'hotel',
     en: 'Hotels',
     zh: '酒店',
