@@ -34,7 +34,14 @@ export function TicketsPage() {
                   <span className="shrink-0 text-xs text-ink-light/60">{open ? t('board.hide') : t('board.show')}</span>
                 </button>
                 {open && (
-                  <ul className="space-y-3 border-t border-washi-dark px-4 py-4">
+                  <div className="space-y-3 border-t border-washi-dark px-4 py-4">
+                    {(group.entryEn || group.entryZh) && (
+                      <p className="rounded-lg border border-gold/50 bg-gold/15 px-3 py-3 text-sm leading-relaxed text-ink">
+                        {zh ? group.entryZh : group.entryEn}
+                      </p>
+                    )}
+                    {group.files.length > 0 && (
+                  <ul className="space-y-3">
                     {group.files.map((file) => {
                       const href = ticketUrl(file.path);
                       const name = zh ? file.zh : file.en;
@@ -80,6 +87,8 @@ export function TicketsPage() {
                       );
                     })}
                   </ul>
+                    )}
+                  </div>
                 )}
               </section>
             );

@@ -12,6 +12,9 @@ export interface TicketGroup {
   zh: string;
   blurbEn: string;
   blurbZh: string;
+  /** Shown as soon as the section is opened. Used when entry is a passport or a live code, not a saved file. */
+  entryEn?: string;
+  entryZh?: string;
   files: TicketFile[];
 }
 
@@ -111,6 +114,60 @@ export const TICKET_GROUPS: TicketGroup[] = [
         zh: 'FWD · Zy & Xy',
       },
     ],
+  },
+  {
+    id: 'summer-palace',
+    en: 'Summer Palace',
+    zh: '颐和园',
+    blurbEn: 'Mon 2 Nov, 12:00–15:00. Two paid tickets. The other two use a passport.',
+    blurbZh: '11月2日周一 12:00–15:00。两张付费票。另外两位凭护照。',
+    entryEn:
+      'Afternoon gate tickets, ¥40 for two full-price passport tickets. The QR below is for Ji Xinyu and Tang Zhi You. The other two are not on this order — they enter free with their passports. 佛香阁 and the other inner gardens are closed this Monday, so this is the gate ticket, not the through ticket.',
+    entryZh:
+      '下午场大门票，两张护照全价票共 ¥40。下面的二维码是 Ji Xinyu 和 Tang Zhi You 的。另外两位不在这一单上，凭护照免费进入。这个周一佛香阁等园中园关闭，所以买的是大门票，不是联票。',
+    files: [
+      {
+        id: 'summer-palace-zy-xy',
+        path: 'tickets/Summer Palace/zy&xy.jpg',
+        en: 'Gate ticket · 2 Nov 12:00–15:00 · Ji Xinyu, Tang Zhi You',
+        zh: '大门票 · 11月2日 12:00–15:00 · Ji Xinyu、Tang Zhi You',
+      },
+    ],
+  },
+  {
+    id: 'tiananmen-flag',
+    en: 'Tiananmen flag-raising',
+    zh: '天安门升旗',
+    blurbEn: 'Tue 3 Nov. No paper ticket — passport at 安检口 3.',
+    blurbZh: '11月3日周二。没有纸质票 — 护照走 3 号安检口。',
+    entryEn:
+      'There is no ticket to show and no QR to save. All 4 enter with the passport on the reservation. Use 安检口 3 for the flag-raising.',
+    entryZh: '不用出示门票，也没有二维码可存。4 人都凭预约上的护照进入。升旗走 3 号安检口。',
+    files: [],
+  },
+  {
+    id: 'forbidden-city',
+    en: 'Forbidden City',
+    zh: '故宫',
+    blurbEn: 'Morning slot bought. Passport at 午门.',
+    blurbZh: '上午场已买。护照从午门进。',
+    entryEn:
+      'The Tue 3 Nov morning slot is already bought for all 4. There is no paper ticket and no QR to screenshot. Bring the passports on the booking and enter at 午门. The morning slot is scanned by 12:00.',
+    entryZh:
+      '11月3日周二上午场，4 人已买好。没有纸质票，也不用截二维码。带订单上的护照，从午门进。上午场 12:00 前检票。',
+    files: [],
+  },
+  {
+    id: 'hetou-gate',
+    en: '河头老街 gate',
+    zh: '河头老街大门',
+    blurbEn: 'Wed 4 Nov. Live QR from the mini program, at the gate.',
+    blurbZh: '11月4日周三。门口用小程序的动态二维码。',
+    entryEn:
+      'Do not rely on a screenshot. On the day, open the 河头老街旅游 or 河头老街票务 mini program and show the live QR at the gate. A code saved earlier will not scan.',
+    entryZh:
+      '不要靠截图。当天打开微信小程序「河头老街旅游」或「河头老街票务」，在门口出示当时的动态二维码。提前保存的码刷不了。',
+    files: [],
   },
 ];
 

@@ -59,15 +59,15 @@ const itineraryEn: ItineraryData = {
     },
     {
       id: 'summer-palace',
-      when: 'Sun 26 Oct, 21:00 — or at the gate on Mon 2 Nov',
-      what: 'Summer Palace gate ticket, 2 people',
+      when: 'Bought — Mon 2 Nov, 12:00–15:00',
+      what: 'Summer Palace gate ticket, 2 adults',
       dayIds: ['day-2'],
       phase: 'release',
-      urgency: 'high',
+      urgency: 'medium',
       link: 'https://www.summerpalace.net.cn/',
       linkLabel: 'summerpalace.net.cn',
       notes:
-        'Visit is now Mon 2 Nov, after the Xidan pop-up. Online tickets open 1–7 days ahead at 21:00, so 2 Nov first appears Sun 26 Oct at 21:00. Not on sale on the morning of 25 Oct. The park and Long Corridor are open. 佛香阁, 德和园, 苏州街, and the palace museum are closed on Mondays, so buy the gate ticket (¥20 in November), not the ¥50 through ticket. Age 60+ is free with a passport. The gate on Monday morning also works.',
+        'Bought. ¥40 for two full-price tickets, afternoon slot, Ji Xinyu and Tang Zhi You. Show that QR. The other two are not on the order and enter free with their passports. The saved screenshot is in Tickets.',
     },
     {
       id: 'tiananmen-flag',
@@ -79,7 +79,7 @@ const itineraryEn: ItineraryData = {
       link: 'https://yuyue2026.tamgw.beijing.gov.cn/web/index.html',
       linkLabel: 'Tiananmen reservation',
       notes:
-        '27 Oct is the first day: book 1–7 days ahead, and not on 3 Nov itself. Free. Choose the 升旗 session and 安检口 3. Quota starts at 12:00 in batches, so keep refreshing. 12:30 is the Mao clock, not this one. Early November sunrise is about 06:45 — be at the gate about 2 hours before. A Forbidden City ticket does not cover the square. Passports.',
+        'No paper ticket and no QR. All 4 enter with the passport on the reservation, at 安检口 3. 27 Oct at 12:00 was the first release: book 1–7 days ahead, and not on 3 Nov itself. Free. Choose the 升旗 session. Quota starts at 12:00 in batches. 12:30 is the Mao clock, not this one. Early November sunrise is about 06:45 — be at the gate about 2 hours before. A Forbidden City ticket does not cover the square.',
     },
     {
       id: 'tiananmen-tower',
@@ -95,15 +95,15 @@ const itineraryEn: ItineraryData = {
     },
     {
       id: 'forbidden-city',
-      when: 'Tue 27 Oct, 20:00',
+      when: 'Bought — morning slot, Tue 3 Nov',
       what: 'Forbidden City morning slot, 4 people',
       dayIds: ['day-3'],
       phase: 'release',
-      urgency: 'critical',
+      urgency: 'medium',
       link: 'https://ticket.dpm.org.cn/',
       linkLabel: 'ticket.dpm.org.cn',
       notes:
-        'Hardest ticket. Opens exactly 7 days ahead, at 20:00. Tue 3 Nov is open (closed Mondays). No same-day tickets. Official 故宫博物院 mini program only. Morning slot, scanned by 12:00, enter at 午门. Low season: ¥40 for each adult, ¥20 for each person 60+ (half price, not free). All 4 passports must be on the booking.',
+        'Bought for all 4. No paper ticket and no QR to save. Enter with the passports on the booking, at 午门. Morning slot is scanned by 12:00.',
     },
     {
       id: 'national-museum',
@@ -147,7 +147,7 @@ const itineraryEn: ItineraryData = {
       phase: 'later',
       urgency: 'high',
       notes:
-        'There is no 31 Oct release. That date is the deadline, and you can buy earlier. Wednesday gate is usually ¥78 (weekend ¥98); confirm on the page. Age 60+ still pays — free entry starts at 70. WeChat mini program 河头老街旅游 or 河头老街票务. Real-name, 4 people.',
+        'There is no 31 Oct release. That date is the deadline, and you can buy earlier. Wednesday gate is usually ¥78 (weekend ¥98); confirm on the page. Age 60+ still pays — free entry starts at 70. WeChat mini program 河头老街旅游 or 河头老街票务. Real-name, 4 people. On the day, open that mini program at the gate and show the live QR. A screenshot saved earlier will not scan.',
     },
     {
       id: 'hetou-show',

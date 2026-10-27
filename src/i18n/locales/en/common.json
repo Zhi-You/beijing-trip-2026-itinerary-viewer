@@ -14,7 +14,7 @@
   },
   "tickets": {
     "title": "Tickets",
-    "subtitle": "Saved confirmations for the trip. Open a section to view or download the file.",
+    "subtitle": "Saved confirmations for the trip. Open a section for the file, or for how to enter when there is no file.",
     "view": "View",
     "download": "Download",
     "openTab": "Open in a new tab"
