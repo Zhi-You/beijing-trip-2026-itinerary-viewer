@@ -102,15 +102,15 @@ const itineraryZh: ItineraryData = {
     },
     {
       id: 'national-museum',
-      when: '10月29日周四 17:00',
+      when: '已约 — 11月5日周四 13:30–16:00',
       what: '国家博物馆 13:30–16:00，4 人',
       dayIds: ['day-5'],
       phase: 'release',
-      urgency: 'critical',
+      urgency: 'medium',
       link: 'https://pcticket.chnmuseum.cn/museum-en/#/personal/index',
       linkLabel: '国家博物馆',
       notes:
-        '10月29日 17:00 是对的：11月5日周四的前 7 天。免费。约 13:30–16:00，不要约上午 — 同一天上午要去纪念堂，纪念堂中午关门。11月下午场到 16:00，不是 16:30。一个账号每周 1 次、最多 5 人。联系人已经填好。第一次失败就继续刷新。北门，带护照。',
+        '4 人已约上。免费。下午场，北门进。每人一张检票二维码，在「票据」里，出示和本人护照对应的那张。同一天上午要去纪念堂，纪念堂中午关门，所以博物馆不要用上午场。',
     },
     {
       id: 'mao-memorial',

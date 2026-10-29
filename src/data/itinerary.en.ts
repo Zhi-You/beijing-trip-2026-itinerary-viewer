@@ -107,15 +107,15 @@ const itineraryEn: ItineraryData = {
     },
     {
       id: 'national-museum',
-      when: 'Thu 29 Oct, 17:00',
+      when: 'Bought — Thu 5 Nov, 13:30–16:00',
       what: 'National Museum, 13:30–16:00, 4 people',
       dayIds: ['day-5'],
       phase: 'release',
-      urgency: 'critical',
+      urgency: 'medium',
       link: 'https://pcticket.chnmuseum.cn/museum-en/#/personal/index',
       linkLabel: 'National Museum',
       notes:
-        '29 Oct at 17:00 is correct: 7 days before Thu 5 Nov. Free. Book 13:30–16:00, not the morning — Mao is the same morning and closes at noon. In November the afternoon slot ends at 16:00, not 16:30. One account, up to 5 people, once this week. Contacts are already saved. If the first try fails, keep refreshing. North gate, passports.',
+        'Booked for all 4. Free. Afternoon slot, north gate. Each person has a ticket-checking QR in Tickets — show the one that matches that passport. Mao is the same morning and closes at noon, so do not use a morning museum slot.',
     },
     {
       id: 'mao-memorial',

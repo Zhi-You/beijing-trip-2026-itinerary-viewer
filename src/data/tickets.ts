@@ -169,6 +169,43 @@ export const TICKET_GROUPS: TicketGroup[] = [
       '不要靠截图。当天打开微信小程序「河头老街旅游」或「河头老街票务」，在门口出示当时的动态二维码。提前保存的码刷不了。',
     files: [],
   },
+  {
+    id: 'national-museum',
+    en: 'National Museum',
+    zh: '国家博物馆',
+    blurbEn: 'Thu 5 Nov, 13:30–16:00. One ticket-checking QR per person.',
+    blurbZh: '11月5日周四 13:30–16:00。每人一张检票二维码。',
+    entryEn:
+      'Free reservation for all 4, afternoon slot on Thu 5 Nov. Enter at the north gate. Show the QR that matches that person’s passport. If a saved code will not scan, open the same reservation in the official museum page.',
+    entryZh:
+      '4 人免费预约，11月5日周四下午场。从北门进。出示和本人护照对应的二维码。若保存的码刷不了，打开官方预约页里的同一条预约。',
+    files: [
+      {
+        id: 'museum-ji-xinyu',
+        path: 'tickets/National Museum/photo_2026-10-30_01-12-46.jpg',
+        en: 'Ji Xinyu · ticket-checking QR',
+        zh: 'Ji Xinyu · 检票二维码',
+      },
+      {
+        id: 'museum-tang-zhi-you',
+        path: 'tickets/National Museum/photo_2026-10-30_01-12-20.jpg',
+        en: 'Tang Zhi You · ticket-checking QR',
+        zh: 'Tang Zhi You · 检票二维码',
+      },
+      {
+        id: 'museum-tang-kiun-ching',
+        path: 'tickets/National Museum/photo_2026-10-29_17-03-47.jpg',
+        en: 'Tang Kiun Ching · ticket-checking QR',
+        zh: 'Tang Kiun Ching · 检票二维码',
+      },
+      {
+        id: 'museum-pan',
+        path: 'tickets/National Museum/photo_2026-10-30_01-12-44.jpg',
+        en: 'Pan****eng · ticket-checking QR',
+        zh: 'Pan****eng · 检票二维码',
+      },
+    ],
+  },
 ];
 
 export function ticketUrl(path: string): string {
